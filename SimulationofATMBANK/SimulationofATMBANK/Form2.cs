@@ -21,5 +21,20 @@ namespace SimulationofATMBANK
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
