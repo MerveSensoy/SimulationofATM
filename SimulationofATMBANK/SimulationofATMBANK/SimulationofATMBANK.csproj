@@ -80,6 +80,12 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="HesapBilgisiSorma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapBilgisiSorma.Designer.cs">
+      <DependentUpon>HesapBilgisiSorma.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParaTransferi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapBilgisiSorma.resx">
+      <DependentUpon>HesapBilgisiSorma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParaTransferi.resx">
       <DependentUpon>ParaTransferi.cs</DependentUpon>
