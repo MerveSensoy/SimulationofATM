@@ -61,63 +61,10 @@
             button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hoşgeldiniz.";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(80, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Lütfen Şifrenizi Giriniz.";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(209, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(209, 195);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Düzeltme";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(209, 227);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "İptal";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(83, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
             // sec_1
             // 
             sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
-            sec_1.Location = new System.Drawing.Point(82, 119);
+            sec_1.Location = new System.Drawing.Point(82, 125);
             sec_1.Name = "sec_1";
             sec_1.Size = new System.Drawing.Size(30, 30);
             sec_1.TabIndex = 6;
@@ -127,7 +74,7 @@
             // button4
             // 
             button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            button4.Location = new System.Drawing.Point(118, 119);
+            button4.Location = new System.Drawing.Point(112, 125);
             button4.Name = "button4";
             button4.Size = new System.Drawing.Size(30, 30);
             button4.TabIndex = 7;
@@ -137,7 +84,7 @@
             // button5
             // 
             button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            button5.Location = new System.Drawing.Point(154, 119);
+            button5.Location = new System.Drawing.Point(142, 125);
             button5.Name = "button5";
             button5.Size = new System.Drawing.Size(30, 30);
             button5.TabIndex = 8;
@@ -158,7 +105,7 @@
             // button7
             // 
             button7.ForeColor = System.Drawing.SystemColors.ControlText;
-            button7.Location = new System.Drawing.Point(118, 155);
+            button7.Location = new System.Drawing.Point(112, 155);
             button7.Name = "button7";
             button7.Size = new System.Drawing.Size(30, 30);
             button7.TabIndex = 10;
@@ -168,7 +115,7 @@
             // button8
             // 
             button8.ForeColor = System.Drawing.SystemColors.ControlText;
-            button8.Location = new System.Drawing.Point(154, 155);
+            button8.Location = new System.Drawing.Point(142, 155);
             button8.Name = "button8";
             button8.Size = new System.Drawing.Size(30, 30);
             button8.TabIndex = 11;
@@ -178,7 +125,7 @@
             // button9
             // 
             button9.ForeColor = System.Drawing.SystemColors.ControlText;
-            button9.Location = new System.Drawing.Point(82, 191);
+            button9.Location = new System.Drawing.Point(82, 185);
             button9.Name = "button9";
             button9.Size = new System.Drawing.Size(30, 30);
             button9.TabIndex = 12;
@@ -188,7 +135,7 @@
             // button10
             // 
             button10.ForeColor = System.Drawing.SystemColors.ControlText;
-            button10.Location = new System.Drawing.Point(118, 191);
+            button10.Location = new System.Drawing.Point(112, 185);
             button10.Name = "button10";
             button10.Size = new System.Drawing.Size(30, 30);
             button10.TabIndex = 13;
@@ -198,7 +145,7 @@
             // button11
             // 
             button11.ForeColor = System.Drawing.SystemColors.ControlText;
-            button11.Location = new System.Drawing.Point(154, 191);
+            button11.Location = new System.Drawing.Point(142, 185);
             button11.Name = "button11";
             button11.Size = new System.Drawing.Size(30, 30);
             button11.TabIndex = 14;
@@ -208,7 +155,7 @@
             // button12
             // 
             button12.ForeColor = System.Drawing.SystemColors.ControlText;
-            button12.Location = new System.Drawing.Point(82, 227);
+            button12.Location = new System.Drawing.Point(82, 215);
             button12.Name = "button12";
             button12.Size = new System.Drawing.Size(30, 30);
             button12.TabIndex = 15;
@@ -218,7 +165,7 @@
             // button13
             // 
             button13.ForeColor = System.Drawing.SystemColors.ControlText;
-            button13.Location = new System.Drawing.Point(118, 227);
+            button13.Location = new System.Drawing.Point(112, 215);
             button13.Name = "button13";
             button13.Size = new System.Drawing.Size(30, 30);
             button13.TabIndex = 16;
@@ -228,12 +175,65 @@
             // button14
             // 
             button14.ForeColor = System.Drawing.SystemColors.ControlText;
-            button14.Location = new System.Drawing.Point(154, 227);
+            button14.Location = new System.Drawing.Point(142, 215);
             button14.Name = "button14";
             button14.Size = new System.Drawing.Size(30, 30);
             button14.TabIndex = 17;
             button14.Text = "+";
             button14.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(102, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hoşgeldiniz.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(80, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Lütfen Şifrenizi Giriniz.";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(209, 160);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Giriş";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(209, 190);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Düzeltme";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(209, 220);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "İptal";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(83, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
             // 
             // Form2
             // 

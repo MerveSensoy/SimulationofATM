@@ -34,8 +34,8 @@
             System.Windows.Forms.Button button2;
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             sec_1 = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
             button7 = new System.Windows.Forms.Button();
@@ -63,6 +63,26 @@
             button1.Text = "<";
             button1.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            button7.ForeColor = System.Drawing.SystemColors.ControlText;
+            button7.Location = new System.Drawing.Point(389, 199);
+            button7.Name = "button7";
+            button7.Size = new System.Drawing.Size(30, 30);
+            button7.TabIndex = 22;
+            button7.Text = "<";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            button2.Location = new System.Drawing.Point(12, 199);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(30, 30);
+            button2.TabIndex = 24;
+            button2.Text = ">";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -81,53 +101,33 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Diğer Hesaplarıma Para Yatırma";
             // 
-            // button7
+            // label3
             // 
-            button7.ForeColor = System.Drawing.SystemColors.ControlText;
-            button7.Location = new System.Drawing.Point(389, 199);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(30, 30);
-            button7.TabIndex = 22;
-            button7.Text = "<";
-            button7.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(48, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Anasayfa";
             // 
-            // button6
+            // label4
             // 
-            this.button6.Location = new System.Drawing.Point(308, 203);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "Kart İade";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            button2.Location = new System.Drawing.Point(12, 199);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(30, 30);
-            button2.TabIndex = 24;
-            button2.Text = ">";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(51, 203);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Anasayfa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(333, 208);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Kart İade";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 262);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(button2);
-            this.Controls.Add(this.button3);
             this.Controls.Add(button7);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(button1);
@@ -143,8 +143,8 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
 
     }
 }
