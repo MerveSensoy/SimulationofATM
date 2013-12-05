@@ -34,6 +34,7 @@
             System.Windows.Forms.Button button3;
             System.Windows.Forms.Button button4;
             System.Windows.Forms.Button button5;
+            System.Windows.Forms.Button button7;
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,22 +42,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             sec_1 = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
+            button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(156, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Şu kadar Bakiyeniz Bulunmaktadır.";
             // 
             // sec_1
             // 
@@ -118,6 +112,15 @@
             button5.Text = "<";
             button5.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(156, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Şu kadar Bakiyeniz Bulunmaktadır.";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -149,7 +152,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(365, 68);
+            this.label5.Location = new System.Drawing.Point(368, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 16;
@@ -159,11 +162,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(349, 146);
+            this.label6.Location = new System.Drawing.Point(352, 146);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 17;
             this.label6.Text = "Hesap Bilgileri";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -174,11 +178,32 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Diğer İşlemler";
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(347, 287);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Kart İade";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.ForeColor = System.Drawing.SystemColors.ControlText;
+            button7.Location = new System.Drawing.Point(428, 283);
+            button7.Name = "button7";
+            button7.Size = new System.Drawing.Size(30, 30);
+            button7.TabIndex = 20;
+            button7.Text = "<";
+            button7.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(470, 322);
+            this.Controls.Add(button7);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -208,5 +233,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button6;
     }
 }

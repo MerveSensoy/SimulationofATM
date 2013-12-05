@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace SimulationofATMBANK
 {
-    public partial class Form3 : Form
+    public partial class Form4 : Form
     {
-        public Form3()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void sec_1_Click(object sender, EventArgs e)
         {
 
         }
