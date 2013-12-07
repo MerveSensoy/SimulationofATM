@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="50TLHızlıParaÇekme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50TLHızlıParaÇekme.Designer.cs">
+      <DependentUpon>50TLHızlıParaÇekme.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaşkaHesabaParaYatırma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,12 @@
     <Compile Include="ParaÇekme.Designer.cs">
       <DependentUpon>ParaÇekme.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParaÇekmeMakbuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaÇekmeMakbuz.Designer.cs">
+      <DependentUpon>ParaÇekmeMakbuz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TanımlıHesabaParaYatirma.cs">
@@ -136,6 +148,9 @@
     <Compile Include="TanımlıHesabaParaYatirma.Designer.cs">
       <DependentUpon>TanımlıHesabaParaYatirma.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="50TLHızlıParaÇekme.resx">
+      <DependentUpon>50TLHızlıParaÇekme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaşkaHesabaParaYatırma.resx">
       <DependentUpon>BaşkaHesabaParaYatırma.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ParaÇekme.resx">
       <DependentUpon>ParaÇekme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaÇekmeMakbuz.resx">
+      <DependentUpon>ParaÇekmeMakbuz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
