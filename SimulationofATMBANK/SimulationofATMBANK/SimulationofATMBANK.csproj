@@ -116,6 +116,12 @@
     <Compile Include="Form9.Designer.cs">
       <DependentUpon>Form9.cs</DependentUpon>
     </Compile>
+    <Compile Include="GüncelBakiyeSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GüncelBakiyeSorgulama.Designer.cs">
+      <DependentUpon>GüncelBakiyeSorgulama.cs</DependentUpon>
+    </Compile>
     <Compile Include="HesapBilgisiSorma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="ParaÇekme.Designer.cs">
       <DependentUpon>ParaÇekme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaÇekmeDiğerKısım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaÇekmeDiğerKısım.Designer.cs">
+      <DependentUpon>ParaÇekmeDiğerKısım.cs</DependentUpon>
     </Compile>
     <Compile Include="ParaÇekmeMakbuz.cs">
       <SubType>Form</SubType>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GüncelBakiyeSorgulama.resx">
+      <DependentUpon>GüncelBakiyeSorgulama.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HesapBilgisiSorma.resx">
       <DependentUpon>HesapBilgisiSorma.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ParaÇekme.resx">
       <DependentUpon>ParaÇekme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaÇekmeDiğerKısım.resx">
+      <DependentUpon>ParaÇekmeDiğerKısım.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParaÇekmeMakbuz.resx">
       <DependentUpon>ParaÇekmeMakbuz.cs</DependentUpon>
