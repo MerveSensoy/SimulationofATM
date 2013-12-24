@@ -1,6 +1,6 @@
 ﻿namespace SimulationofATMBANK
 {
-    partial class Form3
+    partial class Anasayfa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Button sec_1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anasayfa));
             System.Windows.Forms.Button button1;
             System.Windows.Forms.Button button2;
             System.Windows.Forms.Button button3;
@@ -54,7 +55,9 @@
             // 
             // sec_1
             // 
+            sec_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
+            sec_1.Image = ((System.Drawing.Image)(resources.GetObject("sec_1.Image")));
             sec_1.Location = new System.Drawing.Point(12, 59);
             sec_1.Name = "sec_1";
             sec_1.Size = new System.Drawing.Size(30, 30);
@@ -64,7 +67,9 @@
             // 
             // button1
             // 
+            button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             button1.Location = new System.Drawing.Point(12, 199);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(30, 30);
@@ -74,7 +79,9 @@
             // 
             // button2
             // 
+            button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             button2.Location = new System.Drawing.Point(12, 129);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(30, 30);
@@ -84,7 +91,9 @@
             // 
             // button3
             // 
+            button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             button3.Location = new System.Drawing.Point(428, 59);
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(30, 30);
@@ -94,7 +103,9 @@
             // 
             // button4
             // 
+            button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             button4.ForeColor = System.Drawing.SystemColors.ControlText;
+            button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             button4.Location = new System.Drawing.Point(428, 129);
             button4.Name = "button4";
             button4.Size = new System.Drawing.Size(30, 30);
@@ -104,7 +115,9 @@
             // 
             // button5
             // 
+            button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             button5.ForeColor = System.Drawing.SystemColors.ControlText;
+            button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             button5.Location = new System.Drawing.Point(428, 199);
             button5.Name = "button5";
             button5.Size = new System.Drawing.Size(30, 30);
@@ -112,9 +125,23 @@
             button5.Text = "<";
             button5.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            button8.ForeColor = System.Drawing.SystemColors.ControlText;
+            button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            button8.Location = new System.Drawing.Point(428, 269);
+            button8.Name = "button8";
+            button8.Size = new System.Drawing.Size(30, 30);
+            button8.TabIndex = 27;
+            button8.Text = "<";
+            button8.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.Location = new System.Drawing.Point(156, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 13);
@@ -123,7 +150,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(48, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
@@ -132,7 +161,9 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.Location = new System.Drawing.Point(48, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 13);
@@ -141,7 +172,9 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.Location = new System.Drawing.Point(48, 208);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 13);
@@ -150,18 +183,21 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Location = new System.Drawing.Point(368, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 16;
             this.label5.Text = "50 TL Çek";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
             this.label6.Location = new System.Drawing.Point(352, 138);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 13);
@@ -171,7 +207,9 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
+            this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.Location = new System.Drawing.Point(352, 208);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 13);
@@ -180,28 +218,21 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
+            this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
             this.label8.Location = new System.Drawing.Point(368, 278);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 28;
             this.label8.Text = "Kart İade";
             // 
-            // button8
-            // 
-            button8.ForeColor = System.Drawing.SystemColors.ControlText;
-            button8.Location = new System.Drawing.Point(428, 269);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(30, 30);
-            button8.TabIndex = 27;
-            button8.Text = "<";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // Form3
+            // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 322);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(484, 462);
             this.Controls.Add(this.label8);
             this.Controls.Add(button8);
             this.Controls.Add(this.label7);
@@ -217,7 +248,7 @@
             this.Controls.Add(button1);
             this.Controls.Add(sec_1);
             this.Controls.Add(this.label1);
-            this.Name = "Form3";
+            this.Name = "Anasayfa";
             this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();

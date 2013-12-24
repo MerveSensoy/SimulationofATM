@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SimulationofATMBANK
 {
-    public partial class Form2 : Form
+    public partial class Giris : Form
     {
-        public Form2()
+        public Giris()
         {
             InitializeComponent();
         }
@@ -35,6 +35,11 @@ namespace SimulationofATMBANK
         private void button6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }

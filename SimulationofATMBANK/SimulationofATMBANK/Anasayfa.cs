@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SimulationofATMBANK
 {
-    public partial class Form3 : Form
+    public partial class Anasayfa : Form
     {
-        public Form3()
+        public Anasayfa()
         {
             InitializeComponent();
         }
