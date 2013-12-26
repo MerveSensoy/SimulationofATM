@@ -321,10 +321,6 @@ namespace SimulationofATMBANK
 
         }
 
-        private void panel6_sec_9_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void panel6_yatirilacakpara_TextChanged(object sender, EventArgs e)
         {
@@ -370,5 +366,207 @@ namespace SimulationofATMBANK
         {
 
         }
+
+        private void panel6_sec_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_eksi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_arti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_giris_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_duzeltme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_iptal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_makbuzistiyorum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_makbuzistemiyorum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_paragonderilenhesapnumarasi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_parayatirilanhesapnumarasi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_musteriisimsoyisim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_gonderilenmiktar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_guncelbakiye_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_yatirilacakhesapnumarasi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_eksi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_sec_arti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_giris_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_duzeltme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_iptal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_anasayfa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_baskahesabaparatransferi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_tanimlihesabaparayatirma_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_anasayfa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_digerhesap1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_digerhesap2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_anasayfa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

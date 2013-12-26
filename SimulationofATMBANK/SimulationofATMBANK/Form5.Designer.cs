@@ -90,8 +90,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             System.Windows.Forms.Button panel7_makbuzistiyorum;
             System.Windows.Forms.Button panel7_makbuzistemiyorum;
-            System.Windows.Forms.Button button3;
-            System.Windows.Forms.Button button4;
+            System.Windows.Forms.Button panel9_anasayfa;
+            System.Windows.Forms.Button panel9_kartiade;
             System.Windows.Forms.Button panel9_sec_arti;
             System.Windows.Forms.Button panel9_sec_0;
             System.Windows.Forms.Button panel9_sec_eksi;
@@ -104,6 +104,14 @@
             System.Windows.Forms.Button panel9_sec_3;
             System.Windows.Forms.Button panel9_sec_2;
             System.Windows.Forms.Button panel9_sec_1;
+            System.Windows.Forms.Button panel10_anasayfa;
+            System.Windows.Forms.Button panel10_kartiade;
+            System.Windows.Forms.Button panel10_tanimlihesabaparayatirma;
+            System.Windows.Forms.Button panel10_baskahesabaparatransferi;
+            System.Windows.Forms.Button panel11_digerhesap1;
+            System.Windows.Forms.Button panel11_digerhesap2;
+            System.Windows.Forms.Button panel11_anasayfa;
+            System.Windows.Forms.Button panel11_kartiade;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.giris_textBox1 = new System.Windows.Forms.TextBox();
             this.giris_iptal = new System.Windows.Forms.Button();
@@ -198,6 +206,18 @@
             this.panel9_giris = new System.Windows.Forms.Button();
             this.panel9_yatirilacakhesapnumarasi = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             giris_sec_arti = new System.Windows.Forms.Button();
             giris_sec_0 = new System.Windows.Forms.Button();
             giris_sec_eksi = new System.Windows.Forms.Button();
@@ -259,8 +279,8 @@
             panel6_sec_1 = new System.Windows.Forms.Button();
             panel7_makbuzistiyorum = new System.Windows.Forms.Button();
             panel7_makbuzistemiyorum = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
-            button4 = new System.Windows.Forms.Button();
+            panel9_anasayfa = new System.Windows.Forms.Button();
+            panel9_kartiade = new System.Windows.Forms.Button();
             panel9_sec_arti = new System.Windows.Forms.Button();
             panel9_sec_0 = new System.Windows.Forms.Button();
             panel9_sec_eksi = new System.Windows.Forms.Button();
@@ -273,6 +293,14 @@
             panel9_sec_3 = new System.Windows.Forms.Button();
             panel9_sec_2 = new System.Windows.Forms.Button();
             panel9_sec_1 = new System.Windows.Forms.Button();
+            panel10_anasayfa = new System.Windows.Forms.Button();
+            panel10_kartiade = new System.Windows.Forms.Button();
+            panel10_tanimlihesabaparayatirma = new System.Windows.Forms.Button();
+            panel10_baskahesabaparatransferi = new System.Windows.Forms.Button();
+            panel11_digerhesap1 = new System.Windows.Forms.Button();
+            panel11_digerhesap2 = new System.Windows.Forms.Button();
+            panel11_anasayfa = new System.Windows.Forms.Button();
+            panel11_kartiade = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -292,6 +320,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // giris_sec_arti
@@ -2152,6 +2184,7 @@
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.pictureBox10);
             this.panel9.Controls.Add(this.label41);
             this.panel9.Controls.Add(this.label42);
@@ -2159,8 +2192,8 @@
             this.panel9.Controls.Add(this.label44);
             this.panel9.Controls.Add(this.label45);
             this.panel9.Controls.Add(this.label46);
-            this.panel9.Controls.Add(button3);
-            this.panel9.Controls.Add(button4);
+            this.panel9.Controls.Add(panel9_anasayfa);
+            this.panel9.Controls.Add(panel9_kartiade);
             this.panel9.Controls.Add(this.label47);
             this.panel9.Controls.Add(panel9_sec_arti);
             this.panel9.Controls.Add(panel9_sec_0);
@@ -2251,29 +2284,31 @@
             this.label46.TabIndex = 82;
             this.label46.Text = "Anasayfa";
             // 
-            // button3
+            // panel9_anasayfa
             // 
-            button3.BackColor = System.Drawing.Color.DarkGray;
-            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            button3.Location = new System.Drawing.Point(46, 424);
-            button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(30, 30);
-            button3.TabIndex = 81;
-            button3.Text = ">";
-            button3.UseVisualStyleBackColor = false;
+            panel9_anasayfa.BackColor = System.Drawing.Color.DarkGray;
+            panel9_anasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel9_anasayfa.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel9_anasayfa.Location = new System.Drawing.Point(46, 424);
+            panel9_anasayfa.Name = "panel9_anasayfa";
+            panel9_anasayfa.Size = new System.Drawing.Size(30, 30);
+            panel9_anasayfa.TabIndex = 81;
+            panel9_anasayfa.Text = ">";
+            panel9_anasayfa.UseVisualStyleBackColor = false;
+            panel9_anasayfa.Click += new System.EventHandler(this.panel9_anasayfa_Click);
             // 
-            // button4
+            // panel9_kartiade
             // 
-            button4.BackColor = System.Drawing.Color.DarkGray;
-            button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            button4.Location = new System.Drawing.Point(423, 424);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(30, 30);
-            button4.TabIndex = 80;
-            button4.Text = "<";
-            button4.UseVisualStyleBackColor = false;
+            panel9_kartiade.BackColor = System.Drawing.Color.DarkGray;
+            panel9_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel9_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel9_kartiade.Location = new System.Drawing.Point(423, 424);
+            panel9_kartiade.Name = "panel9_kartiade";
+            panel9_kartiade.Size = new System.Drawing.Size(30, 30);
+            panel9_kartiade.TabIndex = 80;
+            panel9_kartiade.Text = "<";
+            panel9_kartiade.UseVisualStyleBackColor = false;
+            panel9_kartiade.Click += new System.EventHandler(this.panel9_kartiade_Click);
             // 
             // label47
             // 
@@ -2298,6 +2333,7 @@
             panel9_sec_arti.TabIndex = 78;
             panel9_sec_arti.Text = "+";
             panel9_sec_arti.UseVisualStyleBackColor = false;
+            panel9_sec_arti.Click += new System.EventHandler(this.panel9_sec_arti_Click);
             // 
             // panel9_sec_0
             // 
@@ -2311,6 +2347,7 @@
             panel9_sec_0.TabIndex = 77;
             panel9_sec_0.Text = "0";
             panel9_sec_0.UseVisualStyleBackColor = false;
+            panel9_sec_0.Click += new System.EventHandler(this.panel9_sec_0_Click);
             // 
             // panel9_sec_eksi
             // 
@@ -2324,6 +2361,7 @@
             panel9_sec_eksi.TabIndex = 76;
             panel9_sec_eksi.Text = "-";
             panel9_sec_eksi.UseVisualStyleBackColor = false;
+            panel9_sec_eksi.Click += new System.EventHandler(this.panel9_sec_eksi_Click);
             // 
             // panel9_sec_9
             // 
@@ -2337,6 +2375,7 @@
             panel9_sec_9.TabIndex = 75;
             panel9_sec_9.Text = "9";
             panel9_sec_9.UseVisualStyleBackColor = false;
+            panel9_sec_9.Click += new System.EventHandler(this.panel9_sec_9_Click);
             // 
             // panel9_sec_8
             // 
@@ -2350,6 +2389,7 @@
             panel9_sec_8.TabIndex = 74;
             panel9_sec_8.Text = "8";
             panel9_sec_8.UseVisualStyleBackColor = false;
+            panel9_sec_8.Click += new System.EventHandler(this.panel9_sec_8_Click);
             // 
             // panel9_sec_7
             // 
@@ -2363,6 +2403,7 @@
             panel9_sec_7.TabIndex = 73;
             panel9_sec_7.Text = "7";
             panel9_sec_7.UseVisualStyleBackColor = false;
+            panel9_sec_7.Click += new System.EventHandler(this.panel9_sec_7_Click);
             // 
             // panel9_sec_6
             // 
@@ -2376,6 +2417,7 @@
             panel9_sec_6.TabIndex = 72;
             panel9_sec_6.Text = "6";
             panel9_sec_6.UseVisualStyleBackColor = false;
+            panel9_sec_6.Click += new System.EventHandler(this.panel9_sec_6_Click);
             // 
             // panel9_sec_5
             // 
@@ -2389,6 +2431,7 @@
             panel9_sec_5.TabIndex = 71;
             panel9_sec_5.Text = "5";
             panel9_sec_5.UseVisualStyleBackColor = false;
+            panel9_sec_5.Click += new System.EventHandler(this.panel9_sec_5_Click);
             // 
             // panel9_sec_4
             // 
@@ -2402,6 +2445,7 @@
             panel9_sec_4.TabIndex = 70;
             panel9_sec_4.Text = "4";
             panel9_sec_4.UseVisualStyleBackColor = false;
+            panel9_sec_4.Click += new System.EventHandler(this.panel9_sec_4_Click);
             // 
             // panel9_sec_3
             // 
@@ -2415,6 +2459,7 @@
             panel9_sec_3.TabIndex = 69;
             panel9_sec_3.Text = "3";
             panel9_sec_3.UseVisualStyleBackColor = false;
+            panel9_sec_3.Click += new System.EventHandler(this.panel9_sec_3_Click);
             // 
             // panel9_sec_2
             // 
@@ -2428,6 +2473,7 @@
             panel9_sec_2.TabIndex = 68;
             panel9_sec_2.Text = "2";
             panel9_sec_2.UseVisualStyleBackColor = false;
+            panel9_sec_2.Click += new System.EventHandler(this.panel9_sec_2_Click);
             // 
             // panel9_sec_1
             // 
@@ -2441,6 +2487,7 @@
             panel9_sec_1.TabIndex = 67;
             panel9_sec_1.Text = "1";
             panel9_sec_1.UseVisualStyleBackColor = false;
+            panel9_sec_1.Click += new System.EventHandler(this.panel9_sec_1_Click);
             // 
             // panel9_iptal
             // 
@@ -2453,6 +2500,7 @@
             this.panel9_iptal.TabIndex = 66;
             this.panel9_iptal.Text = "İptal";
             this.panel9_iptal.UseVisualStyleBackColor = false;
+            this.panel9_iptal.Click += new System.EventHandler(this.panel9_iptal_Click);
             // 
             // panel9_duzeltme
             // 
@@ -2465,6 +2513,7 @@
             this.panel9_duzeltme.TabIndex = 65;
             this.panel9_duzeltme.Text = "Düzeltme";
             this.panel9_duzeltme.UseVisualStyleBackColor = false;
+            this.panel9_duzeltme.Click += new System.EventHandler(this.panel9_duzeltme_Click);
             // 
             // panel9_giris
             // 
@@ -2477,6 +2526,7 @@
             this.panel9_giris.TabIndex = 64;
             this.panel9_giris.Text = "Giriş";
             this.panel9_giris.UseVisualStyleBackColor = false;
+            this.panel9_giris.Click += new System.EventHandler(this.panel9_giris_Click);
             // 
             // panel9_yatirilacakhesapnumarasi
             // 
@@ -2487,6 +2537,7 @@
             this.panel9_yatirilacakhesapnumarasi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel9_yatirilacakhesapnumarasi.Size = new System.Drawing.Size(128, 20);
             this.panel9_yatirilacakhesapnumarasi.TabIndex = 63;
+            this.panel9_yatirilacakhesapnumarasi.TextChanged += new System.EventHandler(this.panel9_yatirilacakhesapnumarasi_TextChanged);
             // 
             // pictureBox10
             // 
@@ -2497,6 +2548,257 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 88;
             this.pictureBox10.TabStop = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.pictureBox11);
+            this.panel10.Controls.Add(this.label48);
+            this.panel10.Controls.Add(this.label49);
+            this.panel10.Controls.Add(panel10_anasayfa);
+            this.panel10.Controls.Add(panel10_kartiade);
+            this.panel10.Controls.Add(this.label50);
+            this.panel10.Controls.Add(this.label51);
+            this.panel10.Controls.Add(panel10_tanimlihesabaparayatirma);
+            this.panel10.Controls.Add(panel10_baskahesabaparatransferi);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(484, 462);
+            this.panel10.TabIndex = 89;
+            this.panel10.Visible = false;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.DarkGray;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label48.Location = new System.Drawing.Point(357, 378);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(59, 13);
+            this.label48.TabIndex = 42;
+            this.label48.Text = "Kart İade";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.DarkGray;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label49.Location = new System.Drawing.Point(72, 378);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(59, 13);
+            this.label49.TabIndex = 41;
+            this.label49.Text = "Anasayfa";
+            // 
+            // panel10_anasayfa
+            // 
+            panel10_anasayfa.BackColor = System.Drawing.Color.DarkGray;
+            panel10_anasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel10_anasayfa.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel10_anasayfa.Location = new System.Drawing.Point(36, 369);
+            panel10_anasayfa.Name = "panel10_anasayfa";
+            panel10_anasayfa.Size = new System.Drawing.Size(30, 30);
+            panel10_anasayfa.TabIndex = 40;
+            panel10_anasayfa.Text = ">";
+            panel10_anasayfa.UseVisualStyleBackColor = false;
+            panel10_anasayfa.Click += new System.EventHandler(this.panel10_anasayfa_Click);
+            // 
+            // panel10_kartiade
+            // 
+            panel10_kartiade.BackColor = System.Drawing.Color.DarkGray;
+            panel10_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel10_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel10_kartiade.Location = new System.Drawing.Point(422, 369);
+            panel10_kartiade.Name = "panel10_kartiade";
+            panel10_kartiade.Size = new System.Drawing.Size(30, 30);
+            panel10_kartiade.TabIndex = 39;
+            panel10_kartiade.Text = "<";
+            panel10_kartiade.UseVisualStyleBackColor = false;
+            panel10_kartiade.Click += new System.EventHandler(this.panel10_kartiade_Click);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.DarkGray;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label50.Location = new System.Drawing.Point(251, 238);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(170, 13);
+            this.label50.TabIndex = 38;
+            this.label50.Text = "Tanımlı Hesaba Para Yatırma";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.DarkGray;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label51.Location = new System.Drawing.Point(72, 238);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(165, 13);
+            this.label51.TabIndex = 37;
+            this.label51.Text = "Başka Hesaba Para Yatırma";
+            // 
+            // panel10_tanimlihesabaparayatirma
+            // 
+            panel10_tanimlihesabaparayatirma.BackColor = System.Drawing.Color.DarkGray;
+            panel10_tanimlihesabaparayatirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel10_tanimlihesabaparayatirma.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel10_tanimlihesabaparayatirma.Location = new System.Drawing.Point(427, 229);
+            panel10_tanimlihesabaparayatirma.Name = "panel10_tanimlihesabaparayatirma";
+            panel10_tanimlihesabaparayatirma.Size = new System.Drawing.Size(30, 30);
+            panel10_tanimlihesabaparayatirma.TabIndex = 36;
+            panel10_tanimlihesabaparayatirma.Text = "<";
+            panel10_tanimlihesabaparayatirma.UseVisualStyleBackColor = false;
+            panel10_tanimlihesabaparayatirma.Click += new System.EventHandler(this.panel10_tanimlihesabaparayatirma_Click);
+            // 
+            // panel10_baskahesabaparatransferi
+            // 
+            panel10_baskahesabaparatransferi.BackColor = System.Drawing.Color.DarkGray;
+            panel10_baskahesabaparatransferi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel10_baskahesabaparatransferi.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel10_baskahesabaparatransferi.Location = new System.Drawing.Point(36, 229);
+            panel10_baskahesabaparatransferi.Name = "panel10_baskahesabaparatransferi";
+            panel10_baskahesabaparatransferi.Size = new System.Drawing.Size(30, 30);
+            panel10_baskahesabaparatransferi.TabIndex = 35;
+            panel10_baskahesabaparatransferi.Text = ">";
+            panel10_baskahesabaparatransferi.UseVisualStyleBackColor = false;
+            panel10_baskahesabaparatransferi.Click += new System.EventHandler(this.panel10_baskahesabaparatransferi_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(137, 91);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 43;
+            this.pictureBox11.TabStop = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.pictureBox12);
+            this.panel11.Controls.Add(panel11_digerhesap1);
+            this.panel11.Controls.Add(panel11_digerhesap2);
+            this.panel11.Controls.Add(this.radioButton2);
+            this.panel11.Controls.Add(this.radioButton1);
+            this.panel11.Controls.Add(this.label52);
+            this.panel11.Controls.Add(this.label53);
+            this.panel11.Controls.Add(panel11_anasayfa);
+            this.panel11.Controls.Add(panel11_kartiade);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(484, 462);
+            this.panel11.TabIndex = 44;
+            this.panel11.Visible = false;
+            // 
+            // panel11_digerhesap1
+            // 
+            panel11_digerhesap1.BackColor = System.Drawing.Color.DarkGray;
+            panel11_digerhesap1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel11_digerhesap1.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel11_digerhesap1.Location = new System.Drawing.Point(13, 213);
+            panel11_digerhesap1.Name = "panel11_digerhesap1";
+            panel11_digerhesap1.Size = new System.Drawing.Size(30, 30);
+            panel11_digerhesap1.TabIndex = 53;
+            panel11_digerhesap1.Text = ">";
+            panel11_digerhesap1.UseVisualStyleBackColor = false;
+            panel11_digerhesap1.Click += new System.EventHandler(this.panel11_digerhesap1_Click);
+            // 
+            // panel11_digerhesap2
+            // 
+            panel11_digerhesap2.BackColor = System.Drawing.Color.DarkGray;
+            panel11_digerhesap2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel11_digerhesap2.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel11_digerhesap2.Location = new System.Drawing.Point(13, 272);
+            panel11_digerhesap2.Name = "panel11_digerhesap2";
+            panel11_digerhesap2.Size = new System.Drawing.Size(30, 30);
+            panel11_digerhesap2.TabIndex = 52;
+            panel11_digerhesap2.Text = ">";
+            panel11_digerhesap2.UseVisualStyleBackColor = false;
+            panel11_digerhesap2.Click += new System.EventHandler(this.panel11_digerhesap2_Click);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton2.Location = new System.Drawing.Point(56, 279);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(95, 17);
+            this.radioButton2.TabIndex = 51;
+            this.radioButton2.Text = "Diğer Hesap";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton1.Location = new System.Drawing.Point(56, 220);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(95, 17);
+            this.radioButton1.TabIndex = 50;
+            this.radioButton1.Text = "Diğer Hesap";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.DarkGray;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label52.Location = new System.Drawing.Point(362, 392);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(59, 13);
+            this.label52.TabIndex = 49;
+            this.label52.Text = "Kart İade";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.Color.DarkGray;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label53.Location = new System.Drawing.Point(72, 392);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(59, 13);
+            this.label53.TabIndex = 48;
+            this.label53.Text = "Anasayfa";
+            // 
+            // panel11_anasayfa
+            // 
+            panel11_anasayfa.BackColor = System.Drawing.Color.DarkGray;
+            panel11_anasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel11_anasayfa.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel11_anasayfa.Location = new System.Drawing.Point(36, 382);
+            panel11_anasayfa.Name = "panel11_anasayfa";
+            panel11_anasayfa.Size = new System.Drawing.Size(30, 30);
+            panel11_anasayfa.TabIndex = 47;
+            panel11_anasayfa.Text = ">";
+            panel11_anasayfa.UseVisualStyleBackColor = false;
+            panel11_anasayfa.Click += new System.EventHandler(this.panel11_anasayfa_Click);
+            // 
+            // panel11_kartiade
+            // 
+            panel11_kartiade.BackColor = System.Drawing.Color.DarkGray;
+            panel11_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel11_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel11_kartiade.Location = new System.Drawing.Point(427, 382);
+            panel11_kartiade.Name = "panel11_kartiade";
+            panel11_kartiade.Size = new System.Drawing.Size(30, 30);
+            panel11_kartiade.TabIndex = 46;
+            panel11_kartiade.Text = "<";
+            panel11_kartiade.UseVisualStyleBackColor = false;
+            panel11_kartiade.Click += new System.EventHandler(this.panel11_kartiade_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(135, 91);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 54;
+            this.pictureBox12.TabStop = false;
             // 
             // Form5
             // 
@@ -2555,6 +2857,12 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2656,5 +2964,17 @@
         private System.Windows.Forms.Button panel9_giris;
         private System.Windows.Forms.TextBox panel9_yatirilacakhesapnumarasi;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }
