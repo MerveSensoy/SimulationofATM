@@ -567,6 +567,199 @@ namespace SimulationofATMBANK
 
         }
 
+        private void panel12_tanimlidigerhesap1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void panel12_tanimlidigerhesap2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_tanimlidigerhesap3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_anasayfa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_eskibakiye_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_cekilenmiktar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_yenibakiye_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_makbuzistiyorum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_makbuzistemiyorum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel14_guncelbakiyesorgulama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel14_hesapozeti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel14_anasayfa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel14_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel15_musteriisimsoyisim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel15_guncelbakiye_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel15_yeniislem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel15_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel15_hesapnumarasi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_eskisifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_yenisifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_yenisifretekrar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_eksi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_sec_1panel16_sec_arti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_onayla_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_duzeltme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel16_iptal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel17_yeniislem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel17_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
