@@ -179,7 +179,7 @@ namespace SimulationofATMBANK
 
         private void panel2_digerTLcek_Click(object sender, EventArgs e)
         {
-
+            panel4.Visible = true;
         }
 
         private void panel3_paracekilenhesapnumarasi_TextChanged(object sender, EventArgs e)
@@ -214,6 +214,160 @@ namespace SimulationofATMBANK
             panel1.Visible = false;
             panel2.Visible= false;
             panel3.Visible = false;
+
+        }
+
+        private void panel4_digermiktari_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_eksi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_sec_arti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_giris_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+            panel3.Visible = true;
+        }
+
+        private void panel4_duzeltme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_iptal_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+            panel3.Visible = false;
+            panel2.Visible = false;
+            panel1.Visible = false;
+        }
+
+        private void panel5_kartinhesabinaparayatirma_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_digerhesaplarimaparayatirma_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_anasayfa_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void panel5_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_yatirilacakpara_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_sec_8_Click(object sender, EventArgs e)
+        {
 
         }
     }
