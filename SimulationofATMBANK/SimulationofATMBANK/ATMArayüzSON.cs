@@ -576,5 +576,50 @@ namespace SimulationofATMBANK
         {
 
         }
+
+        private void label114_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label113_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label115_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label116_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label117_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label118_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label119_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label120_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label121_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
