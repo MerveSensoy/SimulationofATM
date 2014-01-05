@@ -12,6 +12,8 @@ namespace SimulationofATMBANK
 {
     public partial class Form5 : Form
     {
+        int i;
+        // Yeni Bir Panel eklenip Giriş ve kart bölümleri oluşturulacak.
         public Form5()
         {
             InitializeComponent();
@@ -24,52 +26,52 @@ namespace SimulationofATMBANK
 
         private void giris_sec_1_Click(object sender, EventArgs e)
         {
-
+            i = 1;
         }
 
         private void giris_sec_2_Click(object sender, EventArgs e)
         {
-
+            i = 2;
         }
 
         private void giris_sec_3_Click(object sender, EventArgs e)
         {
-
+            i = 3;
         }
 
         private void giris_sec_4_Click(object sender, EventArgs e)
         {
-
+            i = 4;
         }
 
         private void giris_sec_5_Click(object sender, EventArgs e)
         {
-
+            i = 5;
         }
 
         private void giris_sec_6_Click(object sender, EventArgs e)
         {
-
+            i = 6;
         }
 
         private void giris_sec_7_Click(object sender, EventArgs e)
         {
-
+            i = 7;
         }
 
         private void giris_sec_8_Click(object sender, EventArgs e)
         {
-
+            i = 8;
         }
 
         private void giris_sec_9_Click(object sender, EventArgs e)
         {
-
+            i = 9;
         }
 
         private void giris_sec_0_Click(object sender, EventArgs e)
         {
-
+            i = 0;
         }
 
         private void giris_sec_eksi_Click(object sender, EventArgs e)
@@ -84,6 +86,8 @@ namespace SimulationofATMBANK
 
         private void giris_giris_Click(object sender, EventArgs e)
         {
+            //Database kontrol işlemleri gerçekleştirilecek
+            panel18.Visible = false;
             panel1.Visible = true;
         }
 
@@ -758,6 +762,16 @@ namespace SimulationofATMBANK
         }
 
         private void panel17_kartiade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel18_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void giris_sec_2_Click_1(object sender, EventArgs e)
         {
 
         }
