@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimulasyonPanel));
             System.Windows.Forms.Button panel1_kartiade;
             System.Windows.Forms.Button panel1_digerislemler;
             System.Windows.Forms.Button panel1_hesapbilgileri;
@@ -139,6 +138,7 @@
             System.Windows.Forms.Button giris_sec_7;
             System.Windows.Forms.Button giris_sec_9;
             System.Windows.Forms.Button giris_sec_eksi;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimulasyonPanel));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -446,55 +446,6 @@
             this.panel18.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Brown;
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(panel1_kartiade);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(panel1_digerislemler);
-            this.panel1.Controls.Add(panel1_hesapbilgileri);
-            this.panel1.Controls.Add(panel1_hizlielliTLcek);
-            this.panel1.Controls.Add(panel1_kendihesabinaparayatirma);
-            this.panel1.Controls.Add(panel1_paratransferi);
-            this.panel1.Controls.Add(panel1_paracekme);
-            this.panel1.Controls.Add(this.panel1_bakiye);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(487, 493);
-            this.panel1.TabIndex = 101;
-            this.panel1.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(159, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 45;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DarkGray;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(376, 429);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "Kart İade";
-            // 
             // panel1_kartiade
             // 
             panel1_kartiade.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -507,79 +458,6 @@
             panel1_kartiade.TabIndex = 43;
             panel1_kartiade.Text = "<";
             panel1_kartiade.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DarkGray;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(351, 359);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "Diğer İşlemler";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.DarkGray;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(347, 289);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 13);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "Hesap Bilgileri";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.DarkGray;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(369, 219);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
-            this.label5.TabIndex = 40;
-            this.label5.Text = "50 TL Çek";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.DarkGray;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(49, 359);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 13);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Para Transferi";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.DarkGray;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(49, 289);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 13);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Kendi Hesabına Para Yatırma";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.DarkGray;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(49, 219);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 13);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Para Çekme";
             // 
             // panel1_digerislemler
             // 
@@ -659,45 +537,6 @@
             panel1_paracekme.Text = ">";
             panel1_paracekme.UseVisualStyleBackColor = false;
             // 
-            // panel1_bakiye
-            // 
-            this.panel1_bakiye.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1_bakiye.AutoSize = true;
-            this.panel1_bakiye.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1_bakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel1_bakiye.Location = new System.Drawing.Point(157, 189);
-            this.panel1_bakiye.Name = "panel1_bakiye";
-            this.panel1_bakiye.Size = new System.Drawing.Size(204, 13);
-            this.panel1_bakiye.TabIndex = 30;
-            this.panel1_bakiye.Text = "Şu kadar Bakiyeniz Bulunmaktadır.";
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.Brown;
-            this.panel17.Controls.Add(this.pictureBox18);
-            this.panel17.Controls.Add(panel17_kartiade);
-            this.panel17.Controls.Add(panel17_yeniislem);
-            this.panel17.Controls.Add(this.button7);
-            this.panel17.Controls.Add(this.button8);
-            this.panel17.Controls.Add(this.label74);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(487, 493);
-            this.panel17.TabIndex = 102;
-            this.panel17.Visible = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(158, 128);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 52;
-            this.pictureBox18.TabStop = false;
-            // 
             // panel17_kartiade
             // 
             panel17_kartiade.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -723,84 +562,6 @@
             panel17_yeniislem.TabIndex = 50;
             panel17_yeniislem.Text = ">";
             panel17_yeniislem.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.BackColor = System.Drawing.Color.DarkGray;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.Location = new System.Drawing.Point(362, 338);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 49;
-            this.button7.Text = "Kart İade";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button8.BackColor = System.Drawing.Color.DarkGray;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.Location = new System.Drawing.Point(49, 338);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 48;
-            this.button8.Text = "Yeni İşlem";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // label74
-            // 
-            this.label74.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label74.AutoSize = true;
-            this.label74.BackColor = System.Drawing.Color.DarkGray;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label74.Location = new System.Drawing.Point(155, 287);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(223, 13);
-            this.label74.TabIndex = 47;
-            this.label74.Text = "Başka İşlem Yapmak İstiyor Musunuz?";
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.Brown;
-            this.panel16.Controls.Add(this.pictureBox17);
-            this.panel16.Controls.Add(panel16_sec_1panel16_sec_arti);
-            this.panel16.Controls.Add(panel16_sec_0);
-            this.panel16.Controls.Add(panel16_sec_eksi);
-            this.panel16.Controls.Add(panel16_sec_9);
-            this.panel16.Controls.Add(panel16_sec_8);
-            this.panel16.Controls.Add(panel16_sec_7);
-            this.panel16.Controls.Add(panel16_sec_6);
-            this.panel16.Controls.Add(panel16_sec_5);
-            this.panel16.Controls.Add(panel16_sec_4);
-            this.panel16.Controls.Add(panel16_sec_3);
-            this.panel16.Controls.Add(panel16_sec_2);
-            this.panel16.Controls.Add(panel16_sec_1);
-            this.panel16.Controls.Add(this.panel16_iptal);
-            this.panel16.Controls.Add(this.panel16_duzeltme);
-            this.panel16.Controls.Add(this.panel16_onayla);
-            this.panel16.Controls.Add(this.panel16_yenisifretekrar);
-            this.panel16.Controls.Add(this.panel16_yenisifre);
-            this.panel16.Controls.Add(this.panel16_eskisifre);
-            this.panel16.Controls.Add(this.label71);
-            this.panel16.Controls.Add(this.label72);
-            this.panel16.Controls.Add(this.label73);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(0, 0);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(487, 493);
-            this.panel16.TabIndex = 103;
-            this.panel16.Visible = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(127, 48);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 55;
-            this.pictureBox17.TabStop = false;
             // 
             // panel16_sec_1panel16_sec_arti
             // 
@@ -946,131 +707,6 @@
             panel16_sec_1.Text = "1";
             panel16_sec_1.UseVisualStyleBackColor = false;
             // 
-            // panel16_iptal
-            // 
-            this.panel16_iptal.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16_iptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel16_iptal.Location = new System.Drawing.Point(259, 392);
-            this.panel16_iptal.Name = "panel16_iptal";
-            this.panel16_iptal.Size = new System.Drawing.Size(75, 23);
-            this.panel16_iptal.TabIndex = 42;
-            this.panel16_iptal.Text = "İptal";
-            this.panel16_iptal.UseVisualStyleBackColor = false;
-            // 
-            // panel16_duzeltme
-            // 
-            this.panel16_duzeltme.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16_duzeltme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel16_duzeltme.Location = new System.Drawing.Point(259, 360);
-            this.panel16_duzeltme.Name = "panel16_duzeltme";
-            this.panel16_duzeltme.Size = new System.Drawing.Size(75, 23);
-            this.panel16_duzeltme.TabIndex = 41;
-            this.panel16_duzeltme.Text = "Düzeltme";
-            this.panel16_duzeltme.UseVisualStyleBackColor = false;
-            // 
-            // panel16_onayla
-            // 
-            this.panel16_onayla.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16_onayla.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel16_onayla.Location = new System.Drawing.Point(259, 330);
-            this.panel16_onayla.Name = "panel16_onayla";
-            this.panel16_onayla.Size = new System.Drawing.Size(75, 23);
-            this.panel16_onayla.TabIndex = 40;
-            this.panel16_onayla.Text = "Onayla";
-            this.panel16_onayla.UseVisualStyleBackColor = false;
-            // 
-            // panel16_yenisifretekrar
-            // 
-            this.panel16_yenisifretekrar.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16_yenisifretekrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel16_yenisifretekrar.Location = new System.Drawing.Point(257, 245);
-            this.panel16_yenisifretekrar.Name = "panel16_yenisifretekrar";
-            this.panel16_yenisifretekrar.Size = new System.Drawing.Size(100, 20);
-            this.panel16_yenisifretekrar.TabIndex = 39;
-            // 
-            // panel16_yenisifre
-            // 
-            this.panel16_yenisifre.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16_yenisifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel16_yenisifre.Location = new System.Drawing.Point(257, 218);
-            this.panel16_yenisifre.Name = "panel16_yenisifre";
-            this.panel16_yenisifre.Size = new System.Drawing.Size(100, 20);
-            this.panel16_yenisifre.TabIndex = 38;
-            // 
-            // panel16_eskisifre
-            // 
-            this.panel16_eskisifre.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16_eskisifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel16_eskisifre.Location = new System.Drawing.Point(257, 188);
-            this.panel16_eskisifre.Name = "panel16_eskisifre";
-            this.panel16_eskisifre.Size = new System.Drawing.Size(100, 20);
-            this.panel16_eskisifre.TabIndex = 37;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.BackColor = System.Drawing.Color.DarkGray;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label71.Location = new System.Drawing.Point(129, 248);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(122, 13);
-            this.label71.TabIndex = 36;
-            this.label71.Text = "Yeni Şifreyi Tekrarla";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.BackColor = System.Drawing.Color.DarkGray;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label72.Location = new System.Drawing.Point(129, 218);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(62, 13);
-            this.label72.TabIndex = 35;
-            this.label72.Text = "Yeni Şifre";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.BackColor = System.Drawing.Color.DarkGray;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label73.Location = new System.Drawing.Point(129, 188);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(61, 13);
-            this.label73.TabIndex = 34;
-            this.label73.Text = "Eski Şifre";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Brown;
-            this.panel15.Controls.Add(this.pictureBox16);
-            this.panel15.Controls.Add(panel15_kartiade);
-            this.panel15.Controls.Add(panel15_yeniislem);
-            this.panel15.Controls.Add(this.button5);
-            this.panel15.Controls.Add(this.button6);
-            this.panel15.Controls.Add(this.label67);
-            this.panel15.Controls.Add(this.panel15_guncelbakiye);
-            this.panel15.Controls.Add(this.panel15_musteriisimsoyisim);
-            this.panel15.Controls.Add(this.panel15_hesapnumarasi);
-            this.panel15.Controls.Add(this.label68);
-            this.panel15.Controls.Add(this.label69);
-            this.panel15.Controls.Add(this.label70);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(487, 493);
-            this.panel15.TabIndex = 104;
-            this.panel15.Visible = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(143, 28);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 62;
-            this.pictureBox16.TabStop = false;
-            // 
             // panel15_kartiade
             // 
             panel15_kartiade.BackColor = System.Drawing.Color.DarkGray;
@@ -1094,150 +730,6 @@
             panel15_yeniislem.TabIndex = 60;
             panel15_yeniislem.Text = ">";
             panel15_yeniislem.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DarkGray;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(279, 302);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 59;
-            this.button5.Text = "Kart İade";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.DarkGray;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(134, 302);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 58;
-            this.button6.Text = "Yeni İşlem";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.BackColor = System.Drawing.Color.DarkGray;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label67.Location = new System.Drawing.Point(95, 244);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(89, 13);
-            this.label67.TabIndex = 57;
-            this.label67.Text = "Güncel Bakiye";
-            // 
-            // panel15_guncelbakiye
-            // 
-            this.panel15_guncelbakiye.BackColor = System.Drawing.Color.DarkGray;
-            this.panel15_guncelbakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel15_guncelbakiye.Location = new System.Drawing.Point(265, 244);
-            this.panel15_guncelbakiye.Name = "panel15_guncelbakiye";
-            this.panel15_guncelbakiye.Size = new System.Drawing.Size(100, 20);
-            this.panel15_guncelbakiye.TabIndex = 56;
-            // 
-            // panel15_musteriisimsoyisim
-            // 
-            this.panel15_musteriisimsoyisim.BackColor = System.Drawing.Color.DarkGray;
-            this.panel15_musteriisimsoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel15_musteriisimsoyisim.Location = new System.Drawing.Point(265, 204);
-            this.panel15_musteriisimsoyisim.Name = "panel15_musteriisimsoyisim";
-            this.panel15_musteriisimsoyisim.Size = new System.Drawing.Size(100, 20);
-            this.panel15_musteriisimsoyisim.TabIndex = 55;
-            // 
-            // panel15_hesapnumarasi
-            // 
-            this.panel15_hesapnumarasi.BackColor = System.Drawing.Color.DarkGray;
-            this.panel15_hesapnumarasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel15_hesapnumarasi.Location = new System.Drawing.Point(265, 164);
-            this.panel15_hesapnumarasi.Name = "panel15_hesapnumarasi";
-            this.panel15_hesapnumarasi.Size = new System.Drawing.Size(100, 20);
-            this.panel15_hesapnumarasi.TabIndex = 54;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.BackColor = System.Drawing.Color.DarkGray;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label68.Location = new System.Drawing.Point(95, 204);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(138, 13);
-            this.label68.TabIndex = 53;
-            this.label68.Text = "Müşteri İsim ve Soyisim";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.BackColor = System.Drawing.Color.DarkGray;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label69.Location = new System.Drawing.Point(95, 164);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(99, 13);
-            this.label69.TabIndex = 52;
-            this.label69.Text = "Hesap Numarası";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.BackColor = System.Drawing.Color.DarkGray;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label70.Location = new System.Drawing.Point(95, 207);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(0, 13);
-            this.label70.TabIndex = 51;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Brown;
-            this.panel14.Controls.Add(this.pictureBox15);
-            this.panel14.Controls.Add(this.label62);
-            this.panel14.Controls.Add(this.label63);
-            this.panel14.Controls.Add(panel14_anasayfa);
-            this.panel14.Controls.Add(panel14_kartiade);
-            this.panel14.Controls.Add(this.label64);
-            this.panel14.Controls.Add(this.label66);
-            this.panel14.Controls.Add(panel14_hesapozeti);
-            this.panel14.Controls.Add(panel14_guncelbakiyesorgulama);
-            this.panel14.Controls.Add(this.label65);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(0, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(487, 493);
-            this.panel14.TabIndex = 105;
-            this.panel14.Visible = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(143, 83);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 60;
-            this.pictureBox15.TabStop = false;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.BackColor = System.Drawing.Color.DarkGray;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label62.Location = new System.Drawing.Point(377, 359);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(59, 13);
-            this.label62.TabIndex = 59;
-            this.label62.Text = "Kart İade";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.BackColor = System.Drawing.Color.DarkGray;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label63.Location = new System.Drawing.Point(49, 351);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(59, 13);
-            this.label63.TabIndex = 58;
-            this.label63.Text = "Anasayfa";
             // 
             // panel14_anasayfa
             // 
@@ -1263,28 +755,6 @@
             panel14_kartiade.Text = "<";
             panel14_kartiade.UseVisualStyleBackColor = false;
             // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.BackColor = System.Drawing.Color.DarkGray;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label64.Location = new System.Drawing.Point(360, 212);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(76, 13);
-            this.label64.TabIndex = 55;
-            this.label64.Text = "Hesap Özeti";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.BackColor = System.Drawing.Color.DarkGray;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label66.Location = new System.Drawing.Point(49, 212);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(152, 13);
-            this.label66.TabIndex = 54;
-            this.label66.Text = "Güncel Bakiye Sorgulama";
-            // 
             // panel14_hesapozeti
             // 
             panel14_hesapozeti.BackColor = System.Drawing.Color.DarkGray;
@@ -1308,70 +778,6 @@
             panel14_guncelbakiyesorgulama.TabIndex = 52;
             panel14_guncelbakiyesorgulama.Text = ">";
             panel14_guncelbakiyesorgulama.UseVisualStyleBackColor = false;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.BackColor = System.Drawing.Color.DarkGray;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label65.Location = new System.Drawing.Point(95, 207);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(0, 13);
-            this.label65.TabIndex = 51;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Brown;
-            this.panel13.Controls.Add(this.pictureBox14);
-            this.panel13.Controls.Add(this.label56);
-            this.panel13.Controls.Add(this.label57);
-            this.panel13.Controls.Add(panel13_makbuzistiyorum);
-            this.panel13.Controls.Add(panel13_makbuzistemiyorum);
-            this.panel13.Controls.Add(this.label58);
-            this.panel13.Controls.Add(this.panel13_yenibakiye);
-            this.panel13.Controls.Add(this.panel13_cekilenmiktar);
-            this.panel13.Controls.Add(this.panel13_eskibakiye);
-            this.panel13.Controls.Add(this.label59);
-            this.panel13.Controls.Add(this.label60);
-            this.panel13.Controls.Add(this.label61);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(487, 493);
-            this.panel13.TabIndex = 106;
-            this.panel13.Visible = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(108, 64);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 62;
-            this.pictureBox14.TabStop = false;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.BackColor = System.Drawing.Color.DarkGray;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label56.Location = new System.Drawing.Point(315, 377);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(121, 13);
-            this.label56.TabIndex = 61;
-            this.label56.Text = "Makbuz İstemiyorum";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.BackColor = System.Drawing.Color.DarkGray;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label57.Location = new System.Drawing.Point(48, 377);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(105, 13);
-            this.label57.TabIndex = 60;
-            this.label57.Text = "Makbuz İstiyorum";
             // 
             // panel13_makbuzistiyorum
             // 
@@ -1397,108 +803,6 @@
             panel13_makbuzistemiyorum.Text = "<";
             panel13_makbuzistemiyorum.UseVisualStyleBackColor = false;
             // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.BackColor = System.Drawing.Color.DarkGray;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label58.Location = new System.Drawing.Point(139, 205);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(188, 13);
-            this.label58.TabIndex = 57;
-            this.label58.Text = "Paranızı Sağ Alt Köşeden Alınız.";
-            // 
-            // panel13_yenibakiye
-            // 
-            this.panel13_yenibakiye.BackColor = System.Drawing.Color.DarkGray;
-            this.panel13_yenibakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel13_yenibakiye.Location = new System.Drawing.Point(227, 312);
-            this.panel13_yenibakiye.Name = "panel13_yenibakiye";
-            this.panel13_yenibakiye.Size = new System.Drawing.Size(100, 20);
-            this.panel13_yenibakiye.TabIndex = 56;
-            // 
-            // panel13_cekilenmiktar
-            // 
-            this.panel13_cekilenmiktar.BackColor = System.Drawing.Color.DarkGray;
-            this.panel13_cekilenmiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel13_cekilenmiktar.Location = new System.Drawing.Point(227, 272);
-            this.panel13_cekilenmiktar.Name = "panel13_cekilenmiktar";
-            this.panel13_cekilenmiktar.Size = new System.Drawing.Size(100, 20);
-            this.panel13_cekilenmiktar.TabIndex = 55;
-            // 
-            // panel13_eskibakiye
-            // 
-            this.panel13_eskibakiye.BackColor = System.Drawing.Color.DarkGray;
-            this.panel13_eskibakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel13_eskibakiye.Location = new System.Drawing.Point(227, 232);
-            this.panel13_eskibakiye.Name = "panel13_eskibakiye";
-            this.panel13_eskibakiye.Size = new System.Drawing.Size(100, 20);
-            this.panel13_eskibakiye.TabIndex = 54;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.BackColor = System.Drawing.Color.DarkGray;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label59.Location = new System.Drawing.Point(118, 315);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(74, 13);
-            this.label59.TabIndex = 53;
-            this.label59.Text = "Yeni Bakiye";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.BackColor = System.Drawing.Color.DarkGray;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label60.Location = new System.Drawing.Point(118, 272);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(88, 13);
-            this.label60.TabIndex = 52;
-            this.label60.Text = "Çekilen Miktar";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.BackColor = System.Drawing.Color.DarkGray;
-            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label61.Location = new System.Drawing.Point(118, 232);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(73, 13);
-            this.label61.TabIndex = 51;
-            this.label61.Text = "Eski Bakiye";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Brown;
-            this.panel12.Controls.Add(this.pictureBox13);
-            this.panel12.Controls.Add(panel12_tanimlidigerhesap3);
-            this.panel12.Controls.Add(this.radioButton3);
-            this.panel12.Controls.Add(panel12_tanimlidigerhesap1);
-            this.panel12.Controls.Add(panel12_tanimlidigerhesap2);
-            this.panel12.Controls.Add(this.radioButton4);
-            this.panel12.Controls.Add(this.radioButton5);
-            this.panel12.Controls.Add(this.label54);
-            this.panel12.Controls.Add(this.label55);
-            this.panel12.Controls.Add(panel12_anasayfa);
-            this.panel12.Controls.Add(panel12_kartiade);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(487, 493);
-            this.panel12.TabIndex = 107;
-            this.panel12.Visible = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(135, 91);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 66;
-            this.pictureBox13.TabStop = false;
-            // 
             // panel12_tanimlidigerhesap3
             // 
             panel12_tanimlidigerhesap3.BackColor = System.Drawing.Color.DarkGray;
@@ -1510,18 +814,6 @@
             panel12_tanimlidigerhesap3.TabIndex = 65;
             panel12_tanimlidigerhesap3.Text = ">";
             panel12_tanimlidigerhesap3.UseVisualStyleBackColor = false;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.DarkGray;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton3.Location = new System.Drawing.Point(56, 345);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(95, 17);
-            this.radioButton3.TabIndex = 64;
-            this.radioButton3.Text = "Diğer Hesap";
-            this.radioButton3.UseVisualStyleBackColor = false;
             // 
             // panel12_tanimlidigerhesap1
             // 
@@ -1547,52 +839,6 @@
             panel12_tanimlidigerhesap2.Text = ">";
             panel12_tanimlidigerhesap2.UseVisualStyleBackColor = false;
             // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.DarkGray;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton4.Location = new System.Drawing.Point(56, 286);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(95, 17);
-            this.radioButton4.TabIndex = 61;
-            this.radioButton4.Text = "Diğer Hesap";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.DarkGray;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton5.Location = new System.Drawing.Point(56, 227);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(95, 17);
-            this.radioButton5.TabIndex = 60;
-            this.radioButton5.Text = "Diğer Hesap";
-            this.radioButton5.UseVisualStyleBackColor = false;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.Color.DarkGray;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label54.Location = new System.Drawing.Point(369, 424);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(59, 13);
-            this.label54.TabIndex = 59;
-            this.label54.Text = "Kart İade";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.DarkGray;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label55.Location = new System.Drawing.Point(92, 424);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(59, 13);
-            this.label55.TabIndex = 58;
-            this.label55.Text = "Anasayfa";
-            // 
             // panel12_anasayfa
             // 
             panel12_anasayfa.BackColor = System.Drawing.Color.DarkGray;
@@ -1616,35 +862,6 @@
             panel12_kartiade.TabIndex = 56;
             panel12_kartiade.Text = "<";
             panel12_kartiade.UseVisualStyleBackColor = false;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Brown;
-            this.panel11.Controls.Add(this.pictureBox12);
-            this.panel11.Controls.Add(panel11_digerhesap1);
-            this.panel11.Controls.Add(panel11_digerhesap2);
-            this.panel11.Controls.Add(this.radioButton2);
-            this.panel11.Controls.Add(this.radioButton1);
-            this.panel11.Controls.Add(this.label52);
-            this.panel11.Controls.Add(this.label53);
-            this.panel11.Controls.Add(panel11_anasayfa);
-            this.panel11.Controls.Add(panel11_kartiade);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(487, 493);
-            this.panel11.TabIndex = 108;
-            this.panel11.Visible = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(135, 91);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 54;
-            this.pictureBox12.TabStop = false;
             // 
             // panel11_digerhesap1
             // 
@@ -1670,52 +887,6 @@
             panel11_digerhesap2.Text = ">";
             panel11_digerhesap2.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.DarkGray;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton2.Location = new System.Drawing.Point(56, 279);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(95, 17);
-            this.radioButton2.TabIndex = 51;
-            this.radioButton2.Text = "Diğer Hesap";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.DarkGray;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton1.Location = new System.Drawing.Point(56, 220);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 17);
-            this.radioButton1.TabIndex = 50;
-            this.radioButton1.Text = "Diğer Hesap";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.BackColor = System.Drawing.Color.DarkGray;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label52.Location = new System.Drawing.Point(362, 392);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(59, 13);
-            this.label52.TabIndex = 49;
-            this.label52.Text = "Kart İade";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.BackColor = System.Drawing.Color.DarkGray;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label53.Location = new System.Drawing.Point(72, 392);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(59, 13);
-            this.label53.TabIndex = 48;
-            this.label53.Text = "Anasayfa";
-            // 
             // panel11_anasayfa
             // 
             panel11_anasayfa.BackColor = System.Drawing.Color.DarkGray;
@@ -1739,57 +910,6 @@
             panel11_kartiade.TabIndex = 46;
             panel11_kartiade.Text = "<";
             panel11_kartiade.UseVisualStyleBackColor = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Brown;
-            this.panel10.Controls.Add(this.pictureBox11);
-            this.panel10.Controls.Add(this.label48);
-            this.panel10.Controls.Add(this.label49);
-            this.panel10.Controls.Add(panel10_anasayfa);
-            this.panel10.Controls.Add(panel10_kartiade);
-            this.panel10.Controls.Add(this.label50);
-            this.panel10.Controls.Add(this.label51);
-            this.panel10.Controls.Add(panel10_tanimlihesabaparayatirma);
-            this.panel10.Controls.Add(panel10_baskahesabaparatransferi);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(487, 493);
-            this.panel10.TabIndex = 109;
-            this.panel10.Visible = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(137, 91);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 43;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.DarkGray;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label48.Location = new System.Drawing.Point(357, 378);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(59, 13);
-            this.label48.TabIndex = 42;
-            this.label48.Text = "Kart İade";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.BackColor = System.Drawing.Color.DarkGray;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label49.Location = new System.Drawing.Point(72, 378);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(59, 13);
-            this.label49.TabIndex = 41;
-            this.label49.Text = "Anasayfa";
             // 
             // panel10_anasayfa
             // 
@@ -1815,28 +935,6 @@
             panel10_kartiade.Text = "<";
             panel10_kartiade.UseVisualStyleBackColor = false;
             // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.DarkGray;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label50.Location = new System.Drawing.Point(251, 238);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(170, 13);
-            this.label50.TabIndex = 38;
-            this.label50.Text = "Tanımlı Hesaba Para Yatırma";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.DarkGray;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label51.Location = new System.Drawing.Point(72, 238);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(165, 13);
-            this.label51.TabIndex = 37;
-            this.label51.Text = "Başka Hesaba Para Yatırma";
-            // 
             // panel10_tanimlihesabaparayatirma
             // 
             panel10_tanimlihesabaparayatirma.BackColor = System.Drawing.Color.DarkGray;
@@ -1861,118 +959,6 @@
             panel10_baskahesabaparatransferi.Text = ">";
             panel10_baskahesabaparatransferi.UseVisualStyleBackColor = false;
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Brown;
-            this.panel9.Controls.Add(this.pictureBox10);
-            this.panel9.Controls.Add(this.label41);
-            this.panel9.Controls.Add(this.label42);
-            this.panel9.Controls.Add(this.label43);
-            this.panel9.Controls.Add(this.label44);
-            this.panel9.Controls.Add(this.label45);
-            this.panel9.Controls.Add(this.label46);
-            this.panel9.Controls.Add(panel9_anasayfa);
-            this.panel9.Controls.Add(panel9_kartiade);
-            this.panel9.Controls.Add(this.label47);
-            this.panel9.Controls.Add(panel9_sec_arti);
-            this.panel9.Controls.Add(panel9_sec_0);
-            this.panel9.Controls.Add(panel9_sec_eksi);
-            this.panel9.Controls.Add(panel9_sec_9);
-            this.panel9.Controls.Add(panel9_sec_8);
-            this.panel9.Controls.Add(panel9_sec_7);
-            this.panel9.Controls.Add(panel9_sec_6);
-            this.panel9.Controls.Add(panel9_sec_5);
-            this.panel9.Controls.Add(panel9_sec_4);
-            this.panel9.Controls.Add(panel9_sec_3);
-            this.panel9.Controls.Add(panel9_sec_2);
-            this.panel9.Controls.Add(panel9_sec_1);
-            this.panel9.Controls.Add(this.panel9_iptal);
-            this.panel9.Controls.Add(this.panel9_duzeltme);
-            this.panel9.Controls.Add(this.panel9_giris);
-            this.panel9.Controls.Add(this.panel9_yatirilacakhesapnumarasi);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(487, 493);
-            this.panel9.TabIndex = 110;
-            this.panel9.Visible = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(120, 79);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(201, 119);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 88;
-            this.pictureBox10.TabStop = false;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.BackColor = System.Drawing.Color.DarkGray;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label41.Location = new System.Drawing.Point(43, 356);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(127, 13);
-            this.label41.TabIndex = 87;
-            this.label41.Text = "kullanarak deneyiniz.";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.DarkGray;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label42.Location = new System.Drawing.Point(43, 326);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(107, 13);
-            this.label42.TabIndex = 86;
-            this.label42.Text = "Hesap numarasını";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.Color.DarkGray;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label43.Location = new System.Drawing.Point(43, 296);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(77, 13);
-            this.label43.TabIndex = 85;
-            this.label43.Text = "6123456789";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.DarkGray;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label44.Location = new System.Drawing.Point(43, 266);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(57, 13);
-            this.label44.TabIndex = 84;
-            this.label44.Text = "NOT (!) :";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.DarkGray;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label45.Location = new System.Drawing.Point(358, 433);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(59, 13);
-            this.label45.TabIndex = 83;
-            this.label45.Text = "Kart İade";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.BackColor = System.Drawing.Color.DarkGray;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label46.Location = new System.Drawing.Point(82, 433);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(59, 13);
-            this.label46.TabIndex = 82;
-            this.label46.Text = "Anasayfa";
-            // 
             // panel9_anasayfa
             // 
             panel9_anasayfa.BackColor = System.Drawing.Color.DarkGray;
@@ -1996,17 +982,6 @@
             panel9_kartiade.TabIndex = 80;
             panel9_kartiade.Text = "<";
             panel9_kartiade.UseVisualStyleBackColor = false;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.DarkGray;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label47.Location = new System.Drawing.Point(160, 210);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(148, 13);
-            this.label47.TabIndex = 79;
-            this.label47.Text = "Hesap Numarasını Giriniz";
             // 
             // panel9_sec_arti
             // 
@@ -2163,6 +1138,1715 @@
             panel9_sec_1.TabIndex = 67;
             panel9_sec_1.Text = "1";
             panel9_sec_1.UseVisualStyleBackColor = false;
+            // 
+            // panel7_makbuzistiyorum
+            // 
+            panel7_makbuzistiyorum.BackColor = System.Drawing.Color.DarkGray;
+            panel7_makbuzistiyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel7_makbuzistiyorum.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel7_makbuzistiyorum.Location = new System.Drawing.Point(20, 298);
+            panel7_makbuzistiyorum.Name = "panel7_makbuzistiyorum";
+            panel7_makbuzistiyorum.Size = new System.Drawing.Size(30, 30);
+            panel7_makbuzistiyorum.TabIndex = 48;
+            panel7_makbuzistiyorum.Text = ">";
+            panel7_makbuzistiyorum.UseVisualStyleBackColor = false;
+            // 
+            // panel7_makbuzistemiyorum
+            // 
+            panel7_makbuzistemiyorum.BackColor = System.Drawing.Color.DarkGray;
+            panel7_makbuzistemiyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel7_makbuzistemiyorum.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel7_makbuzistemiyorum.Location = new System.Drawing.Point(434, 298);
+            panel7_makbuzistemiyorum.Name = "panel7_makbuzistemiyorum";
+            panel7_makbuzistemiyorum.Size = new System.Drawing.Size(30, 30);
+            panel7_makbuzistemiyorum.TabIndex = 47;
+            panel7_makbuzistemiyorum.Text = "<";
+            panel7_makbuzistemiyorum.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            button15.BackColor = System.Drawing.Color.DarkGray;
+            button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            button15.ForeColor = System.Drawing.SystemColors.ControlText;
+            button15.Location = new System.Drawing.Point(44, 369);
+            button15.Name = "button15";
+            button15.Size = new System.Drawing.Size(30, 30);
+            button15.TabIndex = 56;
+            button15.Text = ">";
+            button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            button16.BackColor = System.Drawing.Color.DarkGray;
+            button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            button16.ForeColor = System.Drawing.SystemColors.ControlText;
+            button16.Location = new System.Drawing.Point(421, 369);
+            button16.Name = "button16";
+            button16.Size = new System.Drawing.Size(30, 30);
+            button16.TabIndex = 55;
+            button16.Text = "<";
+            button16.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_arti
+            // 
+            panel6_sec_arti.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_arti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_arti.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_arti.Location = new System.Drawing.Point(232, 301);
+            panel6_sec_arti.Name = "panel6_sec_arti";
+            panel6_sec_arti.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_arti.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_arti.TabIndex = 53;
+            panel6_sec_arti.Text = "+";
+            panel6_sec_arti.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_0
+            // 
+            panel6_sec_0.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_0.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_0.Location = new System.Drawing.Point(202, 301);
+            panel6_sec_0.Name = "panel6_sec_0";
+            panel6_sec_0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_0.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_0.TabIndex = 52;
+            panel6_sec_0.Text = "0";
+            panel6_sec_0.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_eksi
+            // 
+            panel6_sec_eksi.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_eksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_eksi.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_eksi.Location = new System.Drawing.Point(172, 301);
+            panel6_sec_eksi.Name = "panel6_sec_eksi";
+            panel6_sec_eksi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_eksi.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_eksi.TabIndex = 51;
+            panel6_sec_eksi.Text = "-";
+            panel6_sec_eksi.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_9
+            // 
+            panel6_sec_9.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_9.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_9.Location = new System.Drawing.Point(232, 271);
+            panel6_sec_9.Name = "panel6_sec_9";
+            panel6_sec_9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_9.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_9.TabIndex = 50;
+            panel6_sec_9.Text = "9";
+            panel6_sec_9.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_8
+            // 
+            panel6_sec_8.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_8.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_8.Location = new System.Drawing.Point(202, 271);
+            panel6_sec_8.Name = "panel6_sec_8";
+            panel6_sec_8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_8.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_8.TabIndex = 49;
+            panel6_sec_8.Text = "8";
+            panel6_sec_8.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_7
+            // 
+            panel6_sec_7.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_7.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_7.Location = new System.Drawing.Point(172, 271);
+            panel6_sec_7.Name = "panel6_sec_7";
+            panel6_sec_7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_7.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_7.TabIndex = 48;
+            panel6_sec_7.Text = "7";
+            panel6_sec_7.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_6
+            // 
+            panel6_sec_6.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_6.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_6.Location = new System.Drawing.Point(232, 241);
+            panel6_sec_6.Name = "panel6_sec_6";
+            panel6_sec_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_6.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_6.TabIndex = 47;
+            panel6_sec_6.Text = "6";
+            panel6_sec_6.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_5
+            // 
+            panel6_sec_5.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_5.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_5.Location = new System.Drawing.Point(202, 241);
+            panel6_sec_5.Name = "panel6_sec_5";
+            panel6_sec_5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_5.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_5.TabIndex = 46;
+            panel6_sec_5.Text = "5";
+            panel6_sec_5.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_4
+            // 
+            panel6_sec_4.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_4.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_4.Location = new System.Drawing.Point(172, 241);
+            panel6_sec_4.Name = "panel6_sec_4";
+            panel6_sec_4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_4.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_4.TabIndex = 45;
+            panel6_sec_4.Text = "4";
+            panel6_sec_4.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_3
+            // 
+            panel6_sec_3.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_3.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_3.Location = new System.Drawing.Point(232, 211);
+            panel6_sec_3.Name = "panel6_sec_3";
+            panel6_sec_3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_3.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_3.TabIndex = 44;
+            panel6_sec_3.Text = "3";
+            panel6_sec_3.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_2
+            // 
+            panel6_sec_2.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_2.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_2.Location = new System.Drawing.Point(202, 211);
+            panel6_sec_2.Name = "panel6_sec_2";
+            panel6_sec_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_2.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_2.TabIndex = 43;
+            panel6_sec_2.Text = "2";
+            panel6_sec_2.UseVisualStyleBackColor = false;
+            // 
+            // panel6_sec_1
+            // 
+            panel6_sec_1.BackColor = System.Drawing.Color.DarkGray;
+            panel6_sec_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel6_sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel6_sec_1.Location = new System.Drawing.Point(172, 211);
+            panel6_sec_1.Name = "panel6_sec_1";
+            panel6_sec_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            panel6_sec_1.Size = new System.Drawing.Size(30, 30);
+            panel6_sec_1.TabIndex = 42;
+            panel6_sec_1.Text = "1";
+            panel6_sec_1.UseVisualStyleBackColor = false;
+            // 
+            // panel5_anasayfa
+            // 
+            panel5_anasayfa.BackColor = System.Drawing.Color.DarkGray;
+            panel5_anasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel5_anasayfa.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel5_anasayfa.Location = new System.Drawing.Point(39, 286);
+            panel5_anasayfa.Name = "panel5_anasayfa";
+            panel5_anasayfa.Size = new System.Drawing.Size(30, 30);
+            panel5_anasayfa.TabIndex = 32;
+            panel5_anasayfa.Text = ">";
+            panel5_anasayfa.UseVisualStyleBackColor = false;
+            // 
+            // panel5_kartiade
+            // 
+            panel5_kartiade.BackColor = System.Drawing.Color.DarkGray;
+            panel5_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel5_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel5_kartiade.Location = new System.Drawing.Point(416, 286);
+            panel5_kartiade.Name = "panel5_kartiade";
+            panel5_kartiade.Size = new System.Drawing.Size(30, 30);
+            panel5_kartiade.TabIndex = 31;
+            panel5_kartiade.Text = "<";
+            panel5_kartiade.UseVisualStyleBackColor = false;
+            // 
+            // panel5_digerhesaplarimaparayatirma
+            // 
+            panel5_digerhesaplarimaparayatirma.BackColor = System.Drawing.Color.DarkGray;
+            panel5_digerhesaplarimaparayatirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel5_digerhesaplarimaparayatirma.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel5_digerhesaplarimaparayatirma.Location = new System.Drawing.Point(442, 162);
+            panel5_digerhesaplarimaparayatirma.Name = "panel5_digerhesaplarimaparayatirma";
+            panel5_digerhesaplarimaparayatirma.Size = new System.Drawing.Size(30, 30);
+            panel5_digerhesaplarimaparayatirma.TabIndex = 28;
+            panel5_digerhesaplarimaparayatirma.Text = "<";
+            panel5_digerhesaplarimaparayatirma.UseVisualStyleBackColor = false;
+            // 
+            // panel5_kartinhesabinaparayatirma
+            // 
+            panel5_kartinhesabinaparayatirma.BackColor = System.Drawing.Color.DarkGray;
+            panel5_kartinhesabinaparayatirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel5_kartinhesabinaparayatirma.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel5_kartinhesabinaparayatirma.Location = new System.Drawing.Point(13, 165);
+            panel5_kartinhesabinaparayatirma.Name = "panel5_kartinhesabinaparayatirma";
+            panel5_kartinhesabinaparayatirma.Size = new System.Drawing.Size(30, 30);
+            panel5_kartinhesabinaparayatirma.TabIndex = 27;
+            panel5_kartinhesabinaparayatirma.Text = ">";
+            panel5_kartinhesabinaparayatirma.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_arti
+            // 
+            panel4_sec_arti.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_arti.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_arti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_arti.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_arti.Location = new System.Drawing.Point(219, 404);
+            panel4_sec_arti.Name = "panel4_sec_arti";
+            panel4_sec_arti.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_arti.TabIndex = 54;
+            panel4_sec_arti.Text = "+";
+            panel4_sec_arti.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_0
+            // 
+            panel4_sec_0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_0.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_0.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_0.Location = new System.Drawing.Point(189, 404);
+            panel4_sec_0.Name = "panel4_sec_0";
+            panel4_sec_0.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_0.TabIndex = 53;
+            panel4_sec_0.Text = "0";
+            panel4_sec_0.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_eksi
+            // 
+            panel4_sec_eksi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_eksi.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_eksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_eksi.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_eksi.Location = new System.Drawing.Point(159, 404);
+            panel4_sec_eksi.Name = "panel4_sec_eksi";
+            panel4_sec_eksi.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_eksi.TabIndex = 52;
+            panel4_sec_eksi.Text = "-";
+            panel4_sec_eksi.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_9
+            // 
+            panel4_sec_9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_9.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_9.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_9.Location = new System.Drawing.Point(219, 374);
+            panel4_sec_9.Name = "panel4_sec_9";
+            panel4_sec_9.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_9.TabIndex = 51;
+            panel4_sec_9.Text = "9";
+            panel4_sec_9.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_8
+            // 
+            panel4_sec_8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_8.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_8.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_8.Location = new System.Drawing.Point(189, 374);
+            panel4_sec_8.Name = "panel4_sec_8";
+            panel4_sec_8.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_8.TabIndex = 50;
+            panel4_sec_8.Text = "8";
+            panel4_sec_8.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_7
+            // 
+            panel4_sec_7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_7.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_7.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_7.Location = new System.Drawing.Point(159, 374);
+            panel4_sec_7.Name = "panel4_sec_7";
+            panel4_sec_7.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_7.TabIndex = 49;
+            panel4_sec_7.Text = "7";
+            panel4_sec_7.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_6
+            // 
+            panel4_sec_6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_6.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_6.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_6.Location = new System.Drawing.Point(219, 344);
+            panel4_sec_6.Name = "panel4_sec_6";
+            panel4_sec_6.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_6.TabIndex = 48;
+            panel4_sec_6.Text = "6";
+            panel4_sec_6.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_5
+            // 
+            panel4_sec_5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_5.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_5.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_5.Location = new System.Drawing.Point(189, 344);
+            panel4_sec_5.Name = "panel4_sec_5";
+            panel4_sec_5.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_5.TabIndex = 47;
+            panel4_sec_5.Text = "5";
+            panel4_sec_5.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_4
+            // 
+            panel4_sec_4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_4.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_4.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_4.Location = new System.Drawing.Point(159, 344);
+            panel4_sec_4.Name = "panel4_sec_4";
+            panel4_sec_4.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_4.TabIndex = 46;
+            panel4_sec_4.Text = "4";
+            panel4_sec_4.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_3
+            // 
+            panel4_sec_3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_3.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_3.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_3.Location = new System.Drawing.Point(219, 314);
+            panel4_sec_3.Name = "panel4_sec_3";
+            panel4_sec_3.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_3.TabIndex = 45;
+            panel4_sec_3.Text = "3";
+            panel4_sec_3.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_2
+            // 
+            panel4_sec_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_2.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_2.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_2.Location = new System.Drawing.Point(189, 314);
+            panel4_sec_2.Name = "panel4_sec_2";
+            panel4_sec_2.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_2.TabIndex = 44;
+            panel4_sec_2.Text = "2";
+            panel4_sec_2.UseVisualStyleBackColor = false;
+            // 
+            // panel4_sec_1
+            // 
+            panel4_sec_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            panel4_sec_1.BackColor = System.Drawing.Color.DarkGray;
+            panel4_sec_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel4_sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel4_sec_1.Location = new System.Drawing.Point(159, 314);
+            panel4_sec_1.Name = "panel4_sec_1";
+            panel4_sec_1.Size = new System.Drawing.Size(30, 30);
+            panel4_sec_1.TabIndex = 43;
+            panel4_sec_1.Text = "1";
+            panel4_sec_1.UseVisualStyleBackColor = false;
+            // 
+            // panel3_kartiade
+            // 
+            panel3_kartiade.BackColor = System.Drawing.Color.DarkGray;
+            panel3_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel3_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel3_kartiade.Location = new System.Drawing.Point(445, 377);
+            panel3_kartiade.Name = "panel3_kartiade";
+            panel3_kartiade.Size = new System.Drawing.Size(30, 30);
+            panel3_kartiade.TabIndex = 63;
+            panel3_kartiade.Text = "<";
+            panel3_kartiade.UseVisualStyleBackColor = false;
+            // 
+            // panel3_yeniislem
+            // 
+            panel3_yeniislem.BackColor = System.Drawing.Color.DarkGray;
+            panel3_yeniislem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel3_yeniislem.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel3_yeniislem.Location = new System.Drawing.Point(13, 374);
+            panel3_yeniislem.Name = "panel3_yeniislem";
+            panel3_yeniislem.Size = new System.Drawing.Size(30, 30);
+            panel3_yeniislem.TabIndex = 62;
+            panel3_yeniislem.Text = ">";
+            panel3_yeniislem.UseVisualStyleBackColor = false;
+            // 
+            // panel2_elliTLcek
+            // 
+            panel2_elliTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_elliTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_elliTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_elliTLcek.Location = new System.Drawing.Point(12, 383);
+            panel2_elliTLcek.Name = "panel2_elliTLcek";
+            panel2_elliTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_elliTLcek.TabIndex = 60;
+            panel2_elliTLcek.Text = ">";
+            panel2_elliTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_digerTLcek
+            // 
+            panel2_digerTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_digerTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_digerTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_digerTLcek.Location = new System.Drawing.Point(442, 383);
+            panel2_digerTLcek.Name = "panel2_digerTLcek";
+            panel2_digerTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_digerTLcek.TabIndex = 58;
+            panel2_digerTLcek.Text = "<";
+            panel2_digerTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_binTLcek
+            // 
+            panel2_binTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_binTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_binTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_binTLcek.Location = new System.Drawing.Point(442, 313);
+            panel2_binTLcek.Name = "panel2_binTLcek";
+            panel2_binTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_binTLcek.TabIndex = 51;
+            panel2_binTLcek.Text = "<";
+            panel2_binTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_ikiyuzelliTLcek
+            // 
+            panel2_ikiyuzelliTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_ikiyuzelliTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_ikiyuzelliTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_ikiyuzelliTLcek.Location = new System.Drawing.Point(442, 243);
+            panel2_ikiyuzelliTLcek.Name = "panel2_ikiyuzelliTLcek";
+            panel2_ikiyuzelliTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_ikiyuzelliTLcek.TabIndex = 50;
+            panel2_ikiyuzelliTLcek.Text = "<";
+            panel2_ikiyuzelliTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_yuzTLcek
+            // 
+            panel2_yuzTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_yuzTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_yuzTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_yuzTLcek.Location = new System.Drawing.Point(442, 173);
+            panel2_yuzTLcek.Name = "panel2_yuzTLcek";
+            panel2_yuzTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_yuzTLcek.TabIndex = 49;
+            panel2_yuzTLcek.Text = "<";
+            panel2_yuzTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_yirmiTLcek
+            // 
+            panel2_yirmiTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_yirmiTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_yirmiTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_yirmiTLcek.Location = new System.Drawing.Point(12, 243);
+            panel2_yirmiTLcek.Name = "panel2_yirmiTLcek";
+            panel2_yirmiTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_yirmiTLcek.TabIndex = 48;
+            panel2_yirmiTLcek.Text = ">";
+            panel2_yirmiTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_otuzTLcek
+            // 
+            panel2_otuzTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_otuzTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_otuzTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_otuzTLcek.Location = new System.Drawing.Point(12, 313);
+            panel2_otuzTLcek.Name = "panel2_otuzTLcek";
+            panel2_otuzTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_otuzTLcek.TabIndex = 47;
+            panel2_otuzTLcek.Text = ">";
+            panel2_otuzTLcek.UseVisualStyleBackColor = false;
+            // 
+            // panel2_onTLcek
+            // 
+            panel2_onTLcek.BackColor = System.Drawing.Color.DarkGray;
+            panel2_onTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            panel2_onTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
+            panel2_onTLcek.Location = new System.Drawing.Point(12, 173);
+            panel2_onTLcek.Name = "panel2_onTLcek";
+            panel2_onTLcek.Size = new System.Drawing.Size(30, 30);
+            panel2_onTLcek.TabIndex = 46;
+            panel2_onTLcek.Text = ">";
+            panel2_onTLcek.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_arti
+            // 
+            giris_sec_arti.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_arti.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_arti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_arti.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_arti.Location = new System.Drawing.Point(224, 383);
+            giris_sec_arti.Name = "giris_sec_arti";
+            giris_sec_arti.Size = new System.Drawing.Size(30, 30);
+            giris_sec_arti.TabIndex = 36;
+            giris_sec_arti.Text = "+";
+            giris_sec_arti.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_8
+            // 
+            giris_sec_8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_8.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_8.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_8.Location = new System.Drawing.Point(194, 353);
+            giris_sec_8.Name = "giris_sec_8";
+            giris_sec_8.Size = new System.Drawing.Size(30, 30);
+            giris_sec_8.TabIndex = 32;
+            giris_sec_8.Text = "8";
+            giris_sec_8.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_1
+            // 
+            giris_sec_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_1.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_1.Location = new System.Drawing.Point(164, 293);
+            giris_sec_1.Name = "giris_sec_1";
+            giris_sec_1.Size = new System.Drawing.Size(30, 30);
+            giris_sec_1.TabIndex = 25;
+            giris_sec_1.Text = "1";
+            giris_sec_1.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_2
+            // 
+            giris_sec_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_2.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_2.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_2.Location = new System.Drawing.Point(194, 293);
+            giris_sec_2.Name = "giris_sec_2";
+            giris_sec_2.Size = new System.Drawing.Size(30, 30);
+            giris_sec_2.TabIndex = 26;
+            giris_sec_2.Text = "2";
+            giris_sec_2.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_5
+            // 
+            giris_sec_5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_5.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_5.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_5.Location = new System.Drawing.Point(194, 323);
+            giris_sec_5.Name = "giris_sec_5";
+            giris_sec_5.Size = new System.Drawing.Size(30, 30);
+            giris_sec_5.TabIndex = 29;
+            giris_sec_5.Text = "5";
+            giris_sec_5.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_6
+            // 
+            giris_sec_6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_6.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_6.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_6.Location = new System.Drawing.Point(224, 323);
+            giris_sec_6.Name = "giris_sec_6";
+            giris_sec_6.Size = new System.Drawing.Size(30, 30);
+            giris_sec_6.TabIndex = 30;
+            giris_sec_6.Text = "6";
+            giris_sec_6.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_4
+            // 
+            giris_sec_4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_4.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_4.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_4.Location = new System.Drawing.Point(164, 323);
+            giris_sec_4.Name = "giris_sec_4";
+            giris_sec_4.Size = new System.Drawing.Size(30, 30);
+            giris_sec_4.TabIndex = 28;
+            giris_sec_4.Text = "4";
+            giris_sec_4.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_0
+            // 
+            giris_sec_0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_0.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_0.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_0.Location = new System.Drawing.Point(194, 383);
+            giris_sec_0.Name = "giris_sec_0";
+            giris_sec_0.Size = new System.Drawing.Size(30, 30);
+            giris_sec_0.TabIndex = 35;
+            giris_sec_0.Text = "0";
+            giris_sec_0.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_3
+            // 
+            giris_sec_3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_3.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_3.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_3.Location = new System.Drawing.Point(224, 293);
+            giris_sec_3.Name = "giris_sec_3";
+            giris_sec_3.Size = new System.Drawing.Size(30, 30);
+            giris_sec_3.TabIndex = 27;
+            giris_sec_3.Text = "3";
+            giris_sec_3.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_7
+            // 
+            giris_sec_7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_7.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_7.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_7.Location = new System.Drawing.Point(164, 353);
+            giris_sec_7.Name = "giris_sec_7";
+            giris_sec_7.Size = new System.Drawing.Size(30, 30);
+            giris_sec_7.TabIndex = 31;
+            giris_sec_7.Text = "7";
+            giris_sec_7.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_9
+            // 
+            giris_sec_9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_9.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_9.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_9.Location = new System.Drawing.Point(224, 353);
+            giris_sec_9.Name = "giris_sec_9";
+            giris_sec_9.Size = new System.Drawing.Size(30, 30);
+            giris_sec_9.TabIndex = 33;
+            giris_sec_9.Text = "9";
+            giris_sec_9.UseVisualStyleBackColor = false;
+            // 
+            // giris_sec_eksi
+            // 
+            giris_sec_eksi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            giris_sec_eksi.BackColor = System.Drawing.Color.DarkGray;
+            giris_sec_eksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            giris_sec_eksi.ForeColor = System.Drawing.SystemColors.ControlText;
+            giris_sec_eksi.Location = new System.Drawing.Point(164, 383);
+            giris_sec_eksi.Name = "giris_sec_eksi";
+            giris_sec_eksi.Size = new System.Drawing.Size(30, 30);
+            giris_sec_eksi.TabIndex = 34;
+            giris_sec_eksi.Text = "-";
+            giris_sec_eksi.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(panel1_kartiade);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(panel1_digerislemler);
+            this.panel1.Controls.Add(panel1_hesapbilgileri);
+            this.panel1.Controls.Add(panel1_hizlielliTLcek);
+            this.panel1.Controls.Add(panel1_kendihesabinaparayatirma);
+            this.panel1.Controls.Add(panel1_paratransferi);
+            this.panel1.Controls.Add(panel1_paracekme);
+            this.panel1.Controls.Add(this.panel1_bakiye);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(487, 493);
+            this.panel1.TabIndex = 101;
+            this.panel1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(159, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 45;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.DarkGray;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(376, 429);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 13);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Kart İade";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.DarkGray;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(351, 359);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 13);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "Diğer İşlemler";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.DarkGray;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(347, 289);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 13);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Hesap Bilgileri";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.DarkGray;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Location = new System.Drawing.Point(369, 219);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "50 TL Çek";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.DarkGray;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(49, 359);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 13);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Para Transferi";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.DarkGray;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(49, 289);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 13);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Kendi Hesabına Para Yatırma";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.DarkGray;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(49, 219);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "Para Çekme";
+            // 
+            // panel1_bakiye
+            // 
+            this.panel1_bakiye.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1_bakiye.AutoSize = true;
+            this.panel1_bakiye.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1_bakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel1_bakiye.Location = new System.Drawing.Point(157, 189);
+            this.panel1_bakiye.Name = "panel1_bakiye";
+            this.panel1_bakiye.Size = new System.Drawing.Size(204, 13);
+            this.panel1_bakiye.TabIndex = 30;
+            this.panel1_bakiye.Text = "Şu kadar Bakiyeniz Bulunmaktadır.";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.Brown;
+            this.panel17.Controls.Add(this.pictureBox18);
+            this.panel17.Controls.Add(panel17_kartiade);
+            this.panel17.Controls.Add(panel17_yeniislem);
+            this.panel17.Controls.Add(this.button7);
+            this.panel17.Controls.Add(this.button8);
+            this.panel17.Controls.Add(this.label74);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel17.Location = new System.Drawing.Point(0, 0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(487, 493);
+            this.panel17.TabIndex = 102;
+            this.panel17.Visible = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(158, 128);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 52;
+            this.pictureBox18.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button7.BackColor = System.Drawing.Color.DarkGray;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button7.Location = new System.Drawing.Point(362, 338);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 49;
+            this.button7.Text = "Kart İade";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button8.BackColor = System.Drawing.Color.DarkGray;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button8.Location = new System.Drawing.Point(49, 338);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 48;
+            this.button8.Text = "Yeni İşlem";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // label74
+            // 
+            this.label74.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label74.AutoSize = true;
+            this.label74.BackColor = System.Drawing.Color.DarkGray;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label74.Location = new System.Drawing.Point(155, 287);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(223, 13);
+            this.label74.TabIndex = 47;
+            this.label74.Text = "Başka İşlem Yapmak İstiyor Musunuz?";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.Brown;
+            this.panel16.Controls.Add(this.pictureBox17);
+            this.panel16.Controls.Add(panel16_sec_1panel16_sec_arti);
+            this.panel16.Controls.Add(panel16_sec_0);
+            this.panel16.Controls.Add(panel16_sec_eksi);
+            this.panel16.Controls.Add(panel16_sec_9);
+            this.panel16.Controls.Add(panel16_sec_8);
+            this.panel16.Controls.Add(panel16_sec_7);
+            this.panel16.Controls.Add(panel16_sec_6);
+            this.panel16.Controls.Add(panel16_sec_5);
+            this.panel16.Controls.Add(panel16_sec_4);
+            this.panel16.Controls.Add(panel16_sec_3);
+            this.panel16.Controls.Add(panel16_sec_2);
+            this.panel16.Controls.Add(panel16_sec_1);
+            this.panel16.Controls.Add(this.panel16_iptal);
+            this.panel16.Controls.Add(this.panel16_duzeltme);
+            this.panel16.Controls.Add(this.panel16_onayla);
+            this.panel16.Controls.Add(this.panel16_yenisifretekrar);
+            this.panel16.Controls.Add(this.panel16_yenisifre);
+            this.panel16.Controls.Add(this.panel16_eskisifre);
+            this.panel16.Controls.Add(this.label71);
+            this.panel16.Controls.Add(this.label72);
+            this.panel16.Controls.Add(this.label73);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(487, 493);
+            this.panel16.TabIndex = 103;
+            this.panel16.Visible = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(127, 48);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 55;
+            this.pictureBox17.TabStop = false;
+            // 
+            // panel16_iptal
+            // 
+            this.panel16_iptal.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16_iptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel16_iptal.Location = new System.Drawing.Point(259, 392);
+            this.panel16_iptal.Name = "panel16_iptal";
+            this.panel16_iptal.Size = new System.Drawing.Size(75, 23);
+            this.panel16_iptal.TabIndex = 42;
+            this.panel16_iptal.Text = "İptal";
+            this.panel16_iptal.UseVisualStyleBackColor = false;
+            // 
+            // panel16_duzeltme
+            // 
+            this.panel16_duzeltme.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16_duzeltme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel16_duzeltme.Location = new System.Drawing.Point(259, 360);
+            this.panel16_duzeltme.Name = "panel16_duzeltme";
+            this.panel16_duzeltme.Size = new System.Drawing.Size(75, 23);
+            this.panel16_duzeltme.TabIndex = 41;
+            this.panel16_duzeltme.Text = "Düzeltme";
+            this.panel16_duzeltme.UseVisualStyleBackColor = false;
+            // 
+            // panel16_onayla
+            // 
+            this.panel16_onayla.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16_onayla.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel16_onayla.Location = new System.Drawing.Point(259, 330);
+            this.panel16_onayla.Name = "panel16_onayla";
+            this.panel16_onayla.Size = new System.Drawing.Size(75, 23);
+            this.panel16_onayla.TabIndex = 40;
+            this.panel16_onayla.Text = "Onayla";
+            this.panel16_onayla.UseVisualStyleBackColor = false;
+            // 
+            // panel16_yenisifretekrar
+            // 
+            this.panel16_yenisifretekrar.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16_yenisifretekrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel16_yenisifretekrar.Location = new System.Drawing.Point(257, 245);
+            this.panel16_yenisifretekrar.Name = "panel16_yenisifretekrar";
+            this.panel16_yenisifretekrar.Size = new System.Drawing.Size(100, 20);
+            this.panel16_yenisifretekrar.TabIndex = 39;
+            // 
+            // panel16_yenisifre
+            // 
+            this.panel16_yenisifre.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16_yenisifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel16_yenisifre.Location = new System.Drawing.Point(257, 218);
+            this.panel16_yenisifre.Name = "panel16_yenisifre";
+            this.panel16_yenisifre.Size = new System.Drawing.Size(100, 20);
+            this.panel16_yenisifre.TabIndex = 38;
+            // 
+            // panel16_eskisifre
+            // 
+            this.panel16_eskisifre.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16_eskisifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel16_eskisifre.Location = new System.Drawing.Point(257, 188);
+            this.panel16_eskisifre.Name = "panel16_eskisifre";
+            this.panel16_eskisifre.Size = new System.Drawing.Size(100, 20);
+            this.panel16_eskisifre.TabIndex = 37;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.DarkGray;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label71.Location = new System.Drawing.Point(129, 248);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(122, 13);
+            this.label71.TabIndex = 36;
+            this.label71.Text = "Yeni Şifreyi Tekrarla";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.BackColor = System.Drawing.Color.DarkGray;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label72.Location = new System.Drawing.Point(129, 218);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(62, 13);
+            this.label72.TabIndex = 35;
+            this.label72.Text = "Yeni Şifre";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.BackColor = System.Drawing.Color.DarkGray;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label73.Location = new System.Drawing.Point(129, 188);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(61, 13);
+            this.label73.TabIndex = 34;
+            this.label73.Text = "Eski Şifre";
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.Brown;
+            this.panel15.Controls.Add(this.pictureBox16);
+            this.panel15.Controls.Add(panel15_kartiade);
+            this.panel15.Controls.Add(panel15_yeniislem);
+            this.panel15.Controls.Add(this.button5);
+            this.panel15.Controls.Add(this.button6);
+            this.panel15.Controls.Add(this.label67);
+            this.panel15.Controls.Add(this.panel15_guncelbakiye);
+            this.panel15.Controls.Add(this.panel15_musteriisimsoyisim);
+            this.panel15.Controls.Add(this.panel15_hesapnumarasi);
+            this.panel15.Controls.Add(this.label68);
+            this.panel15.Controls.Add(this.label69);
+            this.panel15.Controls.Add(this.label70);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(487, 493);
+            this.panel15.TabIndex = 104;
+            this.panel15.Visible = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(143, 28);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 62;
+            this.pictureBox16.TabStop = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkGray;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.Location = new System.Drawing.Point(279, 302);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 59;
+            this.button5.Text = "Kart İade";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGray;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(134, 302);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 58;
+            this.button6.Text = "Yeni İşlem";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.Color.DarkGray;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label67.Location = new System.Drawing.Point(95, 244);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(89, 13);
+            this.label67.TabIndex = 57;
+            this.label67.Text = "Güncel Bakiye";
+            // 
+            // panel15_guncelbakiye
+            // 
+            this.panel15_guncelbakiye.BackColor = System.Drawing.Color.DarkGray;
+            this.panel15_guncelbakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel15_guncelbakiye.Location = new System.Drawing.Point(265, 244);
+            this.panel15_guncelbakiye.Name = "panel15_guncelbakiye";
+            this.panel15_guncelbakiye.Size = new System.Drawing.Size(100, 20);
+            this.panel15_guncelbakiye.TabIndex = 56;
+            // 
+            // panel15_musteriisimsoyisim
+            // 
+            this.panel15_musteriisimsoyisim.BackColor = System.Drawing.Color.DarkGray;
+            this.panel15_musteriisimsoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel15_musteriisimsoyisim.Location = new System.Drawing.Point(265, 204);
+            this.panel15_musteriisimsoyisim.Name = "panel15_musteriisimsoyisim";
+            this.panel15_musteriisimsoyisim.Size = new System.Drawing.Size(100, 20);
+            this.panel15_musteriisimsoyisim.TabIndex = 55;
+            // 
+            // panel15_hesapnumarasi
+            // 
+            this.panel15_hesapnumarasi.BackColor = System.Drawing.Color.DarkGray;
+            this.panel15_hesapnumarasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel15_hesapnumarasi.Location = new System.Drawing.Point(265, 164);
+            this.panel15_hesapnumarasi.Name = "panel15_hesapnumarasi";
+            this.panel15_hesapnumarasi.Size = new System.Drawing.Size(100, 20);
+            this.panel15_hesapnumarasi.TabIndex = 54;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.BackColor = System.Drawing.Color.DarkGray;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label68.Location = new System.Drawing.Point(95, 204);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(138, 13);
+            this.label68.TabIndex = 53;
+            this.label68.Text = "Müşteri İsim ve Soyisim";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.BackColor = System.Drawing.Color.DarkGray;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label69.Location = new System.Drawing.Point(95, 164);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(99, 13);
+            this.label69.TabIndex = 52;
+            this.label69.Text = "Hesap Numarası";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.DarkGray;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label70.Location = new System.Drawing.Point(95, 207);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(0, 13);
+            this.label70.TabIndex = 51;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.Brown;
+            this.panel14.Controls.Add(this.pictureBox15);
+            this.panel14.Controls.Add(this.label62);
+            this.panel14.Controls.Add(this.label63);
+            this.panel14.Controls.Add(panel14_anasayfa);
+            this.panel14.Controls.Add(panel14_kartiade);
+            this.panel14.Controls.Add(this.label64);
+            this.panel14.Controls.Add(this.label66);
+            this.panel14.Controls.Add(panel14_hesapozeti);
+            this.panel14.Controls.Add(panel14_guncelbakiyesorgulama);
+            this.panel14.Controls.Add(this.label65);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(0, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(487, 493);
+            this.panel14.TabIndex = 105;
+            this.panel14.Visible = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(143, 83);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 60;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.BackColor = System.Drawing.Color.DarkGray;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label62.Location = new System.Drawing.Point(377, 359);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(59, 13);
+            this.label62.TabIndex = 59;
+            this.label62.Text = "Kart İade";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.Color.DarkGray;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label63.Location = new System.Drawing.Point(49, 351);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(59, 13);
+            this.label63.TabIndex = 58;
+            this.label63.Text = "Anasayfa";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.BackColor = System.Drawing.Color.DarkGray;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label64.Location = new System.Drawing.Point(360, 212);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(76, 13);
+            this.label64.TabIndex = 55;
+            this.label64.Text = "Hesap Özeti";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.BackColor = System.Drawing.Color.DarkGray;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label66.Location = new System.Drawing.Point(49, 212);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(152, 13);
+            this.label66.TabIndex = 54;
+            this.label66.Text = "Güncel Bakiye Sorgulama";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.BackColor = System.Drawing.Color.DarkGray;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label65.Location = new System.Drawing.Point(95, 207);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(0, 13);
+            this.label65.TabIndex = 51;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Brown;
+            this.panel13.Controls.Add(this.pictureBox14);
+            this.panel13.Controls.Add(this.label56);
+            this.panel13.Controls.Add(this.label57);
+            this.panel13.Controls.Add(panel13_makbuzistiyorum);
+            this.panel13.Controls.Add(panel13_makbuzistemiyorum);
+            this.panel13.Controls.Add(this.label58);
+            this.panel13.Controls.Add(this.panel13_yenibakiye);
+            this.panel13.Controls.Add(this.panel13_cekilenmiktar);
+            this.panel13.Controls.Add(this.panel13_eskibakiye);
+            this.panel13.Controls.Add(this.label59);
+            this.panel13.Controls.Add(this.label60);
+            this.panel13.Controls.Add(this.label61);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(487, 493);
+            this.panel13.TabIndex = 106;
+            this.panel13.Visible = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(108, 64);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 62;
+            this.pictureBox14.TabStop = false;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.BackColor = System.Drawing.Color.DarkGray;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label56.Location = new System.Drawing.Point(315, 377);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(121, 13);
+            this.label56.TabIndex = 61;
+            this.label56.Text = "Makbuz İstemiyorum";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.DarkGray;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label57.Location = new System.Drawing.Point(48, 377);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(105, 13);
+            this.label57.TabIndex = 60;
+            this.label57.Text = "Makbuz İstiyorum";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.BackColor = System.Drawing.Color.DarkGray;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label58.Location = new System.Drawing.Point(139, 205);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(188, 13);
+            this.label58.TabIndex = 57;
+            this.label58.Text = "Paranızı Sağ Alt Köşeden Alınız.";
+            // 
+            // panel13_yenibakiye
+            // 
+            this.panel13_yenibakiye.BackColor = System.Drawing.Color.DarkGray;
+            this.panel13_yenibakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel13_yenibakiye.Location = new System.Drawing.Point(227, 312);
+            this.panel13_yenibakiye.Name = "panel13_yenibakiye";
+            this.panel13_yenibakiye.Size = new System.Drawing.Size(100, 20);
+            this.panel13_yenibakiye.TabIndex = 56;
+            // 
+            // panel13_cekilenmiktar
+            // 
+            this.panel13_cekilenmiktar.BackColor = System.Drawing.Color.DarkGray;
+            this.panel13_cekilenmiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel13_cekilenmiktar.Location = new System.Drawing.Point(227, 272);
+            this.panel13_cekilenmiktar.Name = "panel13_cekilenmiktar";
+            this.panel13_cekilenmiktar.Size = new System.Drawing.Size(100, 20);
+            this.panel13_cekilenmiktar.TabIndex = 55;
+            // 
+            // panel13_eskibakiye
+            // 
+            this.panel13_eskibakiye.BackColor = System.Drawing.Color.DarkGray;
+            this.panel13_eskibakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.panel13_eskibakiye.Location = new System.Drawing.Point(227, 232);
+            this.panel13_eskibakiye.Name = "panel13_eskibakiye";
+            this.panel13_eskibakiye.Size = new System.Drawing.Size(100, 20);
+            this.panel13_eskibakiye.TabIndex = 54;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.DarkGray;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label59.Location = new System.Drawing.Point(118, 315);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(74, 13);
+            this.label59.TabIndex = 53;
+            this.label59.Text = "Yeni Bakiye";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.BackColor = System.Drawing.Color.DarkGray;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label60.Location = new System.Drawing.Point(118, 272);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(88, 13);
+            this.label60.TabIndex = 52;
+            this.label60.Text = "Çekilen Miktar";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.BackColor = System.Drawing.Color.DarkGray;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label61.Location = new System.Drawing.Point(118, 232);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(73, 13);
+            this.label61.TabIndex = 51;
+            this.label61.Text = "Eski Bakiye";
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Brown;
+            this.panel12.Controls.Add(this.pictureBox13);
+            this.panel12.Controls.Add(panel12_tanimlidigerhesap3);
+            this.panel12.Controls.Add(this.radioButton3);
+            this.panel12.Controls.Add(panel12_tanimlidigerhesap1);
+            this.panel12.Controls.Add(panel12_tanimlidigerhesap2);
+            this.panel12.Controls.Add(this.radioButton4);
+            this.panel12.Controls.Add(this.radioButton5);
+            this.panel12.Controls.Add(this.label54);
+            this.panel12.Controls.Add(this.label55);
+            this.panel12.Controls.Add(panel12_anasayfa);
+            this.panel12.Controls.Add(panel12_kartiade);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(487, 493);
+            this.panel12.TabIndex = 107;
+            this.panel12.Visible = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(135, 91);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 66;
+            this.pictureBox13.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton3.Location = new System.Drawing.Point(56, 345);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(95, 17);
+            this.radioButton3.TabIndex = 64;
+            this.radioButton3.Text = "Diğer Hesap";
+            this.radioButton3.UseVisualStyleBackColor = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton4.Location = new System.Drawing.Point(56, 286);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(95, 17);
+            this.radioButton4.TabIndex = 61;
+            this.radioButton4.Text = "Diğer Hesap";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton5.Location = new System.Drawing.Point(56, 227);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(95, 17);
+            this.radioButton5.TabIndex = 60;
+            this.radioButton5.Text = "Diğer Hesap";
+            this.radioButton5.UseVisualStyleBackColor = false;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.BackColor = System.Drawing.Color.DarkGray;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label54.Location = new System.Drawing.Point(369, 424);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(59, 13);
+            this.label54.TabIndex = 59;
+            this.label54.Text = "Kart İade";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.BackColor = System.Drawing.Color.DarkGray;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label55.Location = new System.Drawing.Point(92, 424);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(59, 13);
+            this.label55.TabIndex = 58;
+            this.label55.Text = "Anasayfa";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Brown;
+            this.panel11.Controls.Add(this.pictureBox12);
+            this.panel11.Controls.Add(panel11_digerhesap1);
+            this.panel11.Controls.Add(panel11_digerhesap2);
+            this.panel11.Controls.Add(this.radioButton2);
+            this.panel11.Controls.Add(this.radioButton1);
+            this.panel11.Controls.Add(this.label52);
+            this.panel11.Controls.Add(this.label53);
+            this.panel11.Controls.Add(panel11_anasayfa);
+            this.panel11.Controls.Add(panel11_kartiade);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(487, 493);
+            this.panel11.TabIndex = 108;
+            this.panel11.Visible = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(135, 91);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 54;
+            this.pictureBox12.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton2.Location = new System.Drawing.Point(56, 279);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(95, 17);
+            this.radioButton2.TabIndex = 51;
+            this.radioButton2.Text = "Diğer Hesap";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.DarkGray;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton1.Location = new System.Drawing.Point(56, 220);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(95, 17);
+            this.radioButton1.TabIndex = 50;
+            this.radioButton1.Text = "Diğer Hesap";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.DarkGray;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label52.Location = new System.Drawing.Point(362, 392);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(59, 13);
+            this.label52.TabIndex = 49;
+            this.label52.Text = "Kart İade";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.Color.DarkGray;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label53.Location = new System.Drawing.Point(72, 392);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(59, 13);
+            this.label53.TabIndex = 48;
+            this.label53.Text = "Anasayfa";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Brown;
+            this.panel10.Controls.Add(this.pictureBox11);
+            this.panel10.Controls.Add(this.label48);
+            this.panel10.Controls.Add(this.label49);
+            this.panel10.Controls.Add(panel10_anasayfa);
+            this.panel10.Controls.Add(panel10_kartiade);
+            this.panel10.Controls.Add(this.label50);
+            this.panel10.Controls.Add(this.label51);
+            this.panel10.Controls.Add(panel10_tanimlihesabaparayatirma);
+            this.panel10.Controls.Add(panel10_baskahesabaparatransferi);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(487, 493);
+            this.panel10.TabIndex = 109;
+            this.panel10.Visible = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(137, 91);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 43;
+            this.pictureBox11.TabStop = false;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.DarkGray;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label48.Location = new System.Drawing.Point(357, 378);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(59, 13);
+            this.label48.TabIndex = 42;
+            this.label48.Text = "Kart İade";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.DarkGray;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label49.Location = new System.Drawing.Point(72, 378);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(59, 13);
+            this.label49.TabIndex = 41;
+            this.label49.Text = "Anasayfa";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.DarkGray;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label50.Location = new System.Drawing.Point(251, 238);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(170, 13);
+            this.label50.TabIndex = 38;
+            this.label50.Text = "Tanımlı Hesaba Para Yatırma";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.DarkGray;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label51.Location = new System.Drawing.Point(72, 238);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(165, 13);
+            this.label51.TabIndex = 37;
+            this.label51.Text = "Başka Hesaba Para Yatırma";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Brown;
+            this.panel9.Controls.Add(this.pictureBox10);
+            this.panel9.Controls.Add(this.label41);
+            this.panel9.Controls.Add(this.label42);
+            this.panel9.Controls.Add(this.label43);
+            this.panel9.Controls.Add(this.label44);
+            this.panel9.Controls.Add(this.label45);
+            this.panel9.Controls.Add(this.label46);
+            this.panel9.Controls.Add(panel9_anasayfa);
+            this.panel9.Controls.Add(panel9_kartiade);
+            this.panel9.Controls.Add(this.label47);
+            this.panel9.Controls.Add(panel9_sec_arti);
+            this.panel9.Controls.Add(panel9_sec_0);
+            this.panel9.Controls.Add(panel9_sec_eksi);
+            this.panel9.Controls.Add(panel9_sec_9);
+            this.panel9.Controls.Add(panel9_sec_8);
+            this.panel9.Controls.Add(panel9_sec_7);
+            this.panel9.Controls.Add(panel9_sec_6);
+            this.panel9.Controls.Add(panel9_sec_5);
+            this.panel9.Controls.Add(panel9_sec_4);
+            this.panel9.Controls.Add(panel9_sec_3);
+            this.panel9.Controls.Add(panel9_sec_2);
+            this.panel9.Controls.Add(panel9_sec_1);
+            this.panel9.Controls.Add(this.panel9_iptal);
+            this.panel9.Controls.Add(this.panel9_duzeltme);
+            this.panel9.Controls.Add(this.panel9_giris);
+            this.panel9.Controls.Add(this.panel9_yatirilacakhesapnumarasi);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(487, 493);
+            this.panel9.TabIndex = 110;
+            this.panel9.Visible = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(120, 79);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(201, 119);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 88;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.DarkGray;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label41.Location = new System.Drawing.Point(43, 356);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(127, 13);
+            this.label41.TabIndex = 87;
+            this.label41.Text = "kullanarak deneyiniz.";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.DarkGray;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label42.Location = new System.Drawing.Point(43, 326);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(107, 13);
+            this.label42.TabIndex = 86;
+            this.label42.Text = "Hesap numarasını";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.DarkGray;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label43.Location = new System.Drawing.Point(43, 296);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(77, 13);
+            this.label43.TabIndex = 85;
+            this.label43.Text = "6123456789";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.DarkGray;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label44.Location = new System.Drawing.Point(43, 266);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(57, 13);
+            this.label44.TabIndex = 84;
+            this.label44.Text = "NOT (!) :";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.DarkGray;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label45.Location = new System.Drawing.Point(358, 433);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(59, 13);
+            this.label45.TabIndex = 83;
+            this.label45.Text = "Kart İade";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.DarkGray;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label46.Location = new System.Drawing.Point(82, 433);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(59, 13);
+            this.label46.TabIndex = 82;
+            this.label46.Text = "Anasayfa";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.DarkGray;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label47.Location = new System.Drawing.Point(160, 210);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(148, 13);
+            this.label47.TabIndex = 79;
+            this.label47.Text = "Hesap Numarasını Giriniz";
             // 
             // panel9_iptal
             // 
@@ -2410,30 +3094,6 @@
             this.label33.TabIndex = 49;
             this.label33.Text = "Makbuz İstiyorum";
             // 
-            // panel7_makbuzistiyorum
-            // 
-            panel7_makbuzistiyorum.BackColor = System.Drawing.Color.DarkGray;
-            panel7_makbuzistiyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel7_makbuzistiyorum.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel7_makbuzistiyorum.Location = new System.Drawing.Point(20, 298);
-            panel7_makbuzistiyorum.Name = "panel7_makbuzistiyorum";
-            panel7_makbuzistiyorum.Size = new System.Drawing.Size(30, 30);
-            panel7_makbuzistiyorum.TabIndex = 48;
-            panel7_makbuzistiyorum.Text = ">";
-            panel7_makbuzistiyorum.UseVisualStyleBackColor = false;
-            // 
-            // panel7_makbuzistemiyorum
-            // 
-            panel7_makbuzistemiyorum.BackColor = System.Drawing.Color.DarkGray;
-            panel7_makbuzistemiyorum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel7_makbuzistemiyorum.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel7_makbuzistemiyorum.Location = new System.Drawing.Point(434, 298);
-            panel7_makbuzistemiyorum.Name = "panel7_makbuzistemiyorum";
-            panel7_makbuzistemiyorum.Size = new System.Drawing.Size(30, 30);
-            panel7_makbuzistemiyorum.TabIndex = 47;
-            panel7_makbuzistemiyorum.Text = "<";
-            panel7_makbuzistemiyorum.UseVisualStyleBackColor = false;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -2510,30 +3170,6 @@
             this.label30.TabIndex = 57;
             this.label30.Text = "Anasayfa";
             // 
-            // button15
-            // 
-            button15.BackColor = System.Drawing.Color.DarkGray;
-            button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            button15.ForeColor = System.Drawing.SystemColors.ControlText;
-            button15.Location = new System.Drawing.Point(44, 369);
-            button15.Name = "button15";
-            button15.Size = new System.Drawing.Size(30, 30);
-            button15.TabIndex = 56;
-            button15.Text = ">";
-            button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            button16.BackColor = System.Drawing.Color.DarkGray;
-            button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            button16.ForeColor = System.Drawing.SystemColors.ControlText;
-            button16.Location = new System.Drawing.Point(421, 369);
-            button16.Name = "button16";
-            button16.Size = new System.Drawing.Size(30, 30);
-            button16.TabIndex = 55;
-            button16.Text = "<";
-            button16.UseVisualStyleBackColor = false;
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -2544,162 +3180,6 @@
             this.label31.Size = new System.Drawing.Size(202, 13);
             this.label31.TabIndex = 54;
             this.label31.Text = "Yatırmak İstediğiniz Miktarı Giriniz.";
-            // 
-            // panel6_sec_arti
-            // 
-            panel6_sec_arti.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_arti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_arti.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_arti.Location = new System.Drawing.Point(232, 301);
-            panel6_sec_arti.Name = "panel6_sec_arti";
-            panel6_sec_arti.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_arti.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_arti.TabIndex = 53;
-            panel6_sec_arti.Text = "+";
-            panel6_sec_arti.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_0
-            // 
-            panel6_sec_0.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_0.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_0.Location = new System.Drawing.Point(202, 301);
-            panel6_sec_0.Name = "panel6_sec_0";
-            panel6_sec_0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_0.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_0.TabIndex = 52;
-            panel6_sec_0.Text = "0";
-            panel6_sec_0.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_eksi
-            // 
-            panel6_sec_eksi.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_eksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_eksi.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_eksi.Location = new System.Drawing.Point(172, 301);
-            panel6_sec_eksi.Name = "panel6_sec_eksi";
-            panel6_sec_eksi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_eksi.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_eksi.TabIndex = 51;
-            panel6_sec_eksi.Text = "-";
-            panel6_sec_eksi.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_9
-            // 
-            panel6_sec_9.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_9.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_9.Location = new System.Drawing.Point(232, 271);
-            panel6_sec_9.Name = "panel6_sec_9";
-            panel6_sec_9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_9.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_9.TabIndex = 50;
-            panel6_sec_9.Text = "9";
-            panel6_sec_9.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_8
-            // 
-            panel6_sec_8.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_8.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_8.Location = new System.Drawing.Point(202, 271);
-            panel6_sec_8.Name = "panel6_sec_8";
-            panel6_sec_8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_8.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_8.TabIndex = 49;
-            panel6_sec_8.Text = "8";
-            panel6_sec_8.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_7
-            // 
-            panel6_sec_7.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_7.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_7.Location = new System.Drawing.Point(172, 271);
-            panel6_sec_7.Name = "panel6_sec_7";
-            panel6_sec_7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_7.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_7.TabIndex = 48;
-            panel6_sec_7.Text = "7";
-            panel6_sec_7.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_6
-            // 
-            panel6_sec_6.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_6.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_6.Location = new System.Drawing.Point(232, 241);
-            panel6_sec_6.Name = "panel6_sec_6";
-            panel6_sec_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_6.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_6.TabIndex = 47;
-            panel6_sec_6.Text = "6";
-            panel6_sec_6.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_5
-            // 
-            panel6_sec_5.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_5.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_5.Location = new System.Drawing.Point(202, 241);
-            panel6_sec_5.Name = "panel6_sec_5";
-            panel6_sec_5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_5.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_5.TabIndex = 46;
-            panel6_sec_5.Text = "5";
-            panel6_sec_5.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_4
-            // 
-            panel6_sec_4.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_4.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_4.Location = new System.Drawing.Point(172, 241);
-            panel6_sec_4.Name = "panel6_sec_4";
-            panel6_sec_4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_4.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_4.TabIndex = 45;
-            panel6_sec_4.Text = "4";
-            panel6_sec_4.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_3
-            // 
-            panel6_sec_3.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_3.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_3.Location = new System.Drawing.Point(232, 211);
-            panel6_sec_3.Name = "panel6_sec_3";
-            panel6_sec_3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_3.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_3.TabIndex = 44;
-            panel6_sec_3.Text = "3";
-            panel6_sec_3.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_2
-            // 
-            panel6_sec_2.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_2.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_2.Location = new System.Drawing.Point(202, 211);
-            panel6_sec_2.Name = "panel6_sec_2";
-            panel6_sec_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_2.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_2.TabIndex = 43;
-            panel6_sec_2.Text = "2";
-            panel6_sec_2.UseVisualStyleBackColor = false;
-            // 
-            // panel6_sec_1
-            // 
-            panel6_sec_1.BackColor = System.Drawing.Color.DarkGray;
-            panel6_sec_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel6_sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel6_sec_1.Location = new System.Drawing.Point(172, 211);
-            panel6_sec_1.Name = "panel6_sec_1";
-            panel6_sec_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel6_sec_1.Size = new System.Drawing.Size(30, 30);
-            panel6_sec_1.TabIndex = 42;
-            panel6_sec_1.Text = "1";
-            panel6_sec_1.UseVisualStyleBackColor = false;
             // 
             // panel6_iptal
             // 
@@ -2798,30 +3278,6 @@
             this.label26.TabIndex = 33;
             this.label26.Text = "Anasayfa";
             // 
-            // panel5_anasayfa
-            // 
-            panel5_anasayfa.BackColor = System.Drawing.Color.DarkGray;
-            panel5_anasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel5_anasayfa.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel5_anasayfa.Location = new System.Drawing.Point(39, 286);
-            panel5_anasayfa.Name = "panel5_anasayfa";
-            panel5_anasayfa.Size = new System.Drawing.Size(30, 30);
-            panel5_anasayfa.TabIndex = 32;
-            panel5_anasayfa.Text = ">";
-            panel5_anasayfa.UseVisualStyleBackColor = false;
-            // 
-            // panel5_kartiade
-            // 
-            panel5_kartiade.BackColor = System.Drawing.Color.DarkGray;
-            panel5_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel5_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel5_kartiade.Location = new System.Drawing.Point(416, 286);
-            panel5_kartiade.Name = "panel5_kartiade";
-            panel5_kartiade.Size = new System.Drawing.Size(30, 30);
-            panel5_kartiade.TabIndex = 31;
-            panel5_kartiade.Text = "<";
-            panel5_kartiade.UseVisualStyleBackColor = false;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -2843,30 +3299,6 @@
             this.label28.Size = new System.Drawing.Size(173, 13);
             this.label28.TabIndex = 29;
             this.label28.Text = "Kartın Hesabına Para Yatırma";
-            // 
-            // panel5_digerhesaplarimaparayatirma
-            // 
-            panel5_digerhesaplarimaparayatirma.BackColor = System.Drawing.Color.DarkGray;
-            panel5_digerhesaplarimaparayatirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel5_digerhesaplarimaparayatirma.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel5_digerhesaplarimaparayatirma.Location = new System.Drawing.Point(442, 162);
-            panel5_digerhesaplarimaparayatirma.Name = "panel5_digerhesaplarimaparayatirma";
-            panel5_digerhesaplarimaparayatirma.Size = new System.Drawing.Size(30, 30);
-            panel5_digerhesaplarimaparayatirma.TabIndex = 28;
-            panel5_digerhesaplarimaparayatirma.Text = "<";
-            panel5_digerhesaplarimaparayatirma.UseVisualStyleBackColor = false;
-            // 
-            // panel5_kartinhesabinaparayatirma
-            // 
-            panel5_kartinhesabinaparayatirma.BackColor = System.Drawing.Color.DarkGray;
-            panel5_kartinhesabinaparayatirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel5_kartinhesabinaparayatirma.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel5_kartinhesabinaparayatirma.Location = new System.Drawing.Point(13, 165);
-            panel5_kartinhesabinaparayatirma.Name = "panel5_kartinhesabinaparayatirma";
-            panel5_kartinhesabinaparayatirma.Size = new System.Drawing.Size(30, 30);
-            panel5_kartinhesabinaparayatirma.TabIndex = 27;
-            panel5_kartinhesabinaparayatirma.Text = ">";
-            panel5_kartinhesabinaparayatirma.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -2906,162 +3338,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 55;
             this.pictureBox5.TabStop = false;
-            // 
-            // panel4_sec_arti
-            // 
-            panel4_sec_arti.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_arti.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_arti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_arti.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_arti.Location = new System.Drawing.Point(219, 404);
-            panel4_sec_arti.Name = "panel4_sec_arti";
-            panel4_sec_arti.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_arti.TabIndex = 54;
-            panel4_sec_arti.Text = "+";
-            panel4_sec_arti.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_0
-            // 
-            panel4_sec_0.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_0.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_0.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_0.Location = new System.Drawing.Point(189, 404);
-            panel4_sec_0.Name = "panel4_sec_0";
-            panel4_sec_0.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_0.TabIndex = 53;
-            panel4_sec_0.Text = "0";
-            panel4_sec_0.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_eksi
-            // 
-            panel4_sec_eksi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_eksi.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_eksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_eksi.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_eksi.Location = new System.Drawing.Point(159, 404);
-            panel4_sec_eksi.Name = "panel4_sec_eksi";
-            panel4_sec_eksi.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_eksi.TabIndex = 52;
-            panel4_sec_eksi.Text = "-";
-            panel4_sec_eksi.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_9
-            // 
-            panel4_sec_9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_9.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_9.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_9.Location = new System.Drawing.Point(219, 374);
-            panel4_sec_9.Name = "panel4_sec_9";
-            panel4_sec_9.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_9.TabIndex = 51;
-            panel4_sec_9.Text = "9";
-            panel4_sec_9.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_8
-            // 
-            panel4_sec_8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_8.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_8.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_8.Location = new System.Drawing.Point(189, 374);
-            panel4_sec_8.Name = "panel4_sec_8";
-            panel4_sec_8.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_8.TabIndex = 50;
-            panel4_sec_8.Text = "8";
-            panel4_sec_8.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_7
-            // 
-            panel4_sec_7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_7.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_7.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_7.Location = new System.Drawing.Point(159, 374);
-            panel4_sec_7.Name = "panel4_sec_7";
-            panel4_sec_7.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_7.TabIndex = 49;
-            panel4_sec_7.Text = "7";
-            panel4_sec_7.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_6
-            // 
-            panel4_sec_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_6.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_6.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_6.Location = new System.Drawing.Point(219, 344);
-            panel4_sec_6.Name = "panel4_sec_6";
-            panel4_sec_6.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_6.TabIndex = 48;
-            panel4_sec_6.Text = "6";
-            panel4_sec_6.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_5
-            // 
-            panel4_sec_5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_5.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_5.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_5.Location = new System.Drawing.Point(189, 344);
-            panel4_sec_5.Name = "panel4_sec_5";
-            panel4_sec_5.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_5.TabIndex = 47;
-            panel4_sec_5.Text = "5";
-            panel4_sec_5.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_4
-            // 
-            panel4_sec_4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_4.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_4.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_4.Location = new System.Drawing.Point(159, 344);
-            panel4_sec_4.Name = "panel4_sec_4";
-            panel4_sec_4.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_4.TabIndex = 46;
-            panel4_sec_4.Text = "4";
-            panel4_sec_4.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_3
-            // 
-            panel4_sec_3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_3.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_3.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_3.Location = new System.Drawing.Point(219, 314);
-            panel4_sec_3.Name = "panel4_sec_3";
-            panel4_sec_3.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_3.TabIndex = 45;
-            panel4_sec_3.Text = "3";
-            panel4_sec_3.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_2
-            // 
-            panel4_sec_2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_2.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_2.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_2.Location = new System.Drawing.Point(189, 314);
-            panel4_sec_2.Name = "panel4_sec_2";
-            panel4_sec_2.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_2.TabIndex = 44;
-            panel4_sec_2.Text = "2";
-            panel4_sec_2.UseVisualStyleBackColor = false;
-            // 
-            // panel4_sec_1
-            // 
-            panel4_sec_1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            panel4_sec_1.BackColor = System.Drawing.Color.DarkGray;
-            panel4_sec_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel4_sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel4_sec_1.Location = new System.Drawing.Point(159, 314);
-            panel4_sec_1.Name = "panel4_sec_1";
-            panel4_sec_1.Size = new System.Drawing.Size(30, 30);
-            panel4_sec_1.TabIndex = 43;
-            panel4_sec_1.Text = "1";
-            panel4_sec_1.UseVisualStyleBackColor = false;
             // 
             // panel4_digermiktari
             // 
@@ -3166,30 +3442,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 64;
             this.pictureBox4.TabStop = false;
-            // 
-            // panel3_kartiade
-            // 
-            panel3_kartiade.BackColor = System.Drawing.Color.DarkGray;
-            panel3_kartiade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel3_kartiade.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel3_kartiade.Location = new System.Drawing.Point(445, 377);
-            panel3_kartiade.Name = "panel3_kartiade";
-            panel3_kartiade.Size = new System.Drawing.Size(30, 30);
-            panel3_kartiade.TabIndex = 63;
-            panel3_kartiade.Text = "<";
-            panel3_kartiade.UseVisualStyleBackColor = false;
-            // 
-            // panel3_yeniislem
-            // 
-            panel3_yeniislem.BackColor = System.Drawing.Color.DarkGray;
-            panel3_yeniislem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel3_yeniislem.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel3_yeniislem.Location = new System.Drawing.Point(13, 374);
-            panel3_yeniislem.Name = "panel3_yeniislem";
-            panel3_yeniislem.Size = new System.Drawing.Size(30, 30);
-            panel3_yeniislem.TabIndex = 62;
-            panel3_yeniislem.Text = ">";
-            panel3_yeniislem.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -3349,18 +3601,6 @@
             this.label10.TabIndex = 61;
             this.label10.Text = "50";
             // 
-            // panel2_elliTLcek
-            // 
-            panel2_elliTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_elliTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_elliTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_elliTLcek.Location = new System.Drawing.Point(12, 383);
-            panel2_elliTLcek.Name = "panel2_elliTLcek";
-            panel2_elliTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_elliTLcek.TabIndex = 60;
-            panel2_elliTLcek.Text = ">";
-            panel2_elliTLcek.UseVisualStyleBackColor = false;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -3371,18 +3611,6 @@
             this.label11.Size = new System.Drawing.Size(49, 13);
             this.label11.TabIndex = 59;
             this.label11.Text = "Diğer...";
-            // 
-            // panel2_digerTLcek
-            // 
-            panel2_digerTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_digerTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_digerTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_digerTLcek.Location = new System.Drawing.Point(442, 383);
-            panel2_digerTLcek.Name = "panel2_digerTLcek";
-            panel2_digerTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_digerTLcek.TabIndex = 58;
-            panel2_digerTLcek.Text = "<";
-            panel2_digerTLcek.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -3452,104 +3680,6 @@
             this.label17.TabIndex = 52;
             this.label17.Text = "10";
             // 
-            // panel2_binTLcek
-            // 
-            panel2_binTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_binTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_binTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_binTLcek.Location = new System.Drawing.Point(442, 313);
-            panel2_binTLcek.Name = "panel2_binTLcek";
-            panel2_binTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_binTLcek.TabIndex = 51;
-            panel2_binTLcek.Text = "<";
-            panel2_binTLcek.UseVisualStyleBackColor = false;
-            // 
-            // panel2_ikiyuzelliTLcek
-            // 
-            panel2_ikiyuzelliTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_ikiyuzelliTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_ikiyuzelliTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_ikiyuzelliTLcek.Location = new System.Drawing.Point(442, 243);
-            panel2_ikiyuzelliTLcek.Name = "panel2_ikiyuzelliTLcek";
-            panel2_ikiyuzelliTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_ikiyuzelliTLcek.TabIndex = 50;
-            panel2_ikiyuzelliTLcek.Text = "<";
-            panel2_ikiyuzelliTLcek.UseVisualStyleBackColor = false;
-            // 
-            // panel2_yuzTLcek
-            // 
-            panel2_yuzTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_yuzTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_yuzTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_yuzTLcek.Location = new System.Drawing.Point(442, 173);
-            panel2_yuzTLcek.Name = "panel2_yuzTLcek";
-            panel2_yuzTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_yuzTLcek.TabIndex = 49;
-            panel2_yuzTLcek.Text = "<";
-            panel2_yuzTLcek.UseVisualStyleBackColor = false;
-            // 
-            // panel2_yirmiTLcek
-            // 
-            panel2_yirmiTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_yirmiTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_yirmiTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_yirmiTLcek.Location = new System.Drawing.Point(12, 243);
-            panel2_yirmiTLcek.Name = "panel2_yirmiTLcek";
-            panel2_yirmiTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_yirmiTLcek.TabIndex = 48;
-            panel2_yirmiTLcek.Text = ">";
-            panel2_yirmiTLcek.UseVisualStyleBackColor = false;
-            // 
-            // panel2_otuzTLcek
-            // 
-            panel2_otuzTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_otuzTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_otuzTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_otuzTLcek.Location = new System.Drawing.Point(12, 313);
-            panel2_otuzTLcek.Name = "panel2_otuzTLcek";
-            panel2_otuzTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_otuzTLcek.TabIndex = 47;
-            panel2_otuzTLcek.Text = ">";
-            panel2_otuzTLcek.UseVisualStyleBackColor = false;
-            // 
-            // panel2_onTLcek
-            // 
-            panel2_onTLcek.BackColor = System.Drawing.Color.DarkGray;
-            panel2_onTLcek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            panel2_onTLcek.ForeColor = System.Drawing.SystemColors.ControlText;
-            panel2_onTLcek.Location = new System.Drawing.Point(12, 173);
-            panel2_onTLcek.Name = "panel2_onTLcek";
-            panel2_onTLcek.Size = new System.Drawing.Size(30, 30);
-            panel2_onTLcek.TabIndex = 46;
-            panel2_onTLcek.Text = ">";
-            panel2_onTLcek.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_arti
-            // 
-            giris_sec_arti.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_arti.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_arti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_arti.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_arti.Location = new System.Drawing.Point(224, 383);
-            giris_sec_arti.Name = "giris_sec_arti";
-            giris_sec_arti.Size = new System.Drawing.Size(30, 30);
-            giris_sec_arti.TabIndex = 36;
-            giris_sec_arti.Text = "+";
-            giris_sec_arti.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_8
-            // 
-            giris_sec_8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_8.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_8.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_8.Location = new System.Drawing.Point(194, 353);
-            giris_sec_8.Name = "giris_sec_8";
-            giris_sec_8.Size = new System.Drawing.Size(30, 30);
-            giris_sec_8.TabIndex = 32;
-            giris_sec_8.Text = "8";
-            giris_sec_8.UseVisualStyleBackColor = false;
-            // 
             // giris_giris
             // 
             this.giris_giris.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -3561,32 +3691,6 @@
             this.giris_giris.TabIndex = 21;
             this.giris_giris.Text = "Giriş";
             this.giris_giris.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_1
-            // 
-            giris_sec_1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_1.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_1.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_1.Location = new System.Drawing.Point(164, 293);
-            giris_sec_1.Name = "giris_sec_1";
-            giris_sec_1.Size = new System.Drawing.Size(30, 30);
-            giris_sec_1.TabIndex = 25;
-            giris_sec_1.Text = "1";
-            giris_sec_1.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_2
-            // 
-            giris_sec_2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_2.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_2.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_2.Location = new System.Drawing.Point(194, 293);
-            giris_sec_2.Name = "giris_sec_2";
-            giris_sec_2.Size = new System.Drawing.Size(30, 30);
-            giris_sec_2.TabIndex = 26;
-            giris_sec_2.Text = "2";
-            giris_sec_2.UseVisualStyleBackColor = false;
             // 
             // giris_textBox1
             // 
@@ -3646,110 +3750,6 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Lütfen Şifrenizi Giriniz.";
             // 
-            // giris_sec_5
-            // 
-            giris_sec_5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_5.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_5.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_5.Location = new System.Drawing.Point(194, 323);
-            giris_sec_5.Name = "giris_sec_5";
-            giris_sec_5.Size = new System.Drawing.Size(30, 30);
-            giris_sec_5.TabIndex = 29;
-            giris_sec_5.Text = "5";
-            giris_sec_5.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_6
-            // 
-            giris_sec_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_6.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_6.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_6.Location = new System.Drawing.Point(224, 323);
-            giris_sec_6.Name = "giris_sec_6";
-            giris_sec_6.Size = new System.Drawing.Size(30, 30);
-            giris_sec_6.TabIndex = 30;
-            giris_sec_6.Text = "6";
-            giris_sec_6.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_4
-            // 
-            giris_sec_4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_4.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_4.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_4.Location = new System.Drawing.Point(164, 323);
-            giris_sec_4.Name = "giris_sec_4";
-            giris_sec_4.Size = new System.Drawing.Size(30, 30);
-            giris_sec_4.TabIndex = 28;
-            giris_sec_4.Text = "4";
-            giris_sec_4.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_0
-            // 
-            giris_sec_0.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_0.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_0.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_0.Location = new System.Drawing.Point(194, 383);
-            giris_sec_0.Name = "giris_sec_0";
-            giris_sec_0.Size = new System.Drawing.Size(30, 30);
-            giris_sec_0.TabIndex = 35;
-            giris_sec_0.Text = "0";
-            giris_sec_0.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_3
-            // 
-            giris_sec_3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_3.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_3.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_3.Location = new System.Drawing.Point(224, 293);
-            giris_sec_3.Name = "giris_sec_3";
-            giris_sec_3.Size = new System.Drawing.Size(30, 30);
-            giris_sec_3.TabIndex = 27;
-            giris_sec_3.Text = "3";
-            giris_sec_3.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_7
-            // 
-            giris_sec_7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_7.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_7.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_7.Location = new System.Drawing.Point(164, 353);
-            giris_sec_7.Name = "giris_sec_7";
-            giris_sec_7.Size = new System.Drawing.Size(30, 30);
-            giris_sec_7.TabIndex = 31;
-            giris_sec_7.Text = "7";
-            giris_sec_7.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_9
-            // 
-            giris_sec_9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_9.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_9.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_9.Location = new System.Drawing.Point(224, 353);
-            giris_sec_9.Name = "giris_sec_9";
-            giris_sec_9.Size = new System.Drawing.Size(30, 30);
-            giris_sec_9.TabIndex = 33;
-            giris_sec_9.Text = "9";
-            giris_sec_9.UseVisualStyleBackColor = false;
-            // 
-            // giris_sec_eksi
-            // 
-            giris_sec_eksi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            giris_sec_eksi.BackColor = System.Drawing.Color.DarkGray;
-            giris_sec_eksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            giris_sec_eksi.ForeColor = System.Drawing.SystemColors.ControlText;
-            giris_sec_eksi.Location = new System.Drawing.Point(164, 383);
-            giris_sec_eksi.Name = "giris_sec_eksi";
-            giris_sec_eksi.Size = new System.Drawing.Size(30, 30);
-            giris_sec_eksi.TabIndex = 34;
-            giris_sec_eksi.Text = "-";
-            giris_sec_eksi.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -3795,12 +3795,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 493);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
@@ -3808,7 +3809,6 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel16);

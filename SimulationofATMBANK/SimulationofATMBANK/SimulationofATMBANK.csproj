@@ -134,6 +134,12 @@
     <Compile Include="2.Anasayfa.Designer.cs">
       <DependentUpon>2.Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="ATMArayüzSON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATMArayüzSON.Designer.cs">
+      <DependentUpon>ATMArayüzSON.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     <EmbeddedResource Include="2.Anasayfa.resx">
       <DependentUpon>2.Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ATMArayüzSON.resx">
+      <DependentUpon>ATMArayüzSON.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +255,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SimulasyonPanel.resx">
       <DependentUpon>SimulasyonPanel.cs</DependentUpon>
@@ -262,6 +272,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bankamatik.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
