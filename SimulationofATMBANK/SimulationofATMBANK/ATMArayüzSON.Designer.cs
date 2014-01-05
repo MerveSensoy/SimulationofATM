@@ -157,6 +157,7 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.label98 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
@@ -166,7 +167,6 @@
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
@@ -185,20 +185,20 @@
             this.label111 = new System.Windows.Forms.Label();
             this.label112 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
             this.label120 = new System.Windows.Forms.Label();
             this.label121 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label116 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
             this.label122 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -616,6 +616,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(109, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.UseSystemPasswordChar = true;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -950,6 +952,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 20);
             this.textBox2.TabIndex = 20;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label35
             // 
@@ -1120,6 +1123,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(137, 20);
             this.textBox3.TabIndex = 22;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label48
             // 
@@ -1439,6 +1443,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(137, 20);
             this.textBox4.TabIndex = 30;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label72
             // 
@@ -1712,6 +1717,17 @@
             this.panel14.Size = new System.Drawing.Size(355, 249);
             this.panel14.TabIndex = 66;
             // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label98.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label98.Location = new System.Drawing.Point(88, 31);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(173, 25);
+            this.label98.TabIndex = 37;
+            this.label98.Text = "MB FINANCIAL BANK ";
+            // 
             // label88
             // 
             this.label88.AutoSize = true;
@@ -1810,17 +1826,6 @@
             this.label97.Size = new System.Drawing.Size(181, 18);
             this.label97.TabIndex = 27;
             this.label97.Text = "Paranızı Sağ  Alt Köşeden Alınız";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label98.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label98.Location = new System.Drawing.Point(88, 31);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(173, 25);
-            this.label98.TabIndex = 37;
-            this.label98.Text = "MB FINANCIAL BANK ";
             // 
             // panel15
             // 
@@ -2035,6 +2040,33 @@
             this.panel17.Size = new System.Drawing.Size(355, 235);
             this.panel17.TabIndex = 69;
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(183, 163);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 59;
+            this.textBox7.UseSystemPasswordChar = true;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(183, 134);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 58;
+            this.textBox6.UseSystemPasswordChar = true;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(183, 104);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 57;
+            this.textBox5.UseSystemPasswordChar = true;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
             // label113
             // 
             this.label113.AutoSize = true;
@@ -2107,27 +2139,6 @@
             this.label121.Text = "Eski Şifre";
             this.label121.Click += new System.EventHandler(this.label121_Click);
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(183, 104);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 57;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(183, 134);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 58;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(183, 163);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 59;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
@@ -2139,17 +2150,6 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(353, 243);
             this.panel18.TabIndex = 70;
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label116.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label116.Location = new System.Drawing.Point(53, 84);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(242, 18);
-            this.label116.TabIndex = 28;
-            this.label116.Text = "Başka Bir İşlem Yapmak İstiyor Musunuz?";
             // 
             // label117
             // 
@@ -2184,30 +2184,41 @@
             this.label122.TabIndex = 38;
             this.label122.Text = "Kart İade";
             // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label116.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label116.Location = new System.Drawing.Point(53, 84);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(242, 18);
+            this.label116.TabIndex = 28;
+            this.label116.Text = "Başka Bir İşlem Yapmak İstiyor Musunuz?";
+            // 
             // ATMArayüzSON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SimulationofATMBANK.Properties.Resources.Bankamatik;
             this.ClientSize = new System.Drawing.Size(730, 293);
-            this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
-            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel16);
+            this.Controls.Add(this.panel15);
+            this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
