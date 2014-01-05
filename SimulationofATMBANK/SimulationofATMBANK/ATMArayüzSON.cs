@@ -25,6 +25,11 @@ namespace SimulationofATMBANK
             panel3.Visible = false;
             panel4.Visible = false;
             panel5.Visible = false;
+            panel6.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
             
         }
 
@@ -560,6 +565,16 @@ namespace SimulationofATMBANK
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             //Kart İade
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
