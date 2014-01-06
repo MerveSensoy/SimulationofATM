@@ -38,6 +38,10 @@ namespace SimulationofATMBANK
             panel16.Visible = false;
             panel17.Visible = false;
             panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
@@ -51,7 +55,7 @@ namespace SimulationofATMBANK
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -77,12 +81,17 @@ namespace SimulationofATMBANK
             //else if (panel11.Visible == true)
             //{
             //}
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
+            else if (panel12.Visible == true)
+            {
+                panel12.Visible = false;
+                panel7.Visible = true;
+            }
+            else if (panel13.Visible == true)
+            {
+               
+                panel13.Visible = false;
+                panel20.Visible = true;
+            }
             //else if (panel14.Visible == true)
             //{
             //}
@@ -110,7 +119,7 @@ namespace SimulationofATMBANK
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -118,9 +127,11 @@ namespace SimulationofATMBANK
             else if (panel5.Visible == true)
             {
             }
-            //else if (panel6.Visible == true)
-            //{
-            //}
+            else if (panel6.Visible == true)
+            {
+                panel6.Visible = false;
+                panel7.Visible = true;
+            }
             //else if (panel7.Visible == true)
             //{
             //}
@@ -133,21 +144,29 @@ namespace SimulationofATMBANK
             //else if (panel10.Visible == true)
             //{
             //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
+            else if (panel11.Visible == true)
+            {
+                panel11.Visible = false;
+                panel13.Visible = true;
+            }
+            else if (panel12.Visible == true)
+            {
+                panel12.Visible = false;
+                panel7.Visible = true;
+            }
+            else if (panel13.Visible == true)
+            {
+                panel13.Visible = false;
+                panel20.Visible = true;
+            }
             //else if (panel14.Visible == true)
             //{
             //}
-            //else if (panel15.Visible == true)
-            //{
-            //}
+            else if (panel15.Visible == true)
+            {
+                panel15.Visible = false;
+                panel16.Visible = true;
+            }
             //else if (panel16.Visible == true)
             //{
             //}
@@ -163,11 +182,13 @@ namespace SimulationofATMBANK
             }
             else if (panel2.Visible == true)
             {
+                panel2.Visible = false;
+                panel6.Visible = true;
             }
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -217,14 +238,17 @@ namespace SimulationofATMBANK
         {
             if (panel1.Visible == true)
             {
+                
             }
             else if (panel2.Visible == true)
             {
+                panel2.Visible = false;
+                panel11.Visible = true;
             }
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -236,42 +260,86 @@ namespace SimulationofATMBANK
                 panel5.Visible = false;
                 panel2.Visible = true;
             }
-            //else if (panel6.Visible == true)
-            //{
-            //}
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
-            //else if (panel14.Visible == true)
-            //{
-            //}
-            //else if (panel15.Visible == true)
-            //{
-            //}
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
+            else if (panel6.Visible == true)
+            {
+                panel6.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel7.Visible == true)
+            {
+                panel7.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel8.Visible == true)
+            {
+                panel8.Visible = false;
+                panel18.Visible = true;
+            }
+            else if (panel9.Visible == true)
+            {
+                panel9.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel10.Visible == true)
+            {
+                panel10.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel11.Visible == true)
+            {
+                panel11.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel12.Visible == true)
+            {
+                panel12.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel13.Visible == true)
+            {
+                panel13.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel14.Visible == true)
+            {
+                panel14.Visible = false;
+                panel18.Visible = true;
+            }
+            else if (panel15.Visible == true)
+            {
+                panel15.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel16.Visible == true)
+            {
+                panel16.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel17.Visible == true)
+            {
+                panel17.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel18.Visible == true)
+            {
+                panel18.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel19.Visible == true)
+            {
+                panel19.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel20.Visible == true)
+            {
+                panel20.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel21.Visible == true)
+            {
+                panel21.Visible = false;
+                panel18.Visible = true;
+            }
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
@@ -281,11 +349,14 @@ namespace SimulationofATMBANK
             }
             else if (panel2.Visible == true)
             {
+                panel2.Visible = false;
+                //50 tl çekilmesi için işlemler sağlanacak
+                panel14.Visible = true;
             }
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -338,11 +409,13 @@ namespace SimulationofATMBANK
             }
             else if (panel2.Visible == true)
             {
+                panel2.Visible = false;
+                panel15.Visible = true;
             }
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -350,9 +423,11 @@ namespace SimulationofATMBANK
             else if (panel5.Visible == true)
             {
             }
-            //else if (panel6.Visible == true)
-            //{
-            //}
+            else if (panel6.Visible == true)
+            {
+                panel6.Visible = false;
+                panel12.Visible = true;
+            }
             //else if (panel7.Visible == true)
             //{
             //}
@@ -365,9 +440,11 @@ namespace SimulationofATMBANK
             //else if (panel10.Visible == true)
             //{
             //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
+            else if (panel11.Visible == true)
+            {
+                panel11.Visible = false;
+                panel10.Visible = true;
+            }
             //else if (panel12.Visible == true)
             //{
             //}
@@ -379,6 +456,8 @@ namespace SimulationofATMBANK
             //}
             //else if (panel15.Visible == true)
             //{
+            //    panel15.Visible = false;
+                
             //}
             //else if (panel16.Visible == true)
             //{
@@ -399,7 +478,7 @@ namespace SimulationofATMBANK
             else if (panel3.Visible == true)
             {
                 panel3.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             else if (panel4.Visible == true)
             {
@@ -470,23 +549,30 @@ namespace SimulationofATMBANK
             {
                 //Para Çekme İşlemleri Halledilecek
                 panel5.Visible = false;
-                panel4.Visible = true;
+                panel14.Visible = true;
             }
             //else if (panel6.Visible == true)
             //{
             //}
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
+            else if (panel7.Visible == true)
+            {
+                panel7.Visible = false;
+                panel8.Visible = true;
+            }
+            else if (panel8.Visible == true)
+            {
+                panel8.Visible = false;
+                panel19.Visible = true;
+                
+            }
             //else if (panel9.Visible == true)
             //{
             //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
+            else if (panel10.Visible == true)
+            {
+                panel10.Visible = false;
+                panel20.Visible = true;
+            }
             //else if (panel11.Visible == true)
             //{
             //}
@@ -496,18 +582,34 @@ namespace SimulationofATMBANK
             //else if (panel13.Visible == true)
             //{
             //}
-            //else if (panel14.Visible == true)
-            //{
-            //}
+            else if (panel14.Visible == true)
+            {
+                panel14.Visible = false;
+                panel4.Visible = true;
+            }
             //else if (panel15.Visible == true)
             //{
             //}
             //else if (panel16.Visible == true)
             //{
             //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
+            else if (panel17.Visible == true)
+            {
+                //onaylama kaydetme işlemleri gerçekleştirilecek
+            }
+            else if (panel20.Visible == true)
+            {
+                //onaylama kaydetme işlemleri gerçekleştirilecek
+                panel20.Visible = false;
+                panel21.Visible = true;
+            }
+            else if (panel21.Visible == true)
+            {
+                //onaylama kaydetme işlemleri gerçekleştirilecek
+                panel21.Visible = false;
+                panel9.Visible = true;
+            }
+
         }
 
         private void label34_Click(object sender, EventArgs e)
@@ -1205,10 +1307,17 @@ namespace SimulationofATMBANK
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+        }
+        private void label129_Click(object sender, EventArgs e)
+        {
 
         }
 
+
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+        }
+        private void label133_Click(object sender, EventArgs e)
         {
 
         }
@@ -1235,7 +1344,15 @@ namespace SimulationofATMBANK
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
+        }
+        private void label140_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void panel21_Paint(object sender, PaintEventArgs e)
+        {
+        
         }
     }
 }
