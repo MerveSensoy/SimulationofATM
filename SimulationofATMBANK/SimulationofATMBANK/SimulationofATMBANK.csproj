@@ -44,208 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="10.DiğerHesaplar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="10.DiğerHesaplar.Designer.cs">
-      <DependentUpon>10.DiğerHesaplar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="11.TanımlıHesabaParaYatirma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="11.TanımlıHesabaParaYatirma.Designer.cs">
-      <DependentUpon>11.TanımlıHesabaParaYatirma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="12.50TLHızlıParaÇekme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="12.50TLHızlıParaÇekme.Designer.cs">
-      <DependentUpon>12.50TLHızlıParaÇekme.cs</DependentUpon>
-    </Compile>
-    <Compile Include="13HesapBilgisiSorma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="13HesapBilgisiSorma.Designer.cs">
-      <DependentUpon>13HesapBilgisiSorma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="14.GüncelBakiyeSorgulama.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="14.GüncelBakiyeSorgulama.Designer.cs">
-      <DependentUpon>14.GüncelBakiyeSorgulama.cs</DependentUpon>
-    </Compile>
-    <Compile Include="15.Diğerİşlemler.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="15.Diğerİşlemler.Designer.cs">
-      <DependentUpon>15.Diğerİşlemler.cs</DependentUpon>
-    </Compile>
-    <Compile Include="16.DevamMı.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="16.DevamMı.Designer.cs">
-      <DependentUpon>16.DevamMı.cs</DependentUpon>
-    </Compile>
-    <Compile Include="4.ParaYatırma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="4.ParaYatırma.Designer.cs">
-      <DependentUpon>4.ParaYatırma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="5.KartinHesabinaParaYatirma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="5.KartinHesabinaParaYatirma.Designer.cs">
-      <DependentUpon>5.KartinHesabinaParaYatirma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="6.ParaYatırıldıBilgisi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="6.ParaYatırıldıBilgisi.Designer.cs">
-      <DependentUpon>6.ParaYatırıldıBilgisi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="7.Makbuz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="7.Makbuz.Designer.cs">
-      <DependentUpon>7.Makbuz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="8.BaşkaHesabaParaYatırma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="8.BaşkaHesabaParaYatırma.Designer.cs">
-      <DependentUpon>8.BaşkaHesabaParaYatırma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="9.ParaTransferi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="9.ParaTransferi.Designer.cs">
-      <DependentUpon>9.ParaTransferi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="1.Giris.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="1.Giris.Designer.cs">
-      <DependentUpon>1.Giris.cs</DependentUpon>
-    </Compile>
-    <Compile Include="2.Anasayfa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="2.Anasayfa.Designer.cs">
-      <DependentUpon>2.Anasayfa.cs</DependentUpon>
-    </Compile>
     <Compile Include="ATMArayüzSON.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ATMArayüzSON.Designer.cs">
       <DependentUpon>ATMArayüzSON.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3.0ParaÇekme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="3.0ParaÇekme.Designer.cs">
-      <DependentUpon>3.0ParaÇekme.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3.2ParaÇekmeDiğerKısım.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="3.2ParaÇekmeDiğerKısım.Designer.cs">
-      <DependentUpon>3.2ParaÇekmeDiğerKısım.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3.1ParaÇekmeMakbuz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="3.1ParaÇekmeMakbuz.Designer.cs">
-      <DependentUpon>3.1ParaÇekmeMakbuz.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Kullanıcı.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimulasyonPanel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SimulasyonPanel.Designer.cs">
-      <DependentUpon>SimulasyonPanel.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="10.DiğerHesaplar.resx">
-      <DependentUpon>10.DiğerHesaplar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="11.TanımlıHesabaParaYatirma.resx">
-      <DependentUpon>11.TanımlıHesabaParaYatirma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="12.50TLHızlıParaÇekme.resx">
-      <DependentUpon>12.50TLHızlıParaÇekme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="13HesapBilgisiSorma.resx">
-      <DependentUpon>13HesapBilgisiSorma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="14.GüncelBakiyeSorgulama.resx">
-      <DependentUpon>14.GüncelBakiyeSorgulama.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="15.Diğerİşlemler.resx">
-      <DependentUpon>15.Diğerİşlemler.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="16.DevamMı.resx">
-      <DependentUpon>16.DevamMı.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="4.ParaYatırma.resx">
-      <DependentUpon>4.ParaYatırma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="5.KartinHesabinaParaYatirma.resx">
-      <DependentUpon>5.KartinHesabinaParaYatirma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="6.ParaYatırıldıBilgisi.resx">
-      <DependentUpon>6.ParaYatırıldıBilgisi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="7.Makbuz.resx">
-      <DependentUpon>7.Makbuz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="8.BaşkaHesabaParaYatırma.resx">
-      <DependentUpon>8.BaşkaHesabaParaYatırma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="9.ParaTransferi.resx">
-      <DependentUpon>9.ParaTransferi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="1.Giris.resx">
-      <DependentUpon>1.Giris.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="2.Anasayfa.resx">
-      <DependentUpon>2.Anasayfa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ATMArayüzSON.resx">
       <DependentUpon>ATMArayüzSON.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3.0ParaÇekme.resx">
-      <DependentUpon>3.0ParaÇekme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3.2ParaÇekmeDiğerKısım.resx">
-      <DependentUpon>3.2ParaÇekmeDiğerKısım.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3.1ParaÇekmeMakbuz.resx">
-      <DependentUpon>3.1ParaÇekmeMakbuz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -257,9 +66,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SimulasyonPanel.resx">
-      <DependentUpon>SimulasyonPanel.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -224,6 +224,19 @@
             this.label141 = new System.Windows.Forms.Label();
             this.label142 = new System.Windows.Forms.Label();
             this.label143 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label151 = new System.Windows.Forms.Label();
+            this.label150 = new System.Windows.Forms.Label();
+            this.label149 = new System.Windows.Forms.Label();
+            this.label145 = new System.Windows.Forms.Label();
+            this.label146 = new System.Windows.Forms.Label();
+            this.label148 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label144 = new System.Windows.Forms.Label();
+            this.label147 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label152 = new System.Windows.Forms.Label();
+            this.label153 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -265,6 +278,8 @@
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel23.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox20
@@ -358,12 +373,12 @@
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Location = new System.Drawing.Point(558, 92);
+            this.pictureBox12.Location = new System.Drawing.Point(544, 55);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(95, 37);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.Size = new System.Drawing.Size(146, 74);
             this.pictureBox12.TabIndex = 32;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
@@ -2430,6 +2445,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(137, 20);
             this.textBox8.TabIndex = 32;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label125
             // 
@@ -2511,15 +2527,167 @@
             this.label143.TabIndex = 30;
             this.label143.Text = "MB FINANCIAL BANK ";
             // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Transparent;
+            this.panel22.Controls.Add(this.label151);
+            this.panel22.Controls.Add(this.label150);
+            this.panel22.Controls.Add(this.label149);
+            this.panel22.Controls.Add(this.label145);
+            this.panel22.Controls.Add(this.label146);
+            this.panel22.Controls.Add(this.label148);
+            this.panel22.Location = new System.Drawing.Point(87, 28);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(346, 239);
+            this.panel22.TabIndex = 74;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label151.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label151.Location = new System.Drawing.Point(145, 131);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(44, 20);
+            this.label151.TabIndex = 37;
+            this.label151.Text = "Ya da";
+            this.label151.Click += new System.EventHandler(this.label151_Click);
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label150.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label150.Location = new System.Drawing.Point(76, 156);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(189, 20);
+            this.label150.TabIndex = 36;
+            this.label150.Text = "Kartsız Giriş Tuşuna Bakınız";
+            // 
+            // label149
+            // 
+            this.label149.AutoSize = true;
+            this.label149.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label149.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label149.Location = new System.Drawing.Point(124, 105);
+            this.label149.Name = "label149";
+            this.label149.Size = new System.Drawing.Size(83, 20);
+            this.label149.TabIndex = 35;
+            this.label149.Text = "Insert Card";
+            // 
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label145.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label145.Location = new System.Drawing.Point(248, 208);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(78, 18);
+            this.label145.TabIndex = 33;
+            this.label145.Text = "Kartsız Giriş";
+            // 
+            // label146
+            // 
+            this.label146.AutoSize = true;
+            this.label146.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label146.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label146.Location = new System.Drawing.Point(82, 27);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(173, 25);
+            this.label146.TabIndex = 32;
+            this.label146.Text = "MB FINANCIAL BANK ";
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label148.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label148.Location = new System.Drawing.Point(121, 52);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(91, 20);
+            this.label148.TabIndex = 29;
+            this.label148.Text = "HOŞGELDİNİZ";
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.Transparent;
+            this.panel23.Controls.Add(this.label144);
+            this.panel23.Controls.Add(this.label147);
+            this.panel23.Controls.Add(this.textBox9);
+            this.panel23.Controls.Add(this.label152);
+            this.panel23.Controls.Add(this.label153);
+            this.panel23.Location = new System.Drawing.Point(86, 30);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(344, 237);
+            this.panel23.TabIndex = 75;
+            this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint);
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label144.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label144.Location = new System.Drawing.Point(285, 204);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(47, 18);
+            this.label144.TabIndex = 32;
+            this.label144.Text = "Onayla";
+            this.label144.Click += new System.EventHandler(this.label144_Click);
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label147.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label147.Location = new System.Drawing.Point(83, 25);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(173, 25);
+            this.label147.TabIndex = 31;
+            this.label147.Text = "MB FINANCIAL BANK ";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(106, 120);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(109, 20);
+            this.textBox9.TabIndex = 30;
+            this.textBox9.UseSystemPasswordChar = true;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label152.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label152.Location = new System.Drawing.Point(57, 88);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(213, 20);
+            this.label152.TabIndex = 29;
+            this.label152.Text = "Lütfen Hesap Numaranızı Giriniz";
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label153.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label153.Location = new System.Drawing.Point(122, 64);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(91, 20);
+            this.label153.TabIndex = 28;
+            this.label153.Text = "HOŞGELDİNİZ";
+            // 
             // ATMArayüzSON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SimulationofATMBANK.Properties.Resources.Bankamatik;
             this.ClientSize = new System.Drawing.Size(730, 293);
+            this.Controls.Add(this.panel23);
+            this.Controls.Add(this.panel22);
             this.Controls.Add(this.panel21);
             this.Controls.Add(this.panel20);
             this.Controls.Add(this.panel19);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel15);
@@ -2536,7 +2704,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
@@ -2624,6 +2791,10 @@
             this.panel20.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2827,6 +2998,19 @@
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.Label label142;
         private System.Windows.Forms.Label label143;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Label label151;
+        private System.Windows.Forms.Label label150;
+        private System.Windows.Forms.Label label149;
+        private System.Windows.Forms.Label label145;
+        private System.Windows.Forms.Label label146;
+        private System.Windows.Forms.Label label148;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label144;
+        private System.Windows.Forms.Label label147;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label152;
+        private System.Windows.Forms.Label label153;
 
     }
 }

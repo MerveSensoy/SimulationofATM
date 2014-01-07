@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace SimulationofATMBANK
 {
     public partial class ATMArayüzSON : Form
     {
-        int numara; 
+        int numara;
+        string kontrol;
         public ATMArayüzSON()
         {
             InitializeComponent();
@@ -41,7 +44,8 @@ namespace SimulationofATMBANK
             panel19.Visible = false;
             panel20.Visible = false;
             panel21.Visible = false;
-
+            panel22.Visible = false; 
+            panel23.Visible = false;
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
@@ -609,6 +613,16 @@ namespace SimulationofATMBANK
                 panel21.Visible = false;
                 panel9.Visible = true;
             }
+            else if (panel22.Visible == true)
+            {
+                panel22.Visible = false;
+                panel23.Visible = true;
+            }
+            else if (panel23.Visible == true)
+            {
+                panel23.Visible = false;
+                panel1.Visible = true;
+            }
 
         }
 
@@ -652,6 +666,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -679,6 +702,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -712,6 +745,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -739,6 +781,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -772,6 +824,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -799,6 +860,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -832,6 +903,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -859,6 +939,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -892,6 +982,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -919,6 +1018,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -952,6 +1061,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -979,6 +1097,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -1012,6 +1140,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -1039,6 +1176,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -1072,6 +1219,15 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
 
 
             if (panel1.Visible == false)
@@ -1099,6 +1255,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -1132,6 +1298,16 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
+
 
             if (panel1.Visible == false)
             {
@@ -1158,6 +1334,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -1191,6 +1377,16 @@ namespace SimulationofATMBANK
                 textBox7.Text += numara.ToString();
             }
 
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text += numara.ToString();
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text += numara.ToString();
+            }
+
 
             if (panel1.Visible == false)
             {
@@ -1217,6 +1413,16 @@ namespace SimulationofATMBANK
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
+            }
+
+            else if (panel20.Visible == false)
+            {
+                textBox8.Clear();
+            }
+
+            else if (panel23.Visible == false)
+            {
+                textBox9.Clear();
             }
         }
 
@@ -1247,6 +1453,16 @@ namespace SimulationofATMBANK
                 textBox5.Text = textBox5.Text.Substring(0, textBox5.Text.Length - 1);
                 textBox6.Text = textBox6.Text.Substring(0, textBox6.Text.Length - 1);
                 textBox7.Text = textBox7.Text.Substring(0, textBox7.Text.Length - 1);
+            }
+
+            else if (panel20.Visible == true)
+            {
+                textBox8.Text = textBox8.Text.Substring(0, textBox8.Text.Length - 1);
+            }
+
+            else if (panel23.Visible == true)
+            {
+                textBox9.Text = textBox9.Text.Substring(0, textBox9.Text.Length - 1);
             }
         }
 
@@ -1354,5 +1570,50 @@ namespace SimulationofATMBANK
         {
         
         }
+
+        private void label151_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            if (panel22.Visible == true) 
+            {
+                panel22.Visible = false;
+                panel1.Visible = true;
+            }
+            else if(panel23.Visible==true)
+            {
+                panel23.Visible = false;
+                panel1.Visible = true;
+                MessageBox.Show("Kart Zaten Konulmuş Durumda!");
+            }
+
+        }
+
+        private void label144_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel23_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
     }
 }
+
+ 
