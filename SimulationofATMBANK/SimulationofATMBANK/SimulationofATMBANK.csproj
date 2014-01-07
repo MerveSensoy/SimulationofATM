@@ -50,7 +50,6 @@
     <Compile Include="ATMArayüzSON.Designer.cs">
       <DependentUpon>ATMArayüzSON.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kullanıcı.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ATMArayüzSON.resx">

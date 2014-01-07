@@ -145,15 +145,15 @@
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.label167 = new System.Windows.Forms.Label();
+            this.label168 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -170,7 +170,6 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
@@ -244,6 +243,17 @@
             this.label156 = new System.Windows.Forms.Label();
             this.label157 = new System.Windows.Forms.Label();
             this.label158 = new System.Windows.Forms.Label();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label160 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label169 = new System.Windows.Forms.Label();
+            this.label170 = new System.Windows.Forms.Label();
+            this.label171 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -288,6 +298,8 @@
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel26.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox20
@@ -665,10 +677,12 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(118, 129);
             this.textBox1.Name = "textBox1";
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox1.Size = new System.Drawing.Size(109, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.UseSystemPasswordChar = true;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label2
             // 
@@ -1001,9 +1015,11 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(112, 148);
             this.textBox2.Name = "textBox2";
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox2.Size = new System.Drawing.Size(135, 20);
             this.textBox2.TabIndex = 20;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label35
             // 
@@ -1082,11 +1098,11 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label44.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label44.Location = new System.Drawing.Point(252, 151);
+            this.label44.Location = new System.Drawing.Point(234, 153);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(89, 18);
+            this.label44.Size = new System.Drawing.Size(98, 18);
             this.label44.TabIndex = 30;
-            this.label44.Text = "Başka Hesaba";
+            this.label44.Text = "Diğer Hesabıma";
             // 
             // label43
             // 
@@ -1172,9 +1188,11 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(112, 162);
             this.textBox3.Name = "textBox3";
+            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox3.Size = new System.Drawing.Size(137, 20);
             this.textBox3.TabIndex = 22;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // label48
             // 
@@ -1492,9 +1510,11 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(99, 119);
             this.textBox4.Name = "textBox4";
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox4.Size = new System.Drawing.Size(137, 20);
             this.textBox4.TabIndex = 30;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // label72
             // 
@@ -1613,15 +1633,37 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Transparent;
+            this.panel12.Controls.Add(this.label166);
+            this.panel12.Controls.Add(this.label165);
             this.panel12.Controls.Add(this.label84);
-            this.panel12.Controls.Add(this.radioButton2);
-            this.panel12.Controls.Add(this.radioButton1);
             this.panel12.Controls.Add(this.label82);
             this.panel12.Controls.Add(this.label83);
             this.panel12.Location = new System.Drawing.Point(87, 32);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(349, 238);
             this.panel12.TabIndex = 64;
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label166.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label166.Location = new System.Drawing.Point(15, 142);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(64, 18);
+            this.label166.TabIndex = 42;
+            this.label166.Text = "EkHesap2";
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label165.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label165.Location = new System.Drawing.Point(16, 106);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(62, 18);
+            this.label165.TabIndex = 41;
+            this.label165.Text = "EkHesap1";
             // 
             // label84
             // 
@@ -1633,30 +1675,6 @@
             this.label84.Size = new System.Drawing.Size(173, 25);
             this.label84.TabIndex = 40;
             this.label84.Text = "MB FINANCIAL BANK ";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton2.Location = new System.Drawing.Point(18, 139);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 38;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton1.Location = new System.Drawing.Point(18, 103);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 37;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label82
             // 
@@ -1683,15 +1701,37 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.Controls.Add(this.label167);
+            this.panel13.Controls.Add(this.label168);
             this.panel13.Controls.Add(this.label85);
-            this.panel13.Controls.Add(this.radioButton3);
-            this.panel13.Controls.Add(this.radioButton4);
             this.panel13.Controls.Add(this.label86);
             this.panel13.Controls.Add(this.label87);
             this.panel13.Location = new System.Drawing.Point(81, 28);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(355, 239);
             this.panel13.TabIndex = 65;
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label167.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label167.Location = new System.Drawing.Point(23, 145);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(64, 18);
+            this.label167.TabIndex = 47;
+            this.label167.Text = "EkHesap2";
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label168.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label168.Location = new System.Drawing.Point(24, 109);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(62, 18);
+            this.label168.TabIndex = 46;
+            this.label168.Text = "EkHesap1";
             // 
             // label85
             // 
@@ -1703,30 +1743,6 @@
             this.label85.Size = new System.Drawing.Size(173, 25);
             this.label85.TabIndex = 45;
             this.label85.Text = "MB FINANCIAL BANK ";
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton3.Location = new System.Drawing.Point(24, 140);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 44;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton4.Location = new System.Drawing.Point(24, 104);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 43;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // label86
             // 
@@ -1883,7 +1899,6 @@
             this.panel15.BackColor = System.Drawing.Color.Transparent;
             this.panel15.Controls.Add(this.label93);
             this.panel15.Controls.Add(this.label100);
-            this.panel15.Controls.Add(this.label101);
             this.panel15.Controls.Add(this.label102);
             this.panel15.Controls.Add(this.label103);
             this.panel15.Controls.Add(this.label104);
@@ -1913,17 +1928,6 @@
             this.label100.Size = new System.Drawing.Size(69, 18);
             this.label100.TabIndex = 44;
             this.label100.Text = "Sorgulama";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label101.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label101.Location = new System.Drawing.Point(262, 141);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(74, 18);
-            this.label101.TabIndex = 43;
-            this.label101.Text = "Hesap Özeti";
             // 
             // label102
             // 
@@ -2095,28 +2099,34 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(183, 163);
             this.textBox7.Name = "textBox7";
+            this.textBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 59;
             this.textBox7.UseSystemPasswordChar = true;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(183, 134);
             this.textBox6.Name = "textBox6";
+            this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 58;
             this.textBox6.UseSystemPasswordChar = true;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(183, 104);
             this.textBox5.Name = "textBox5";
+            this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 57;
             this.textBox5.UseSystemPasswordChar = true;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // label113
             // 
@@ -2451,9 +2461,11 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(99, 133);
             this.textBox8.Name = "textBox8";
+            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox8.Size = new System.Drawing.Size(137, 20);
             this.textBox8.TabIndex = 32;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
             // 
             // label125
             // 
@@ -2669,10 +2681,11 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(106, 120);
             this.textBox9.Name = "textBox9";
+            this.textBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox9.Size = new System.Drawing.Size(109, 20);
             this.textBox9.TabIndex = 30;
-            this.textBox9.UseSystemPasswordChar = true;
             this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_KeyPress);
             // 
             // label152
             // 
@@ -2764,36 +2777,162 @@
             this.label158.TabIndex = 27;
             this.label158.Text = "MB FINANCIAL BANK ";
             // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.Transparent;
+            this.panel25.Controls.Add(this.label164);
+            this.panel25.Controls.Add(this.label160);
+            this.panel25.Controls.Add(this.label161);
+            this.panel25.Controls.Add(this.label162);
+            this.panel25.Controls.Add(this.label163);
+            this.panel25.Location = new System.Drawing.Point(83, 27);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(350, 243);
+            this.panel25.TabIndex = 77;
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label164.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label164.Location = new System.Drawing.Point(53, 128);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(247, 18);
+            this.label164.TabIndex = 32;
+            this.label164.Text = "Bilgilerinizi Kontrol Ederek Tekrar Deneyin";
+            // 
+            // label160
+            // 
+            this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label160.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label160.Location = new System.Drawing.Point(22, 210);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(67, 18);
+            this.label160.TabIndex = 31;
+            this.label160.Text = "Yeni İşlem";
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label161.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label161.Location = new System.Drawing.Point(288, 210);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(59, 18);
+            this.label161.TabIndex = 30;
+            this.label161.Text = "Kart İade";
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label162.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label162.Location = new System.Drawing.Point(86, 28);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(173, 25);
+            this.label162.TabIndex = 28;
+            this.label162.Text = "MB FINANCIAL BANK ";
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label163.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label163.Location = new System.Drawing.Point(73, 105);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(211, 18);
+            this.label163.TabIndex = 29;
+            this.label163.Text = "İstenen Şartlarda İşlem Yapmadınız!";
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Transparent;
+            this.panel26.Controls.Add(this.label101);
+            this.panel26.Controls.Add(this.label169);
+            this.panel26.Controls.Add(this.label170);
+            this.panel26.Controls.Add(this.label171);
+            this.panel26.Location = new System.Drawing.Point(84, 27);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(352, 243);
+            this.panel26.TabIndex = 78;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label101.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label101.Location = new System.Drawing.Point(85, 28);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(173, 25);
+            this.label101.TabIndex = 50;
+            this.label101.Text = "MB FINANCIAL BANK ";
+            // 
+            // label169
+            // 
+            this.label169.AutoSize = true;
+            this.label169.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label169.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label169.Location = new System.Drawing.Point(19, 143);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(83, 18);
+            this.label169.TabIndex = 49;
+            this.label169.Text = "Şifre Değiştir";
+            // 
+            // label170
+            // 
+            this.label170.AutoSize = true;
+            this.label170.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label170.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label170.Location = new System.Drawing.Point(20, 212);
+            this.label170.Name = "label170";
+            this.label170.Size = new System.Drawing.Size(62, 18);
+            this.label170.TabIndex = 48;
+            this.label170.Text = "Ana Menü";
+            // 
+            // label171
+            // 
+            this.label171.AutoSize = true;
+            this.label171.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label171.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label171.Location = new System.Drawing.Point(270, 212);
+            this.label171.Name = "label171";
+            this.label171.Size = new System.Drawing.Size(59, 18);
+            this.label171.TabIndex = 47;
+            this.label171.Text = "Kart İade";
+            // 
             // ATMArayüzSON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SimulationofATMBANK.Properties.Resources.Bankamatik;
             this.ClientSize = new System.Drawing.Size(730, 293);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel23);
+            this.Controls.Add(this.panel17);
+            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.panel20);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel24);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel14);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel16);
-            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel20);
-            this.Controls.Add(this.panel21);
             this.Controls.Add(this.panel22);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel24);
+            this.Controls.Add(this.panel25);
+            this.Controls.Add(this.panel26);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
@@ -2886,6 +3025,10 @@
             this.panel23.PerformLayout();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2917,7 +3060,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -3013,12 +3155,8 @@
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Panel panel14;
@@ -3035,7 +3173,6 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label104;
@@ -3109,6 +3246,22 @@
         private System.Windows.Forms.Label label156;
         private System.Windows.Forms.Label label157;
         private System.Windows.Forms.Label label158;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label label160;
+        private System.Windows.Forms.Label label161;
+        private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.Label label163;
+        private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.Label label165;
+        private System.Windows.Forms.Label label167;
+        private System.Windows.Forms.Label label168;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label169;
+        private System.Windows.Forms.Label label170;
+        private System.Windows.Forms.Label label171;
 
     }
 }

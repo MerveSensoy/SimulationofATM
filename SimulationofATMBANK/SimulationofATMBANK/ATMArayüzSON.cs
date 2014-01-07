@@ -14,12 +14,169 @@ namespace SimulationofATMBANK
 {
     public partial class ATMArayüzSON : Form
     {
-        int numara, Sifre, HesapNo , cekilecekMiktar,EkHesap1,EkHesap2,EkHesap1Bakiye,EkHesap2Bakiye,Bakiye,KullanıcıID,i;
-        string kontrol,Musteriİsim,MusteriSoyİsim,İslemTipi;
+        int numara, Sifre, HesapNo , kullanılacakMiktar,EkHesap1,EkHesap2,EkHesap1Bakiye,EkHesap2Bakiye,Bakiye,KullanıcıID,i,gonderilecekHesapNo,gonderilenBakiye;
+        string kontrol,Musteriİsim,MusteriSoyİsim,HesapKontrol;
+
         public ATMArayüzSON()
         {
             InitializeComponent();
         }
+
+        private void ParacekmeMakbuzGosterPanel4()
+        {
+            label27.Text = HesapNo.ToString();
+            label28.Text = Musteriİsim + " " + MusteriSoyİsim;
+            label29.Text = kullanılacakMiktar.ToString();
+            label30.Text = Bakiye.ToString();
+        } // Halledildi
+
+        private void ParacekmeBilgiGosterPanel14()
+        {
+            Bakiye -= kullanılacakMiktar;
+            SqlConnection con;
+            con = new SqlConnection("Data Source=BOĞAÇHAN-;Initial Catalog=Bankamatik;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            con.Open();
+            SqlCommand sqlCommand = new SqlCommand("Update Hesap Set  Bakiye='" + Bakiye + "' Where HesapNo='" + HesapNo + "' ", con);
+            SqlDataReader oku = sqlCommand.ExecuteReader();
+
+            oku.Read();
+            oku.Close();
+            oku.Dispose();
+
+            label92.Text = (Bakiye + kullanılacakMiktar).ToString();
+            label91.Text = kullanılacakMiktar.ToString();
+            label90.Text = Bakiye.ToString();
+
+        } // Halledildi
+
+        private void GuncelBakiyeGosterme()
+        {
+            label109.Text = HesapNo.ToString();
+            label108.Text = Musteriİsim + " " + MusteriSoyİsim;
+            label107.Text = Bakiye.ToString();
+        } //Halledildi
+
+        private void ParaYatırmaBilgiGosterPanel19()
+        {
+            if(HesapKontrol=="EkHesap1")
+            {
+                label132.Text = EkHesap1.ToString();
+                label131.Text = Musteriİsim + " " + MusteriSoyİsim;
+                label130.Text = kullanılacakMiktar.ToString();
+                label129.Text = EkHesap1Bakiye.ToString();
+            }
+            else if (HesapKontrol == "EkHesap2")
+            {
+                label132.Text = EkHesap2.ToString();
+                label131.Text = Musteriİsim + " " + MusteriSoyİsim;
+                label130.Text = kullanılacakMiktar.ToString();
+                label129.Text = EkHesap2Bakiye.ToString();
+            }
+            else
+            {
+                label132.Text = HesapNo.ToString();
+                label131.Text = Musteriİsim + " " + MusteriSoyİsim;
+                label130.Text = kullanılacakMiktar.ToString();
+                label129.Text = Bakiye.ToString();
+            }
+        } //Halledildi
+        
+        private void SifreDegistir()
+        {
+            SqlConnection con;
+            con = new SqlConnection("Data Source=BOĞAÇHAN-;Initial Catalog=Bankamatik;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            con.Open();
+            SqlCommand sqlCommand = new SqlCommand("Update Kullanıcı Set  KullanıcıSifre='" + Convert.ToInt32(textBox6.Text) + "' Where KullanıcıID='" + KullanıcıID + "' ", con);
+            SqlDataReader oku = sqlCommand.ExecuteReader();
+
+            oku.Read();
+            oku.Close();
+            oku.Dispose();
+            con.Close();
+            con.Dispose();
+        } //Halledildi
+
+        private void ParaTransferUpdate()
+        {
+            Bakiye -= kullanılacakMiktar;
+            SqlConnection con;
+            con = new SqlConnection("Data Source=BOĞAÇHAN-;Initial Catalog=Bankamatik;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            con.Open();
+            SqlCommand sqlCommand = new SqlCommand("Update Hesap Set  Bakiye='" + Bakiye + "' Where HesapNo='" + HesapNo + "' ", con);
+            SqlDataReader oku = sqlCommand.ExecuteReader();
+
+            oku.Read();
+            oku.Close();
+            oku.Dispose();
+
+            SqlCommand sqlCommand2 = new SqlCommand("select Bakiye from Hesap where HesapNo='" + gonderilecekHesapNo + "'", con);
+            SqlDataReader oku2 = sqlCommand2.ExecuteReader();
+
+            oku2.Read();
+            gonderilenBakiye = Convert.ToInt32(oku2["Bakiye"].ToString());
+            oku2.Close();
+            oku2.Dispose();
+
+            gonderilenBakiye += kullanılacakMiktar;
+            SqlCommand sqlCommand1 = new SqlCommand("Update Hesap Set  Bakiye='" + gonderilenBakiye + "' Where HesapNo='" + gonderilecekHesapNo + "' ", con);
+            SqlDataReader oku1 = sqlCommand1.ExecuteReader();
+
+            oku1.Read();
+            oku1.Close();
+            oku1.Dispose();
+            con.Close();
+            con.Dispose();
+        } //Halledildi
+
+        private void ParaYatırmaPanel8(int kullanılacakMiktar)
+        {
+            
+            SqlConnection con;
+            con = new SqlConnection("Data Source=BOĞAÇHAN-;Initial Catalog=Bankamatik;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+            con.Open();
+            if (HesapKontrol == "EkHesap1")
+            {
+                EkHesap1Bakiye += kullanılacakMiktar;
+                SqlCommand sqlCommand = new SqlCommand("Update Hesap Set  Bakiye='" + EkHesap1Bakiye + "' Where HesapNo='" + EkHesap1 + "' ", con);
+                SqlDataReader oku = sqlCommand.ExecuteReader();
+                oku.Read();
+                oku.Close();
+                oku.Dispose();
+            }
+            else if (HesapKontrol == "EkHesap2")
+            {
+                EkHesap2Bakiye += kullanılacakMiktar;
+                SqlCommand sqlCommand1 = new SqlCommand("Update Hesap Set  Bakiye='" + EkHesap2Bakiye + "' Where HesapNo='" + EkHesap2 + "' ", con);
+                SqlDataReader oku = sqlCommand1.ExecuteReader();
+                oku.Read();
+                oku.Close();
+                oku.Dispose();
+            }
+            else
+            {
+                Bakiye += kullanılacakMiktar;
+                SqlCommand sqlCommand2 = new SqlCommand("Update Hesap Set  Bakiye='" + Bakiye + "' Where HesapNo='" + HesapNo + "' ", con);
+                SqlDataReader oku = sqlCommand2.ExecuteReader();
+                oku.Read();
+                oku.Close();
+                oku.Dispose();
+            }
+           
+        } //Halledildi
+
+        private void ParaTransferGosterim()
+        {
+            label61.Text = gonderilecekHesapNo.ToString();
+            label69.Text = HesapNo.ToString();
+            label60.Text = Musteriİsim + " " + MusteriSoyİsim;
+            label59.Text = kullanılacakMiktar.ToString();
+            label58.Text = Bakiye.ToString();
+        } //Halledildi
+
 
         private void ATMArayüzSON_Load(object sender, EventArgs e)
         {
@@ -47,69 +204,52 @@ namespace SimulationofATMBANK
             panel22.Visible = true; 
             panel23.Visible = false;
             panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false; 
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
+            
+            if (panel3.Visible == true)
             {
+                kullanılacakMiktar = 10;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
-            else if (panel2.Visible == true)
-            {
-            }
-            else if (panel3.Visible == true)
-            {
-                cekilecekMiktar = 10;
-                panel3.Visible = false;
-                panel14.Visible = true;
-            }
-            else if (panel4.Visible == true)
-            {
-            }
-            else if (panel5.Visible == true)
-            {
-            }
-            //else if (panel6.Visible == true)
-            //{
-            //}
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
             else if (panel12.Visible == true)
             {
                 panel12.Visible = false;
+                HesapKontrol = "EkHesap1";
                 panel7.Visible = true;
             }
             else if (panel13.Visible == true)
             {
                
                 panel13.Visible = false;
+                if (HesapNo == 111111 || HesapNo == 222222 || HesapNo == 333333)
+                {
+                    gonderilecekHesapNo = 444444;
+                }
+                else if (HesapNo == 444444 || HesapNo == 555555 || HesapNo == 666666)
+                {
+                    gonderilecekHesapNo = 111111;
+                }
+                else if (HesapNo == 777777 || HesapNo == 888888 || HesapNo == 999999)
+                {
+                    gonderilecekHesapNo = 444444;
+                }
                 panel20.Visible = true;
             }
-            //else if (panel14.Visible == true)
-            //{
-            //}
-            //else if (panel15.Visible == true)
-            //{
-            //}
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
@@ -124,122 +264,103 @@ namespace SimulationofATMBANK
             }
             else if (panel3.Visible == true)
             {
-                cekilecekMiktar = 20;
-                panel3.Visible = false;
-                panel14.Visible = true;
-            }
-            else if (panel4.Visible == true)
-            {
-            }
-            else if (panel5.Visible == true)
-            {
+                kullanılacakMiktar = 20;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
             else if (panel6.Visible == true)
             {
                 panel6.Visible = false;
+                HesapKontrol = "KartınHesabı";
                 panel7.Visible = true;
             }
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
             else if (panel11.Visible == true)
             {
                 panel11.Visible = false;
+                if (HesapNo == 111111 || HesapNo == 222222 || HesapNo == 333333)
+                {
+                    label168.Text="Hesap No :" + "444444" + " İsim Soyİsim : Merve Şensoy";
+                    label167.Text = "Hesap No :" + "777777" + " İsim Soyİsim : Ekrem Aksoy";
+                }
+                else if (HesapNo == 444444 || HesapNo == 555555 || HesapNo == 666666)
+                {
+                    label168.Text = "Hesap No :" + "111111" + " İsim Soyİsim : Boğaçhan Gençtürk";
+                    label167.Text = "Hesap No :" + "777777" + " İsim Soyİsim : Ekrem Aksoy";
+                }
+                else if (HesapNo == 777777 || HesapNo == 888888 || HesapNo == 999999)
+                {
+                    label168.Text = "Hesap No :" + "444444" + " İsim Soyİsim : Merve Şensoy";
+                    label167.Text = "Hesap No :" + "222222" + " İsim Soyİsim : Boğaçhan Gençtürk";
+                }
                 panel13.Visible = true;
             }
             else if (panel12.Visible == true)
             {
                 panel12.Visible = false;
+                HesapKontrol = "EkHesap2";
                 panel7.Visible = true;
             }
             else if (panel13.Visible == true)
             {
                 panel13.Visible = false;
+                if (HesapNo == 111111 || HesapNo == 222222 || HesapNo == 333333)
+                {
+                    gonderilecekHesapNo = 777777;
+                }
+                else if (HesapNo == 444444 || HesapNo == 555555 || HesapNo == 666666)
+                {
+                    gonderilecekHesapNo = 777777;
+                }
+                else if (HesapNo == 777777 || HesapNo == 888888 || HesapNo == 999999)
+                {
+                    gonderilecekHesapNo = 222222;
+                }
                 panel20.Visible = true;
             }
-            //else if (panel14.Visible == true)
-            //{
-            //}
             else if (panel15.Visible == true)
             {
                 panel15.Visible = false;
+                GuncelBakiyeGosterme();
                 panel16.Visible = true;
             }
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
+            else if (panel26.Visible == true)
+            {
+                panel26.Visible = false;
+                panel17.Visible = true;
+            }
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
-            {
-            }
-            else if (panel2.Visible == true)
+            if (panel2.Visible == true)
             {
                 panel2.Visible = false;
                 panel6.Visible = true;
             }
             else if (panel3.Visible == true)
             {
-                cekilecekMiktar = 30;
-                panel3.Visible = false;
-                panel14.Visible = true;
+                kullanılacakMiktar = 30;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
-            else if (panel4.Visible == true)
-            {
-            }
-            else if (panel5.Visible == true)
-            {
-            }
-            //else if (panel6.Visible == true)
-            //{
-            //}
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
-            //else if (panel14.Visible == true)
-            //{
-            //}
-            //else if (panel15.Visible == true)
-            //{
-            //}
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
@@ -249,6 +370,7 @@ namespace SimulationofATMBANK
                 panel1.Visible = false;
                 panel22.Visible = true;
                 kontrol = null;
+                textBox1.Clear();
             }
             else if (panel2.Visible == true)
             {
@@ -257,9 +379,18 @@ namespace SimulationofATMBANK
             }
             else if (panel3.Visible == true)
             {
-                cekilecekMiktar = 50;
-                panel3.Visible = false;
-                panel14.Visible = true;
+                kullanılacakMiktar = 50;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
             else if (panel4.Visible == true)
             {
@@ -270,6 +401,7 @@ namespace SimulationofATMBANK
             {
                 panel5.Visible = false;
                 panel2.Visible = true;
+                textBox2.Clear();
             }
             else if (panel6.Visible == true)
             {
@@ -280,6 +412,7 @@ namespace SimulationofATMBANK
             {
                 panel7.Visible = false;
                 panel2.Visible = true;
+                textBox3.Clear();
             }
             else if (panel8.Visible == true)
             {
@@ -295,6 +428,7 @@ namespace SimulationofATMBANK
             {
                 panel10.Visible = false;
                 panel2.Visible = true;
+                textBox4.Clear();
             }
             else if (panel11.Visible == true)
             {
@@ -330,6 +464,9 @@ namespace SimulationofATMBANK
             {
                 panel17.Visible = false;
                 panel2.Visible = true;
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
             }
             else if (panel18.Visible == true)
             {
@@ -345,6 +482,7 @@ namespace SimulationofATMBANK
             {
                 panel20.Visible = false;
                 panel2.Visible = true;
+                textBox8.Clear();
             }
             else if (panel21.Visible == true)
             {
@@ -355,198 +493,122 @@ namespace SimulationofATMBANK
             {
                 panel23.Visible = false;
                 panel22.Visible = true;
+                textBox9.Clear();
             }
             else if (panel24.Visible == true)
             {
                 panel24.Visible = false;
                 panel2.Visible = true;
             }
+            else if (panel25.Visible == true)
+            {
+                panel25.Visible = false;
+                panel2.Visible = true;
+            }
+            else if (panel26.Visible == true)
+            {
+                panel26.Visible = false;
+                panel2.Visible = true;
+            }
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
+            if (panel2.Visible == true)
             {
-            }
-            else if (panel2.Visible == true)
-            {
-                panel2.Visible = false;
-                //50 tl çekilmesi için işlemler sağlanacak
-                panel14.Visible = true;
+                kullanılacakMiktar = 50;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel2.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel2.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
             else if (panel3.Visible == true)
             {
-                cekilecekMiktar = 100;
-                panel3.Visible = false;
-                panel14.Visible = true;
+                kullanılacakMiktar = 100;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
-            else if (panel4.Visible == true)
-            {
-            }
-            else if (panel5.Visible == true)
-            {
-            }
-            //else if (panel6.Visible == true)
-            //{
-            //}
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
-            //else if (panel14.Visible == true)
-            //{
-            //}
-            //else if (panel15.Visible == true)
-            //{
-            //}
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
-            {
-            }
-            else if (panel2.Visible == true)
+            if (panel2.Visible == true)
             {
                 panel2.Visible = false;
                 panel15.Visible = true;
             }
             else if (panel3.Visible == true)
             {
-                cekilecekMiktar = 250;
-                panel3.Visible = false;
-                panel14.Visible = true;
-            }
-            else if (panel4.Visible == true)
-            {
-            }
-            else if (panel5.Visible == true)
-            {
+                kullanılacakMiktar = 250;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
             else if (panel6.Visible == true)
             {
                 panel6.Visible = false;
+                label165.Text = "Hesap No " +EkHesap1.ToString();
+                label166.Text = "Hesap No " + EkHesap2.ToString();
                 panel12.Visible = true;
             }
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
             else if (panel11.Visible == true)
             {
                 panel11.Visible = false;
                 panel10.Visible = true;
             }
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
-            //else if (panel14.Visible == true)
-            //{
-            //}
-            //else if (panel15.Visible == true)
-            //{
-            //    panel15.Visible = false;
-                
-            //}
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
+            if (panel2.Visible == true)
             {
-            }
-            else if (panel2.Visible == true)
-            {
+                panel2.Visible = false;
+                panel26.Visible = true;
             }
             else if (panel3.Visible == true)
             {
-                cekilecekMiktar = 1000;
-                panel3.Visible = false;
-                panel14.Visible = true;
+                kullanılacakMiktar = 1000;
+                if (Bakiye - kullanılacakMiktar < 0)
+                {
+                    panel3.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel3.Visible = false;
+                    panel14.Visible = true;
+                    ParacekmeBilgiGosterPanel14();
+                }
             }
-            else if (panel4.Visible == true)
-            {
-            }
+           
             else if (panel5.Visible == true)
             {
                 textBox2.Text += numara.ToString();
             }
-            //else if (panel6.Visible == true)
-            //{
-            //}
-            //else if (panel7.Visible == true)
-            //{
-            //}
-            //else if (panel8.Visible == true)
-            //{
-            //}
-            //else if (panel9.Visible == true)
-            //{
-            //}
-            //else if (panel10.Visible == true)
-            //{
-            //}
-            //else if (panel11.Visible == true)
-            //{
-            //}
-            //else if (panel12.Visible == true)
-            //{
-            //}
-            //else if (panel13.Visible == true)
-            //{
-            //}
-            //else if (panel14.Visible == true)
-            //{
-            //}
-            //else if (panel15.Visible == true)
-            //{
-            //}
-            //else if (panel16.Visible == true)
-            //{
-            //}
-            //else if (panel17.Visible == true)
-            //{
-            //}
         }
 
         private void pictureBox20_Click(object sender, EventArgs e)
@@ -576,10 +638,21 @@ namespace SimulationofATMBANK
                     SqlDataReader oku1 = sqlCommand1.ExecuteReader();
 
                     oku1.Read();
-                    HesapNo = Convert.ToInt32(oku1[0].ToString());
-                    EkHesap1 = Convert.ToInt32(oku1[1].ToString());
-                    EkHesap2 = Convert.ToInt32(oku1[2].ToString());
-                    MessageBox.Show(HesapNo.ToString() + EkHesap1.ToString() + EkHesap2.ToString());
+                    if(HesapNo==Convert.ToInt32(oku1[0].ToString()))
+                    {
+                        EkHesap1 = Convert.ToInt32(oku1[1].ToString());
+                        EkHesap2 = Convert.ToInt32(oku1[2].ToString());
+                    }
+                    else if (HesapNo == Convert.ToInt32(oku1[1].ToString()))
+                    {
+                        EkHesap1 = Convert.ToInt32(oku1[0].ToString());
+                        EkHesap2 = Convert.ToInt32(oku1[2].ToString());
+                    }
+                    else if (HesapNo == Convert.ToInt32(oku1[2].ToString()))
+                    {
+                        EkHesap1 = Convert.ToInt32(oku1[0].ToString());
+                        EkHesap2 = Convert.ToInt32(oku1[1].ToString());
+                    }
 
                     oku1.Close();
                     oku1.Dispose();
@@ -610,6 +683,7 @@ namespace SimulationofATMBANK
                     }
                     con.Close();
                     con.Dispose();
+                    textBox1.Clear();
                     panel1.Visible = false;
                     panel2.Visible = true;
                 }
@@ -636,9 +710,19 @@ namespace SimulationofATMBANK
             }
             else if (panel5.Visible == true)
             {
-                //Para Çekme İşlemleri Halledilecek
-                panel5.Visible = false;
-                panel14.Visible = true;
+                if (Convert.ToInt32(textBox2.Text) % 10 != 0 || Convert.ToInt32(textBox2.Text) == 0 || textBox2.Text == null)
+                {
+                    panel5.Visible = false;
+                    panel25.Visible = true;
+                }
+                else
+                {
+                    panel5.Visible = false;
+                    panel14.Visible = true;
+                    kullanılacakMiktar = Convert.ToInt32(textBox2.Text);
+                    ParacekmeBilgiGosterPanel14();
+                }
+                textBox2.Clear();
             }
             else if (panel6.Visible == true)
             {
@@ -648,12 +732,24 @@ namespace SimulationofATMBANK
             }
             else if (panel7.Visible == true)
             {
-                panel7.Visible = false;
-                panel8.Visible = true;
+                if (Convert.ToInt32(textBox3.Text) % 5 != 0 || Convert.ToInt32(textBox3.Text) == 0 || textBox3.Text == null)
+                {
+                    panel7.Visible = false;
+                    panel25.Visible = true;
+                }
+                else
+                {
+                    panel7.Visible = false;
+                    panel8.Visible = true;
+                    kullanılacakMiktar = Convert.ToInt32(textBox3.Text);
+                    ParaYatırmaPanel8(kullanılacakMiktar);
+                }
+                textBox3.Clear();
             }
             else if (panel8.Visible == true)
             {
                 panel8.Visible = false;
+                ParaYatırmaBilgiGosterPanel19();
                 panel19.Visible = true;
                 
             }
@@ -665,8 +761,31 @@ namespace SimulationofATMBANK
             }
             else if (panel10.Visible == true)
             {
-                panel10.Visible = false;
-                panel20.Visible = true;
+                SqlConnection con;
+                con = new SqlConnection("Data Source=BOĞAÇHAN-;Initial Catalog=Bankamatik;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+
+                con.Open();
+
+                SqlCommand sqlCommand = new SqlCommand("select h.HesapNo from Hesap h where HesapNo='" + textBox4.Text + "'", con);
+                SqlDataReader oku = sqlCommand.ExecuteReader();
+
+                if (oku.Read())
+                {
+                    gonderilecekHesapNo = Convert.ToInt32(oku["HesapNo"].ToString());
+                    panel10.Visible = false;
+                    panel20.Visible = true;
+                }
+                else
+                {
+                    panel10.Visible = false;
+                    panel25.Visible = true;
+                }
+                oku.Close();
+                oku.Dispose();
+
+                con.Close();
+                con.Dispose();
+                textBox4.Clear();
             }
             else if (panel11.Visible == true)
             {
@@ -689,6 +808,7 @@ namespace SimulationofATMBANK
             else if (panel14.Visible == true)
             {
                 panel14.Visible = false;
+                ParacekmeMakbuzGosterPanel4();
                 panel4.Visible = true;
             }
             else if (panel15.Visible == true)
@@ -705,7 +825,20 @@ namespace SimulationofATMBANK
             }
             else if (panel17.Visible == true)
             {
-                //onaylama kaydetme işlemleri gerçekleştirilecek
+                if (textBox5.Text == Sifre.ToString() && textBox6.Text == textBox7.Text)
+                {
+                    SifreDegistir();
+                    panel17.Visible=false;
+                    panel18.Visible=true;
+                }
+                else
+                {
+                    panel17.Visible = false;
+                    panel25.Visible = true;
+                }
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
             }
             else if (panel18.Visible == true)
             {
@@ -721,14 +854,29 @@ namespace SimulationofATMBANK
             }
             else if (panel20.Visible == true)
             {
-                //onaylama kaydetme işlemleri gerçekleştirilecek
-                panel20.Visible = false;
-                panel21.Visible = true;
+                if (Convert.ToInt32(textBox8.Text) % 5 != 0 || Convert.ToInt32(textBox8.Text) == 0 || textBox8.Text == null)
+                {
+                    panel20.Visible = false;
+                    panel25.Visible = true;
+                }
+                else if (Bakiye - Convert.ToInt32(textBox8.Text) < 0)
+                {
+                    panel20.Visible = false;
+                    panel24.Visible = true;
+                }
+                else
+                {
+                    panel20.Visible = false;
+                    panel21.Visible = true;
+                    kullanılacakMiktar = Convert.ToInt32(textBox8.Text);
+                    ParaTransferUpdate();
+                }
+                textBox8.Clear();
             }
             else if (panel21.Visible == true)
             {
-                //onaylama kaydetme işlemleri gerçekleştirilecek
                 panel21.Visible = false;
+                ParaTransferGosterim();
                 panel9.Visible = true;
             }
             else if (panel22.Visible == true)
@@ -738,11 +886,8 @@ namespace SimulationofATMBANK
             }
             else if (panel23.Visible == true)
             {
-
-
                 SqlConnection con;
                 con = new SqlConnection("Data Source=BOĞAÇHAN-;Initial Catalog=Bankamatik;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
-
                 con.Open();
 
                 SqlCommand sqlCommand = new SqlCommand("select h.HesapNo,k.KullanıcıSifre from Hesap h , Kullanıcı k where HesapNo='" + textBox9.Text + "'and k.KullanıcıID=h.KullanıcıID ", con);
@@ -765,10 +910,23 @@ namespace SimulationofATMBANK
 
                 con.Close();
                 con.Dispose();
+                textBox9.Clear();
             }
             else if (panel24.Visible == true)
             {
                 panel24.Visible = false;
+                panel22.Visible = true;
+                kontrol = null;
+            }
+            else if (panel25.Visible == true)
+            {
+                panel25.Visible = false;
+                panel22.Visible = true;
+                kontrol = null;
+            }
+            else if (panel26.Visible == true)
+            {
+                panel26.Visible = false;
                 panel22.Visible = true;
                 kontrol = null;
             }
@@ -824,44 +982,6 @@ namespace SimulationofATMBANK
             {
                 textBox9.Text += numara.ToString();
             }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
-            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -902,44 +1022,6 @@ namespace SimulationofATMBANK
             else if (panel23.Visible == true)
             {
                 textBox9.Text += numara.ToString();
-            }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
             }
         }
 
@@ -982,44 +1064,6 @@ namespace SimulationofATMBANK
             {
                 textBox9.Text += numara.ToString();
             }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
-            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -1060,44 +1104,6 @@ namespace SimulationofATMBANK
             else if (panel23.Visible == true)
             {
                 textBox9.Text += numara.ToString();
-            }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
             }
         }
 
@@ -1140,44 +1146,6 @@ namespace SimulationofATMBANK
             {
                 textBox9.Text += numara.ToString();
             }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
-            }
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -1218,44 +1186,6 @@ namespace SimulationofATMBANK
             else if (panel23.Visible == true)
             {
                 textBox9.Text += numara.ToString();
-            }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
             }
         }
 
@@ -1298,44 +1228,6 @@ namespace SimulationofATMBANK
             {
                 textBox9.Text += numara.ToString();
             }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
-            }
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -1376,44 +1268,6 @@ namespace SimulationofATMBANK
             else if (panel23.Visible == true)
             {
                 textBox9.Text += numara.ToString();
-            }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
             }
         }
 
@@ -1456,44 +1310,6 @@ namespace SimulationofATMBANK
             {
                 textBox9.Text += numara.ToString();
             }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
-            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -1534,44 +1350,6 @@ namespace SimulationofATMBANK
             else if (panel23.Visible == true)
             {
                 textBox9.Text += numara.ToString();
-            }
-
-
-            if (panel1.Visible == false)
-            {
-                textBox1.Clear();
-            }
-
-            else if (panel5.Visible == false)
-            {
-                textBox2.Clear();
-            }
-
-            else if (panel7.Visible == false)
-            {
-                textBox3.Clear();
-            }
-
-            else if (panel10.Visible == false)
-            {
-                textBox4.Clear();
-            }
-
-            else if (panel17.Visible == false)
-            {
-                textBox5.Clear();
-                textBox6.Clear();
-                textBox7.Clear();
-            }
-
-            else if (panel20.Visible == false)
-            {
-                textBox8.Clear();
-            }
-
-            else if (panel23.Visible == false)
-            {
-                textBox9.Clear();
             }
         }
 
@@ -1774,6 +1552,56 @@ namespace SimulationofATMBANK
         {
 
 
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
 
 
