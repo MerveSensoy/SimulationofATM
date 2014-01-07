@@ -232,11 +232,18 @@
             this.label146 = new System.Windows.Forms.Label();
             this.label148 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.label154 = new System.Windows.Forms.Label();
             this.label144 = new System.Windows.Forms.Label();
             this.label147 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label152 = new System.Windows.Forms.Label();
             this.label153 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label159 = new System.Windows.Forms.Label();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.label157 = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -280,6 +287,7 @@
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox20
@@ -2611,6 +2619,7 @@
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.Transparent;
+            this.panel23.Controls.Add(this.label154);
             this.panel23.Controls.Add(this.label144);
             this.panel23.Controls.Add(this.label147);
             this.panel23.Controls.Add(this.textBox9);
@@ -2621,6 +2630,17 @@
             this.panel23.Size = new System.Drawing.Size(344, 237);
             this.panel23.TabIndex = 75;
             this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint);
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label154.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label154.Location = new System.Drawing.Point(22, 204);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(62, 18);
+            this.label154.TabIndex = 39;
+            this.label154.Text = "Ana Menü";
             // 
             // label144
             // 
@@ -2676,35 +2696,104 @@
             this.label153.TabIndex = 28;
             this.label153.Text = "HOŞGELDİNİZ";
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.Transparent;
+            this.panel24.Controls.Add(this.label159);
+            this.panel24.Controls.Add(this.label155);
+            this.panel24.Controls.Add(this.label156);
+            this.panel24.Controls.Add(this.label157);
+            this.panel24.Controls.Add(this.label158);
+            this.panel24.Location = new System.Drawing.Point(84, 28);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(349, 242);
+            this.panel24.TabIndex = 76;
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label159.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label159.Location = new System.Drawing.Point(125, 85);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(99, 18);
+            this.label159.TabIndex = 31;
+            this.label159.Text = "Yetersiz Bakiye!";
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label155.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label155.Location = new System.Drawing.Point(19, 209);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(67, 18);
+            this.label155.TabIndex = 30;
+            this.label155.Text = "Yeni İşlem";
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label156.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label156.Location = new System.Drawing.Point(275, 209);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(59, 18);
+            this.label156.TabIndex = 29;
+            this.label156.Text = "Kart İade";
+            // 
+            // label157
+            // 
+            this.label157.AutoSize = true;
+            this.label157.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label157.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label157.Location = new System.Drawing.Point(125, 108);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(97, 18);
+            this.label157.TabIndex = 28;
+            this.label157.Text = "Tekrar Deneyin!";
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label158.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label158.Location = new System.Drawing.Point(85, 27);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(173, 25);
+            this.label158.TabIndex = 27;
+            this.label158.Text = "MB FINANCIAL BANK ";
+            // 
             // ATMArayüzSON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SimulationofATMBANK.Properties.Resources.Bankamatik;
             this.ClientSize = new System.Drawing.Size(730, 293);
-            this.Controls.Add(this.panel23);
-            this.Controls.Add(this.panel22);
-            this.Controls.Add(this.panel21);
-            this.Controls.Add(this.panel20);
-            this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel17);
-            this.Controls.Add(this.panel16);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel24);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.panel15);
+            this.Controls.Add(this.panel16);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel18);
+            this.Controls.Add(this.panel19);
+            this.Controls.Add(this.panel20);
+            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.panel22);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
@@ -2795,6 +2884,8 @@
             this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3011,6 +3102,13 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label152;
         private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.Label label154;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Label label159;
+        private System.Windows.Forms.Label label155;
+        private System.Windows.Forms.Label label156;
+        private System.Windows.Forms.Label label157;
+        private System.Windows.Forms.Label label158;
 
     }
 }
